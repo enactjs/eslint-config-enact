@@ -1,9 +1,12 @@
 module.exports = {
 	globals: {
 		'require': true,
+		'window': true,
+		'document': true,
 		'module': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
+	parser: 'babel-eslint',
 	parserOptions: {
 		'ecmaVersion': 6,
 		'sourceType': 'module',
