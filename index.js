@@ -75,7 +75,8 @@ module.exports = {
 		'no-floating-decimal': 1,
 		'no-implicit-coercion': 0,
 		'no-implied-eval': 1,
-		'no-invalid-this': 2,
+		// 'no-invalid-this': 2, -- false positive due to https://github.com/babel/eslint-plugin-babel/issues/12
+		'no-invalid-this': 0,
 		'no-iterator': 2,
 		'no-labels': 2,
 		'no-lone-blocks': 0,
@@ -152,7 +153,7 @@ module.exports = {
 		'lines-around-comment': 0,
 		'linebreak-style': [1, 'unix'],
 		'max-nested-callbacks': [1, 4],
-		'new-cap': [2, {'newIsCap': true}],
+		'new-cap': [2, {'newIsCap': true, 'capIsNew': false}],
 		'new-parens': 1,
 		'newline-after-var': [1, 'always'],
 		'no-array-constructor': 2,
