@@ -152,7 +152,7 @@ module.exports = {
 		'lines-around-comment': 0,
 		'linebreak-style': [1, 'unix'],
 		'max-nested-callbacks': [1, 4],
-		'new-cap': [2, {'newIsCap': true}],
+		'new-cap': [2, {'newIsCap': true, 'capIsNew': false}],
 		'new-parens': 1,
 		'newline-after-var': [1, 'always'],
 		'no-array-constructor': 2,
