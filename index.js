@@ -205,6 +205,13 @@ module.exports = {
 		'max-params': 0,
 		'max-statements': 0,
 		'no-bitwise': 0,
-		'no-plusplus': 0
+		'no-plusplus': 0,
+
+		// react plugin
+		'sort-prop-types': [1, {
+			'ignoreCase': true,
+			'requiredFirst': true
+		}],
+		'prefer-es6-class': [1, 'always']
 	}
 };
