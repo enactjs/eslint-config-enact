@@ -209,10 +209,38 @@ module.exports = {
 		'no-plusplus': 0,
 
 		// react plugin
-		'sort-prop-types': [1, {
+		'react/display-name': 1,
+		'react/no-danger': 1,
+		'react/no-deprecated': 1,
+		'react/no-did-mount-set-state': [1, 'allow-in-func'],
+		'react/no-did-update-set-state': [1, 'allow-in-func'],
+		'react/no-direct-mutation-state': 1,
+		'react/no-is-mounted': 1,
+		'react/no-multi-comp': 0,
+		'react/no-set-state': 0,
+		'react/no-string-refs': 1,
+		'react/no-unknown-property': 1,
+		'react/prefer-es6-class': [1, 'always'],
+		'react/prefer-stateless-function': 0,
+		'react/prop-types': 1,
+		'react/react-in-jsx-scope': 1,
+		'react/require-extension': 0,
+		'react/require-render-return': 1,
+		'react/self-closing-comp': 1,
+		'react/sort-comp': 0,
+		'react/sort-prop-types': [1, {
 			'ignoreCase': true,
 			'requiredFirst': true
 		}],
-		'prefer-es6-class': [1, 'always']
+		'react/wrap-multilines': 0,
+
+		// react plugin - jsx rules
+		'react/jsx-boolean-value': [1, 'never'],
+		'react/jsx-closing-bracket-location': [1, 'line-aligned'],
+		'react/jsx-curly-spacing': [1, 'never'],
+		'react/jsx-equals-spacing': [1, 'never'],
+		'react/jsx-first-prop-new-line': [1, 'multiline'],
+		'react/jsx-handler-names': 0,
+		'react/jsx-space-before-closing': 1
 	}
 };
