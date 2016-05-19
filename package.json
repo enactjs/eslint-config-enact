@@ -1,11 +1,20 @@
 {
-	"name": "eslint-config-enyo",
-	"version": "1.0.0",
-	"description": "ESLint config for Enyo Rigby",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC"
+  "name": "eslint-config-enyo",
+  "version": "1.0.0",
+  "description": "ESLint config for Enyo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "repository" : {
+     "type" : "git",
+     "url" : "https://github.com/enyo/eslint-config-enyo.git"
+  },
+  "peerDependencies": {
+    "eslint": "^2.10.2",
+    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-babel": "^3.2.0"
+  }
 }

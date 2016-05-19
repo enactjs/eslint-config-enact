@@ -15,7 +15,8 @@ module.exports = {
 		}
 	},
 	plugins: [
-		'react'
+		'react',
+		'babel'
 	],
 	settings: {
 		'react': {
@@ -127,7 +128,8 @@ module.exports = {
 		'no-process-exit': 0,
 		'no-restricted-modules': 0,
 		'no-sync': 0,
-		'array-bracket-spacing': [1, 'never', {}],
+		// Superseded by babel version below
+		'array-bracket-spacing': 0,
 		'brace-style': [1, '1tbs', {}],
 		'camelcase': [1, {'properties': 'always'}],
 		'comma-spacing': [1, {'after': true}],
@@ -169,7 +171,8 @@ module.exports = {
 		'no-trailing-spaces': 1,
 		'no-underscore-dangle': 0,
 		'no-unneeded-ternary': 1,
-		'object-curly-spacing': [1, 'never'],
+		// Superseded by babel version below
+		'object-curly-spacing': 0,
 		'one-var': 0,
 		'operator-assignment': 0,
 		'operator-linebreak': [1, 'before'],
@@ -241,6 +244,27 @@ module.exports = {
 		'react/jsx-equals-spacing': [1, 'never'],
 		'react/jsx-first-prop-new-line': [1, 'multiline'],
 		'react/jsx-handler-names': 0,
-		'react/jsx-space-before-closing': 1
+		'react/jsx-indent': [1, 'tab'],
+		'react/jsx-indent-props': [1, 'tab'],
+		'react/jsx-key': 0,
+		'react/jsx-max-props-per-line': 0,
+		'react/jsx-no-bind': [1, {
+			'ignoreRefs': true,
+			'allowArrowFunctions': false,
+			'allowBind': false
+		}],
+		'react/jsx-no-duplicate-props': 1,
+		'react/jsx-no-literals': 0,
+		'react/jsx-no-target-blank': 1,
+		'react/jsx-no-undef': 1,
+		'react/jsx-pascal-case': 1,
+		'react/jsx-sort-props': 0,
+		'react/jsx-space-before-closing': 1,
+		'react/jsx-uses-react': 1,
+		'react/jsx-uses-vars': 1,
+
+		// babel plugin
+		'babel/object-curly-spacing': [1, 'never'],
+		'babel/array-bracket-spacing': [1, 'never', {}]
 	}
 };
