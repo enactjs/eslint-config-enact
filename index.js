@@ -213,6 +213,7 @@ module.exports = {
 
 		// react plugin
 		'react/display-name': 1,
+		'react/forbid-prop-types': 0,
 		'react/no-danger': 1,
 		'react/no-deprecated': 1,
 		'react/no-did-mount-set-state': [1, 'allow-in-func'],
