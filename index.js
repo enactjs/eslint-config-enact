@@ -3,7 +3,10 @@ module.exports = {
 		'require': true,
 		'window': true,
 		'document': true,
-		'module': true
+		'module': true,
+		'describe': true,
+		'it': true,
+		'expect': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parser: 'babel-eslint',
@@ -157,7 +160,7 @@ module.exports = {
 		'max-nested-callbacks': [1, 4],
 		'new-cap': [2, {'newIsCap': true, 'capIsNew': false}],
 		'new-parens': 1,
-		'newline-after-var': [1, 'always'],
+		'newline-after-var': [0, 'always'],
 		'no-array-constructor': 2,
 		'no-continue': 0,
 		'no-inline-comments': 0,
