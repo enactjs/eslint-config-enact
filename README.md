@@ -3,7 +3,7 @@
 Currently not available as an npm module so manual install is necessary. For global usage, install all dependencies globally:
 
 ```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint
 git clone git@github.com:enyojs/eslint-config-enyo.git
 cd eslint-config-enyo
 npm link
