@@ -178,7 +178,7 @@ module.exports = {
 		'object-curly-spacing': 0,
 		'one-var': 0,
 		'operator-assignment': 0,
-		'operator-linebreak': [1, 'before'],
+		'operator-linebreak': [1, 'after'],
 		'padded-blocks': 0,
 		'quote-props': 0,
 		'quotes': [1, 'single', 'avoid-escape'],
