@@ -222,8 +222,10 @@ module.exports = {
 		'react/no-did-mount-set-state': [1],
 		'react/no-did-update-set-state': [1],
 		'react/no-direct-mutation-state': 1,
+		'react/no-find-dom-node': 1,
 		'react/no-is-mounted': 1,
 		'react/no-multi-comp': 0,
+		'react/no-render-return-value': 1,
 		'react/no-set-state': 0,
 		'react/no-string-refs': 1,
 		'react/no-unknown-property': 1,
@@ -231,7 +233,7 @@ module.exports = {
 		'react/prefer-stateless-function': 0,
 		'react/prop-types': 1,
 		'react/react-in-jsx-scope': 1,
-		'react/require-extension': 0,
+		'react/require-optimization': 0,
 		'react/require-render-return': 1,
 		'react/self-closing-comp': 1,
 		'react/sort-comp': 0,
@@ -239,13 +241,13 @@ module.exports = {
 			'ignoreCase': true,
 			'requiredFirst': true
 		}],
-		'react/wrap-multilines': 0,
 
 		// react plugin - jsx rules
 		'react/jsx-boolean-value': [1, 'never'],
 		'react/jsx-closing-bracket-location': [1, 'line-aligned'],
 		'react/jsx-curly-spacing': [1, 'never'],
 		'react/jsx-equals-spacing': [1, 'never'],
+		'react/jsx-filename-extension': 0,
 		'react/jsx-first-prop-new-line': [1, 'multiline'],
 		'react/jsx-handler-names': 0,
 		'react/jsx-indent': [1, 'tab'],
@@ -257,6 +259,7 @@ module.exports = {
 			'allowArrowFunctions': false,
 			'allowBind': false
 		}],
+		'react/jsx-no-comment-textnodes': 1,
 		'react/jsx-no-duplicate-props': 1,
 		'react/jsx-no-literals': 0,
 		'react/jsx-no-target-blank': 1,
@@ -266,6 +269,7 @@ module.exports = {
 		'react/jsx-space-before-closing': 1,
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
+		'react/jsx-wrap-multilines': 0,
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
