@@ -5,9 +5,10 @@ module.exports = {
 		'window': true,
 		'document': true,
 		'module': true,
-		'describe': true,
-		'it': true,
 		'expect': true
+	},
+	env: {
+		'mocha': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parser: 'babel-eslint',
