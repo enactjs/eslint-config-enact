@@ -1,19 +1,19 @@
 module.exports = {
 	globals: {
 		'__DEV__': true,
-		'require': true,
-		'window': true,
 		'document': true,
+		'expect': true,
 		'module': true,
-		'expect': true
+		'require': true,
+		'window': true
 	},
 	env: {
+		'es6': true, // sets the "ecmaVersion" parser option to 6
 		'mocha': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parser: 'babel-eslint',
 	parserOptions: {
-		'ecmaVersion': 6,
 		'sourceType': 'module',
 		'ecmaFeatures': {
 			'jsx': true
