@@ -1,12 +1,13 @@
 module.exports = {
 	globals: {
 		'__DEV__': true,
+		'document': true,
 		'expect': true,
 		'module': true,
-		'require': true
+		'require': true,
+		'window': true
 	},
 	env: {
-		'browser': true,
 		'es6': true, // sets the "ecmaVersion" parser option to 6
 		'mocha': true
 	},
