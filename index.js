@@ -1,6 +1,7 @@
 module.exports = {
 	globals: {
 		'__DEV__': true,
+		'expect': true,
 		'module': true,
 		'require': true
 	},
