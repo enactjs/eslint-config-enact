@@ -4,17 +4,17 @@ Currently not available as an npm module so manual install is necessary. For glo
 
 ```bash
 npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint
-git clone git@github.com:enyojs/eslint-config-enyo.git
-cd eslint-config-enyo
+git clone git@github.com:enactjs/eslint-config-enact.git
+cd eslint-config-enact
 npm link
 ```
 
 *NOTE*: You may see the following warnings, which you can safely ignore:
 
 ```
-npm WARN eslint-config-enyo@1.0.0 requires a peer of eslint@^2.10.2 but none was installed.
-npm WARN eslint-config-enyo@1.0.0 requires a peer of eslint-plugin-react@^5.1.1 but none was installed.
-npm WARN eslint-config-enyo@1.0.0 requires a peer of eslint-plugin-babel@^3.2.0 but none was installed.
+npm WARN eslint-config-enact@1.0.0 requires a peer of eslint@^2.10.2 but none was installed.
+npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-react@^5.1.1 but none was installed.
+npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-babel@^3.2.0 but none was installed.
 ```
 
 ## Setting up an `.eslintrc` file
@@ -23,7 +23,7 @@ For global usage, create an `.eslintrc` file in your home directory with the fol
 
 ```javascript
 {
-  "extends": "enyo",
+  "extends": "enact",
   "env": {
     "browser": false,
     "node": true,

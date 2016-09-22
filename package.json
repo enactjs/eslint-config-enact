@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-enyo",
+  "name": "eslint-config-enact",
   "version": "1.0.0",
-  "description": "ESLint config for Enyo",
+  "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,6 @@
   "license": "Apache-2.0",
   "repository" : {
      "type" : "git",
-     "url" : "https://github.com/enyo/eslint-config-enyo.git"
+     "url" : "https://github.com/enyojs/eslint-config-enact.git"
   }
 }
