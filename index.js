@@ -5,12 +5,11 @@ module.exports = {
 		'window': true,
 		'document': true,
 		'module': true,
-		'describe': true,
-		'it': true,
 		'expect': true
 	},
 	env: {
-		'es6': true // sets the "ecmaVersion" parser option to 6
+		'es6': true, // sets the "ecmaVersion" parser option to 6
+		'mocha': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parser: 'babel-eslint',
@@ -120,7 +119,7 @@ module.exports = {
 		'no-delete-var': 2,
 		'no-label-var': 2,
 		'no-shadow-restricted-names': 2,
-		'no-shadow': [2, {'builtinGlobals': true, 'hoist': 'all'}],
+		'no-shadow': [2, {'builtinGlobals': true, 'hoist': 'all', 'allow': ['context']}],
 		'no-undef-init': 0,
 		'no-undef': 2,
 		'no-undefined': 2,
