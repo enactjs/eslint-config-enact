@@ -5,8 +5,6 @@ module.exports = {
 		'window': true,
 		'document': true,
 		'module': true,
-		'describe': true,
-		'it': true,
 		'expect': true
 	},
 	env: {
