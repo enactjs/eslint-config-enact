@@ -40,7 +40,7 @@ For best effect, add linting to your code editor.
 
 #### Vim
 
-To use eslint for Vim, first install (Syntastic)[https://github.com/scrooloose/syntastic] and then enable the eslint option.
+To use eslint for Vim, first install [Syntastic](https://github.com/scrooloose/syntastic) and then enable the eslint option.
 
 
 ```vimscript
@@ -57,7 +57,7 @@ let g:syntastic_mode_map = {
 
 Unfortunately, Syntastic does not support real-time linting and only lints of save.
 
-Note: You may also wish to install (vim-jsx)[https://github.com/mxw/vim-jsx] as well.
+Note: You may also wish to install [vim-jsx](https://github.com/mxw/vim-jsx) as well.
 
 #### Sublime
 
