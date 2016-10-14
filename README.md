@@ -71,10 +71,23 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 
 ## Next Steps
 
-You may wish to set up a default `.eslintrc` in your home directory for use with other projects.  If you like our linting rules and want to use them by default, set up your `.eslintrc` as follows:
+If in-editor linting is not working in your local project, you may need to add the following to your `package.json`:
+
+```
+{
+  // ...
+  "eslintConfig": {
+    "extends": "enact"
+  }
+}
+```
+
+If you like our linting rules and want to use them by default with your other projects, set up an `.eslintrc` file in your HOME directory as follows:
 
 ```
 {
   "extends": "enact"
 }
 ```
+
+
