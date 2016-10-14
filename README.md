@@ -64,7 +64,7 @@ Unfortunately, Syntastic does not support real-time linting and only lints on sa
 
 Install the [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin.  More information on linters and Visual Studio Code can be found [here](https://code.visualstudio.com/docs/languages/javascript#_linters).
 
-### Web Storm
+### WebStorm
 
 In either the default or per-project preferences, go to *Languages & Frameworks* > *JavaScript* > *Code Quality* > *ESLint*.
 Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslint` are configured.
