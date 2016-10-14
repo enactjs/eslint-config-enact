@@ -35,7 +35,7 @@ module.exports = {
 		}
 	},
 	rules: {
-		'comma-dangle': [1, 'never'],
+		'comma-dangle': [0, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
 		'no-console': 0,
 		'no-constant-condition': 1,
