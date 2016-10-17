@@ -265,10 +265,6 @@ module.exports = {
 		'react/jsx-space-before-closing': 1,
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
-		'react/jsx-wrap-multilines': 0,
-
-		// babel plugin
-		'babel/object-curly-spacing': [1, 'never'],
-		'babel/array-bracket-spacing': [1, 'never', {}]
+		'react/jsx-wrap-multilines': 0
 	}
 };
