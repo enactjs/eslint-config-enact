@@ -129,7 +129,7 @@ module.exports = {
 		'no-undef': 2,
 		'no-undefined': 1,
 		'no-unused-vars': 1,
-		'no-use-before-define': [2, {'functions': false}],
+		'no-use-before-define': [1, {'functions': false}],
 		'callback-return': 0,
 		'handle-callback-err': 0,
 		'no-mixed-requires': 0,
