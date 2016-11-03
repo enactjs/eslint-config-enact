@@ -213,6 +213,7 @@ module.exports = {
 		// react plugin
 		'react/display-name': 0,
 		'react/forbid-prop-types': 0,
+		'react/no-children-prop': 1,
 		'react/no-danger': 1,
 		'react/no-deprecated': 1,
 		'react/no-did-mount-set-state': [1],
@@ -224,6 +225,7 @@ module.exports = {
 		'react/no-render-return-value': 1,
 		'react/no-set-state': 0,
 		'react/no-string-refs': 1,
+		'react/no-unescaped-entities': 1,
 		'react/no-unknown-property': 1,
 		'react/prefer-es6-class': [1, 'always'],
 		'react/prefer-stateless-function': 0,
