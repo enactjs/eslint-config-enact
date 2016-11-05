@@ -6,8 +6,17 @@ The Enact team recommends all developers use ESLint to statically analyze files 
 
 ESLint, and some of the support modules, must be available globally for editors.  Install these dependencies with the following command:
 
+```bash
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
 ```
-npm install -g eslint eslint-config-enact eslint-plugin-react eslint-plugin-babel babel-eslint
+
+Or alternatively:
+
+```bash
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact
+git clone git@github.com:enyojs/eslint-config-enact.git
+cd eslint-config-enact
+npm link
 ```
 
 > Some Linux installations may require the use of `sudo`, though we recommend updating your installation to not require this.  If your Mac OS X installation requires this, you should definitely reinstall node.  Consider using [nvm](https://github.com/creationix/nvm) or another similar tool to manage your node installation.
