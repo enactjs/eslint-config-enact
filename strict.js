@@ -14,7 +14,7 @@ module.exports = {
 		'no-extra-semi': 1,
 		'no-func-assign': 2,
 		'use-isnan': 2,
-		'valid-jsdoc': [1, {'prefer': {'return': 'returns'}, 'preferType': {'String': 'String', 'object': 'Object'}}],
+		'valid-jsdoc': [0, {'prefer': {'return': 'returns'}, 'preferType': {'String': 'String', 'object': 'Object'}}],
 		'dot-location': [1, 'property'],
 		'no-extend-native': 2,
 		'no-fallthrough': 2,
