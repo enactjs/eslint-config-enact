@@ -7,6 +7,7 @@ module.exports = {
 		'enact'
 	],
 	rules: {
+		'array-bracket-spacing': [1, 'never', {}],
 		'comma-dangle': [1, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
 		'no-console': 1,
@@ -36,6 +37,7 @@ module.exports = {
 		'computed-property-spacing': [1, 'never'],
 		'eol-last': 1,
 		'indent': [1, 'tab', {'SwitchCase': 1}],
+		'jsx-quotes': [1, 'prefer-double'],
 		// 'key-spacing': [1, {
 		// 	'singleLine': {
 		// 		'beforeColon': false,
@@ -79,11 +81,11 @@ module.exports = {
 		'react/jsx-indent': [1, 'tab'],
 		'react/jsx-indent-props': [1, 'tab'],
 		'react/jsx-space-before-closing': 1,
+		'react/jsx-tag-spacing': [1, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-wrap-multilines': 0,
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
-		'babel/array-bracket-spacing': [1, 'never', {}],
 
 		// enact plugin
 		'enact/display-name': 1,

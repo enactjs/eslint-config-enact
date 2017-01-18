@@ -139,7 +139,6 @@ module.exports = {
 		'no-process-exit': 0,
 		'no-restricted-modules': 0,
 		'no-sync': 0,
-		// Superseded by babel version below
 		'array-bracket-spacing': 0,
 		'brace-style': [0, '1tbs', {}],
 		'camelcase': [0, {'properties': 'always'}],
@@ -152,6 +151,7 @@ module.exports = {
 		'func-style': 0,
 		'id-length': 0,
 		'indent': [0, 'tab', {'SwitchCase': 1}],
+		'jsx-quotes': [0, 'prefer-double'],
 		'key-spacing': 0,
 		'linebreak-style': [0, 'unix'],
 		'max-nested-callbacks': [0, 4],
@@ -266,6 +266,7 @@ module.exports = {
 		'react/jsx-pascal-case': 1,
 		'react/jsx-sort-props': 0,
 		'react/jsx-space-before-closing': 0,
+		'react/jsx-tag-spacing': [0, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
 		'react/jsx-wrap-multilines': 0
