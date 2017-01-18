@@ -83,6 +83,7 @@ module.exports = {
 		'react/jsx-space-before-closing': 1,
 		'react/jsx-tag-spacing': [1, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-wrap-multilines': 0,
+		'react/sort-comp': 1,
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
