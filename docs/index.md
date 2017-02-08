@@ -2,7 +2,7 @@
 title: eslint-config-enact
 ---
 
-The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an ESLint plugin that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  This document describes how to set up ESLint with various editors.
+The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an [ESLint plugin](https://github.com/enyojs/eslint-config-enact) that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  This document describes how to set up ESLint with various editors.
 
 ## Installing Dependencies
 
