@@ -2,39 +2,23 @@
 title: eslint-config-enact
 ---
 
-The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an [ESLint plugin](https://github.com/enyojs/eslint-config-enact) that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  This document describes how to set up ESLint with various editors.
+The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an [ESLint configuration](https://github.com/enyojs/eslint-config-react) that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  The configuration offers two flavors: strict and regular.
 
-## Installing Dependencies
-
-ESLint, and some of the support modules, must be available globally for editors.  Install these dependencies with the following command:
-
-```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
-```
-
-Or alternatively:
-
-```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact
-git clone git@github.com:enyojs/eslint-config-enact.git
-cd eslint-config-enact
-npm link
-```
-
-> Some Linux installations may require the use of `sudo`, though we recommend updating your installation to not require this.  If your Mac OS X installation requires this, you should definitely reinstall node.  Consider using [nvm](https://github.com/creationix/nvm) or another similar tool to manage your node installation.
-
-<!-- -->
->NOTE: You may see the following warnings, which you can safely ignore:
->
->```npm WARN eslint-config-enact@1.0.0 requires a peer of eslint@^2.10.2 but none was installed.
->npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-react@^5.1.1 but none was installed.
->npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-babel@^3.2.0 but none was installed.```
+This document describes how to use the Enact ESLint configuration and how to set up ESLint with various editors.
 
 ## Analyzing Your Code
 
 ### Command Line
 
-From the project directory, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.
+If you use the `enact-dev` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.  If not, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+```json
+{
+  "extends": "enact"
+}
+```
+>**NOTE**: For strict mode, use `"extends": "enact/strict"`.
+
+If you like our linting rules and want to use them by default you can create the `.eslintrc` file in your HOME directory instead.
 
 ### In-editor
 
@@ -44,13 +28,13 @@ If you prefer the lint results to appear right in your editor, there are some ex
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.
 
->Note: If you happen to have linting set up already using JSHint or another tool, be sure to disable it as these linters sometimes get confused with newer ES6+ syntax and will not take advantage of the Enact linting rules.
+>**NOTE**: If you happen to have linting set up already using JSHint or another tool, be sure to disable it as these linters sometimes get confused with newer ES6+ syntax and will not take advantage of the Enact linting rules.
 
 ##### Atom
 
 From the shell/command prompt, issue the following command to install [linter-eslint](https://github.com/AtomLinter/linter-eslint):
 
-```
+```bash
 apm install linter-eslint
 ```
 
@@ -78,7 +62,7 @@ let g:syntastic_mode_map = {
 
 Unfortunately, Syntastic does not support real-time linting and only lints on save/load.
 
-> Note: You may also wish to install [vim-jsx](https://github.com/mxw/vim-jsx) as well.
+> **NOTE**: You may also wish to install [vim-jsx](https://github.com/mxw/vim-jsx) as well.
 
 ##### Visual Studio Code
 
@@ -93,19 +77,11 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 
 If in-editor linting is not working in your local project, you may need to add the following to your `package.json`:
 
-```
+```json
 {
   // ...
   "eslintConfig": {
     "extends": "enact"
   }
-}
-```
-
-If you like our linting rules and want to use them by default with your other projects, set up an `.eslintrc` file in your HOME directory as follows:
-
-```
-{
-  "extends": "enact"
 }
 ```
