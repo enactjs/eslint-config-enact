@@ -1,30 +1,42 @@
-Get started by installing required dependencies.  For more information (including editor/IDE setup), please see the [docs](docs/index.md).
+# eslint-config-enact
 
-# Required Dependencies
+> A set of linting rules designed by the Enact team.
 
-ESLint, and some of the support modules, must be available globally for editors.  Install these dependencies with the following command:
+This module includes both a standard set of rules and a set of stricter rules that represent the Enact team style.
 
->**NOTE**: Using the [`enct-dev` tools](https://github.com/enyojs/enact-dev/) to create your projects eliminates the need to globally install these dependencies.
+## Usage
+
+Reference this set of rules from your `.eslintrc` or `package.json` file and then use `eslint`.  If you are using `enact-dev`, simply use `npm run lint` from your project directory.
+
+For more information (including editor/IDE setup), please see the [docs](docs/index.md).
+
+## Installation
+
+`eslint-config-enact` can be installed locally or globally.  The following command will install the config and all its dependencies globally:
 
 ```bash
 npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
 ```
 
-Or alternatively:
+>**NOTE**: Using the [`enct-dev` tools](https://github.com/enyojs/enact-dev/) to create your projects eliminates the need to globally install these dependencies unless you wish editor integration.
 
-```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact
-git clone git@github.com:enyojs/eslint-config-enact.git
-cd eslint-config-enact
-npm link
-```
+## Copyright and License Information
 
-Some Linux installations may require the use of `sudo`, though we recommend updating your installation to not require this.  If your Mac OS X installation requires this, you should definitely reinstall node.  Consider using [nvm](https://github.com/creationix/nvm) or another similar tool to manage your node installation.
+Unless otherwise specified, all content, including all source code files and
+documentation files in this repository are:
 
->**NOTE**: You may see the following warnings, which you can safely ignore:
+Copyright (c) 2012-2017 LG Electronics
 
-```bash
-npm WARN eslint-config-enact@1.0.0 requires a peer of eslint@^2.10.2 but none was installed.
-npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-react@^5.1.1 but none was installed.
-npm WARN eslint-config-enact@1.0.0 requires a peer of eslint-plugin-babel@^3.2.0 but none was installed.
-```
+Unless otherwise specified or set forth in the NOTICE file, all content,
+including all source code files and documentation files in this repository are:
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this content except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

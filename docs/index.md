@@ -10,7 +10,30 @@ This document describes how to use the Enact ESLint configuration and how to set
 
 ### Command Line
 
-If you use the `enact-dev` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.  If not, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+If you use the `enact-dev` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.
+
+If you want to switch to the strict version of the linting rules, modify your `package.json` file and change the followint lines:
+
+```json
+    "lint": "enact lint",
+...
+  "eslintConfig": {
+    "extends": "enact"
+  },
+```
+
+to read:
+
+```json
+    "lint": "enact lint --framework",
+...
+  "eslintConfig": {
+    "extends": "enact/strict"
+  },
+```
+
+If you are not using `enact-dev`, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+
 ```json
 {
   "extends": "enact"
@@ -22,13 +45,17 @@ If you like our linting rules and want to use them by default you can create the
 
 ### In-editor
 
-If you prefer the lint results to appear right in your editor, there are some extra steps you can do.
+This section describes the procedure for setting up several popular editors.
 
-#### Setting Up Your Editor
+Before setting up in-editor linting, be sure to install this config and its dependencies globally using the following command:
+
+```bash
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
+```
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.
 
->**NOTE**: If you happen to have linting set up already using JSHint or another tool, be sure to disable it as these linters sometimes get confused with newer ES6+ syntax and will not take advantage of the Enact linting rules.
+>**NOTE**: If you happen to have in-editor linting set up already using JSHint or another tool, be sure to disable it as older linters sometimes get confused with newer ES6+ syntax and will not take advantage of the Enact linting rules.
 
 ##### Atom
 
