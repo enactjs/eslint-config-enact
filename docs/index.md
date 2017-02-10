@@ -100,15 +100,6 @@ Install the [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=
 In either the default or per-project preferences, go to *Languages & Frameworks* > *JavaScript* > *Code Quality* > *ESLint*.
 Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslint` are configured.
 
-#### Next Steps
+#### Troubleshooting
 
-If in-editor linting is not working in your local project, you may need to add the following to your `package.json`:
-
-```json
-{
-  // ...
-  "eslintConfig": {
-    "extends": "enact"
-  }
-}
-```
+If in-editor linting is not working in your local project, be sure you set up `package.json` or `.eslintrc` as described above.
