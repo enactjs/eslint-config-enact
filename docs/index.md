@@ -12,7 +12,7 @@ This document describes how to use the Enact ESLint configuration and how to set
 
 If you use the `enact-dev` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.
 
-If you want to switch to the strict version of the linting rules, modify your `package.json` file and change the followint lines:
+If you want to switch to the strict version of the linting rules, modify your `package.json` file and change the following lines:
 
 ```json
     "lint": "enact lint",
