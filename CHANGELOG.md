@@ -6,7 +6,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 * Replaced deprecated `babel/array-bracket-spacing` with `array-bracket-spacing`
 * Strict: Added `react/jsx-tag-spacing` to enforce proper jsx tag spacing
-* Strict: Added `react/sort-props` to enforce order of component methods
+* Strict: Added `react/sort-comp` to enforce order of component methods
 * Strict: Added `jsx-quotes` to enforce double quotes in jsx
 
 ## [1.1.1]
