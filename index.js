@@ -1,5 +1,6 @@
 module.exports = {
 	globals: {
+		'__BROWSER__': true,
 		'__DEV__': true,
 		'require': true,
 		'window': true,
