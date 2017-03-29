@@ -2,9 +2,17 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [1.1.3]
+## [1.1.5]
 
 * Strict: Added `react/void-dom-elements-no-children`
+
+## [1.1.4]
+
+* Default: Disabled `no-spaced-func` and `no-undefined` warnings
+
+## [1.1.3]
+
+* Basic documentation added
 
 ## [1.1.2]
 
@@ -19,4 +27,4 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [1.1.0]
 
-* Initial release with strict and normal mode
+* Initial release with default and strict mode
