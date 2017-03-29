@@ -68,12 +68,15 @@ module.exports = {
 		'spaced-comment': [1, 'always', {'markers': ['*']}],
 		'arrow-spacing': [1, {'before': true, 'after': true}],
 		'prefer-spread': 1,
+
+		// react plugin - React and jsx rules
 		'react/sort-prop-types': [1, {
 			'ignoreCase': true,
 			'requiredFirst': true
 		}],
+		'react/sort-comp': 1,
+		'react/void-dom-elements-no-children': 2,
 
-		// react plugin - jsx rules
 		'react/jsx-closing-bracket-location': [1, 'line-aligned'],
 		'react/jsx-curly-spacing': [1, 'never'],
 		'react/jsx-equals-spacing': [1, 'never'],
@@ -83,7 +86,6 @@ module.exports = {
 		'react/jsx-space-before-closing': 1,
 		'react/jsx-tag-spacing': [1, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-wrap-multilines': 0,
-		'react/sort-comp': 1,
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
