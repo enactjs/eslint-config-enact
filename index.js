@@ -26,7 +26,8 @@ module.exports = {
 	},
 	plugins: [
 		'react',
-		'babel'
+		'babel',
+		'enact'
 	],
 	settings: {
 		'react': {
@@ -269,6 +270,9 @@ module.exports = {
 		'react/jsx-tag-spacing': [0, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
-		'react/jsx-wrap-multilines': 0
+		'react/jsx-wrap-multilines': 0,
+
+		// enact plugin
+		'enact/no-module-exports-import': 2
 	}
 };
