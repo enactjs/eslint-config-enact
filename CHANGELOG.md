@@ -2,6 +2,14 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.1.7]
+
+* Removed deprecated `react/jsx-space-before-closing` rule
+
+## [1.1.6]
+
+* Added `enact/no-module-exports-import` rule
+
 ## [1.1.5]
 
 * Strict: Added `react/void-dom-elements-no-children`

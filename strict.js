@@ -83,7 +83,6 @@ module.exports = {
 		'react/jsx-first-prop-new-line': [1, 'multiline'],
 		'react/jsx-indent': [1, 'tab'],
 		'react/jsx-indent-props': [1, 'tab'],
-		'react/jsx-space-before-closing': 1,
 		'react/jsx-tag-spacing': [1, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-wrap-multilines': 0,
 

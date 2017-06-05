@@ -266,7 +266,6 @@ module.exports = {
 		'react/jsx-no-undef': 1,
 		'react/jsx-pascal-case': 1,
 		'react/jsx-sort-props': 0,
-		'react/jsx-space-before-closing': 0,
 		'react/jsx-tag-spacing': [0, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
