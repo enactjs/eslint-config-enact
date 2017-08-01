@@ -2,6 +2,13 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.1.8]
+
+* Default: Allow nested ternary (still warning in strict)
+* Strict: Added `no-useless-escape` warning
+* Strict: Added `react/default-props-match-prop-types` warning
+* Strict: Optimized indentation rules
+
 ## [1.1.7]
 
 * Removed deprecated `react/jsx-space-before-closing` rule

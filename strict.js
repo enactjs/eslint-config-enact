@@ -19,11 +19,13 @@ module.exports = {
 		'dot-location': [1, 'property'],
 		'no-extend-native': 2,
 		'no-fallthrough': 2,
+		'no-nested-ternary': 1,
 		'no-new-wrappers': 2,
 		'no-new': 1,
 		'no-return-assign': [2, 'except-parens'],
 		'no-sequences': 2,
 		'no-useless-call': 2,
+		'no-useless-escape': 1,
 		'no-useless-return': 1,
 		'radix': [1, 'as-needed'],
 		'vars-on-top': 1,
@@ -36,7 +38,7 @@ module.exports = {
 		'comma-style': 1,
 		'computed-property-spacing': [1, 'never'],
 		'eol-last': 1,
-		'indent': [1, 'tab', {'SwitchCase': 1}],
+		'indent': [1, 'tab', {'SwitchCase': 1, 'FunctionDeclaration': {'body': 1, 'parameters': 2}, 'FunctionExpression': {'body': 1, 'parameters': 2}}],
 		'jsx-quotes': [1, 'prefer-double'],
 		// 'key-spacing': [1, {
 		// 	'singleLine': {
@@ -70,6 +72,7 @@ module.exports = {
 		'prefer-spread': 1,
 
 		// react plugin - React and jsx rules
+		'react/default-props-match-prop-types': 1,
 		'react/sort-prop-types': [1, {
 			'ignoreCase': true,
 			'requiredFirst': true
