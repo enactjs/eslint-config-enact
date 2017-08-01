@@ -38,7 +38,7 @@ module.exports = {
 		'comma-style': 1,
 		'computed-property-spacing': [1, 'never'],
 		'eol-last': 1,
-		'indent': [1, 'tab', {'SwitchCase': 1}],
+		'indent': [1, 'tab', {'SwitchCase': 1, 'FunctionDeclaration': {'body': 1, 'parameters': 2}, 'FunctionExpression': {'body': 1, 'parameters': 2}}],
 		'jsx-quotes': [1, 'prefer-double'],
 		// 'key-spacing': [1, {
 		// 	'singleLine': {
@@ -72,6 +72,7 @@ module.exports = {
 		'prefer-spread': 1,
 
 		// react plugin - React and jsx rules
+		'react/default-props-match-prop-types': 1,
 		'react/sort-prop-types': [1, {
 			'ignoreCase': true,
 			'requiredFirst': true
