@@ -50,7 +50,7 @@ This section describes the procedure for setting up several popular editors.
 Before setting up in-editor linting, be sure to install this config and its dependencies globally using the following command:
 
 ```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-enact eslint-config-enact
 ```
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.
