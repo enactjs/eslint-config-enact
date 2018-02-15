@@ -2,7 +2,7 @@
 title: eslint-config-enact Linting Configuration
 ---
 
-The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an [ESLint configuration](https://github.com/enyojs/eslint-config-react) that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  The configuration offers two flavors: strict and regular.
+The Enact team recommends all developers use ESLint to statically analyze files for potential errors and to help enforce a common coding style.  To that end, we developed an [ESLint configuration](https://github.com/enactjs/eslint-config-enact) that encapsulates Enact programming conventions.  Most modern editors have support for displaying linter errors in-line with source code.  This can be very helpful during development.  The configuration offers two flavors: strict and regular.
 
 This document describes how to use the Enact ESLint configuration and how to set up ESLint with various editors.
 
@@ -10,7 +10,7 @@ This document describes how to use the Enact ESLint configuration and how to set
 
 ### Command Line
 
-If you use the `enact-dev` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.
+If you use the `cli` tools to create your project, `npm run lint` will run the Enact configuration of ESLint for syntax analysis.
 
 If you want to switch to the strict version of the linting rules, modify your `package.json` file and change the following lines:
 
@@ -32,7 +32,7 @@ to read:
   },
 ```
 
-If you are not using `enact-dev`, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
 
 ```json
 {
@@ -50,7 +50,7 @@ This section describes the procedure for setting up several popular editors.
 Before setting up in-editor linting, be sure to install this config and its dependencies globally using the following command:
 
 ```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint enyojs/eslint-plugin-enact enyojs/eslint-config-enact
+npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-enact eslint-config-enact
 ```
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.

@@ -6,7 +6,7 @@ This module includes both a standard set of rules and a set of stricter rules th
 
 ## Usage
 
-Reference this set of rules from your `.eslintrc` or `package.json` file and then use `eslint`.  If you are using `enact-dev`, simply use `npm run lint` from your project directory.
+Reference this set of rules from your `.eslintrc` or `package.json` file and then use `eslint`.  If you are using the `cli` tools, simply use `npm run lint` from your project directory.
 
 For more information (including editor/IDE setup), please see the [docs](docs/index.md).
 
@@ -18,7 +18,7 @@ For more information (including editor/IDE setup), please see the [docs](docs/in
 npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-enact eslint-config-enact
 ```
 
->**NOTE**: Using the [`enct-dev` tools](https://github.com/enyojs/enact-dev/) to create your projects eliminates the need to globally install these dependencies unless you wish editor integration.
+>**NOTE**: Using the [`cli` tools](https://github.com/enactjs/cli/) to create your projects eliminates the need to globally install these dependencies unless you wish editor integration.
 
 ## Copyright and License Information
 
