@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.1.9]
+
+* Updated copyright for 2018
+* Update github references for new repo location
+
 ## [1.1.8]
 
 * Default: Allow nested ternary (still warning in strict)
