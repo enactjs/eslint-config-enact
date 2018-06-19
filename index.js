@@ -216,7 +216,11 @@ module.exports = {
 
 		// react plugin
 		'react/display-name': 0,
+		'react/forbid-foreign-prop-types': 0,
 		'react/forbid-prop-types': 0,
+		// Note: not a jsx rule!
+		'react/jsx-sort-default-props': [0, {'ignoreCase': true}],
+		'react/no-access-state-in-setstate': 1,
 		'react/no-children-prop': 1,
 		'react/no-danger': 1,
 		'react/no-deprecated': 1,
@@ -229,6 +233,7 @@ module.exports = {
 		'react/no-render-return-value': 1,
 		'react/no-set-state': 0,
 		'react/no-string-refs': 1,
+		'react/no-this-in-sfc': 1,
 		'react/no-unescaped-entities': 1,
 		'react/no-unknown-property': 1,
 		'react/prefer-es6-class': [1, 'always'],
@@ -246,6 +251,7 @@ module.exports = {
 
 		// react plugin - jsx rules
 		'react/jsx-boolean-value': [1, 'never'],
+		'react/jsx-child-element-spacing': 0,
 		'react/jsx-closing-bracket-location': [0, 'line-aligned'],
 		'react/jsx-curly-spacing': [0, 'never'],
 		'react/jsx-equals-spacing': [0, 'never'],
@@ -266,6 +272,7 @@ module.exports = {
 		'react/jsx-no-literals': 0,
 		'react/jsx-no-target-blank': 1,
 		'react/jsx-no-undef': 1,
+		'react/jsx-one-expression-per-line': 0,
 		'react/jsx-pascal-case': 1,
 		'react/jsx-sort-props': 0,
 		'react/jsx-tag-spacing': [0, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],

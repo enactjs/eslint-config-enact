@@ -75,7 +75,8 @@ module.exports = {
 		'react/default-props-match-prop-types': 1,
 		'react/sort-prop-types': [1, {
 			'ignoreCase': true,
-			'requiredFirst': true
+			'requiredFirst': true,
+			'sortShapeProp': true
 		}],
 		'react/sort-comp': 1,
 		'react/void-dom-elements-no-children': 2,
@@ -88,6 +89,13 @@ module.exports = {
 		'react/jsx-indent-props': [1, 'tab'],
 		'react/jsx-tag-spacing': [1, {closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never'}],
 		'react/jsx-wrap-multilines': 0,
+		'react/jsx-props-no-multi-spaces': 1,
+		'react/forbid-foreign-prop-types': 1,
+		'react/no-this-in-sfc': 1,
+		'react/jsx-child-element-spacing': 0,
+		'react/jsx-sort-default-props': [1, {'ignoreCase': true}],
+		'react/jsx-one-expression-per-line': 0,
+		'react/no-access-state-in-setstate': 1,
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
