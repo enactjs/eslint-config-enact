@@ -2,6 +2,15 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.2.0]
+
+* Added `react/no-access-state-in-setstate` warning
+* Strict: Added `react/jsx-props-no-multi-spaces` warning
+* Strict: Added `react/forbid-foreign-prop-types` warning
+* Strict: Added `react/no-this-in-sfc` warning
+* Strict: Added `react/jsx-sort-default-props` warning
+* Strict: Added `react/no-access-state-in-setstate` warning
+
 ## [1.1.9]
 
 * Updated copyright for 2018
