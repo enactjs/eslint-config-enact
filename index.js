@@ -1,6 +1,7 @@
 module.exports = {
 	globals: {
 		'__DEV__': true,
+		'process': true,
 		'require': true,
 		'window': true,
 		'global': true,
