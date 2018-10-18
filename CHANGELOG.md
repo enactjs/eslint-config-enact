@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.2.1]
+
+* Fixed support for `process` global
+
 ## [1.2.0]
 
 * Added `react/no-access-state-in-setstate` warning
