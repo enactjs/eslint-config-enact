@@ -16,7 +16,7 @@ module.exports = {
 	},
 	env: {
 		'es6': true, // sets the "ecmaVersion" parser option to 6
-		'mocha': true
+		'jest': true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	parser: 'babel-eslint',
