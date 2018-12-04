@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.3.0]
+
+* Added support for `jest` globals and removed `mocha` globals.
+
 ## [1.2.1]
 
 * Fixed support for `process` global
