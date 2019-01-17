@@ -33,7 +33,7 @@ module.exports = {
 		'no-undefined': 2,
 		'no-use-before-define': [2, {'functions': false}],
 		'brace-style': [1, '1tbs', {}],
-		'camelcase': [0, {allow: ["^UNSAFE_"]}],
+		'camelcase': [1, {allow: ["^UNSAFE_"]}],
 		'comma-spacing': [1, {'after': true}],
 		'comma-style': 1,
 		'computed-property-spacing': [1, 'never'],
