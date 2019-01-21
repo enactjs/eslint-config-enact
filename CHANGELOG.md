@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.4.0]
+
+* Updated `camelcase` rule to allow for `^UNSAFE_` react lifecycle methods
+* Strict: Updated `camelcase` rule to allow for `^UNSAFE_` react lifecycle methods
+
 ## [1.3.0]
 
 * Added support for `jest` globals and removed `mocha` globals.
