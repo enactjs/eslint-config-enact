@@ -145,7 +145,7 @@ module.exports = {
 		'no-sync': 0,
 		'array-bracket-spacing': 0,
 		'brace-style': [0, '1tbs', {}],
-		'camelcase': [0, {'properties': 'always'}],
+		'camelcase': [0, {allow: ["^UNSAFE_"]}],
 		'comma-spacing': [0, {'after': true}],
 		'comma-style': 0,
 		'computed-property-spacing': [0, 'never'],
