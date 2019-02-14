@@ -4,6 +4,7 @@ module.exports = {
 	plugins: [
 		'react',
 		'babel',
+		'jest',
 		'enact'
 	],
 	rules: {
@@ -99,6 +100,9 @@ module.exports = {
 
 		// babel plugin
 		'babel/object-curly-spacing': [1, 'never'],
+
+		// jest plugin
+		'jest/no-focused-tests': 'error',
 
 		// enact plugin
 		'enact/display-name': 1,
