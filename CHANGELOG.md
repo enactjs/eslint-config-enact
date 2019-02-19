@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.4.1]
+
+* Strict: Added `jest/no-focused-tests` error
+
 ## [1.4.0]
 
 * Updated `camelcase` rule to allow for `^UNSAFE_` react lifecycle methods
