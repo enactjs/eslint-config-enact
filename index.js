@@ -109,6 +109,7 @@ module.exports = {
 		'no-redeclare': [2, {'builtinGlobals': true}],
 		'no-return-assign': [1, 'except-parens'],
 		'no-script-url': 2,
+		'no-self-assign': 1,
 		'no-self-compare': 2,
 		'no-sequences': 1,
 		'no-throw-literal': 2,

@@ -24,6 +24,7 @@ module.exports = {
 		'no-new-wrappers': 2,
 		'no-new': 1,
 		'no-return-assign': [2, 'except-parens'],
+		'no-self-assign': 2,
 		'no-sequences': 2,
 		'no-useless-call': 2,
 		'no-useless-escape': 1,
