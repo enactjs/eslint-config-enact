@@ -15,7 +15,7 @@ For more information (including editor/IDE setup), please see the [docs](docs/in
 `eslint-config-enact` can be installed locally or globally.  The following command will install the config and all its dependencies globally:
 
 ```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
+npm install -g eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
 ```
 
 >**NOTE**: Using the [`cli` tools](https://github.com/enactjs/cli/) to create your projects eliminates the need to globally install these dependencies unless you wish editor integration.
