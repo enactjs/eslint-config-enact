@@ -11,5 +11,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
+  },
+  "peerDependencies": {
+    "babel-eslint": "10.x",
+    "eslint": "5.x",
+    "eslint-plugin-babel": "5.x",
+    "eslint-plugin-enact": "0.1.x",
+    "eslint-plugin-jest": "22.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x"
   }
 }
