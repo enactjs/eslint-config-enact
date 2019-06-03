@@ -28,6 +28,7 @@ module.exports = {
 	},
 	plugins: [
 		'react',
+		'react-hooks',
 		'babel',
 		'enact'
 	],
@@ -280,6 +281,10 @@ module.exports = {
 		'react/jsx-uses-react': 1,
 		'react/jsx-uses-vars': 1,
 		'react/jsx-wrap-multilines': 0,
+
+		// react-hooks plugin
+		'react-hooks/exhaustive-deps': 1,
+		'react-hooks/rules-of-hooks': 2,
 
 		// enact plugin
 		'enact/no-module-exports-import': 2

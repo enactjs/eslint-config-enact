@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Added `react-hooks/exhaustive-deps` warning
+* Added `react-hooks/rules-of-hooks` error
+
 ## [1.4.1]
 
 * Strict: Added `jest/no-focused-tests` error
