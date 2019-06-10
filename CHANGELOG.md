@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [1.5.0]
 
 * Added `react-hooks/exhaustive-deps` warning
 * Added `react-hooks/rules-of-hooks` error
