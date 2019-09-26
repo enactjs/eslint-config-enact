@@ -39,7 +39,16 @@ module.exports = {
 		'comma-style': 1,
 		'computed-property-spacing': [1, 'never'],
 		'eol-last': 1,
-		'indent': [1, 'tab', {'SwitchCase': 1, 'FunctionDeclaration': {'body': 1, 'parameters': 2}, 'FunctionExpression': {'body': 1, 'parameters': 2}}],
+		'indent': [
+			1,
+			'tab',
+			{
+				'SwitchCase': 1,
+				'FunctionDeclaration': {'body': 1, 'parameters': 2},
+				'FunctionExpression': {'body': 1, 'parameters': 2},
+				'ignoredNodes': ['TemplateLiteral *']
+			}
+		],
 		'jsx-quotes': [1, 'prefer-double'],
 		// 'key-spacing': [1, {
 		// 	'singleLine': {
