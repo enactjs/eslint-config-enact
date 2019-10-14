@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [1.6.0]
+
+* Updated ECMAScript support to ES2018
+* Updated ESLint Enact plugin peerDependency to support version `0.2.0`
+
 ## [1.5.0]
 
 * Added `react-hooks/exhaustive-deps` warning

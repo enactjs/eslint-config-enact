@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-enact",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "babel-eslint": "10.x",
     "eslint": "5.x",
     "eslint-plugin-babel": "5.x",
-    "eslint-plugin-enact": "0.1.x",
+    "eslint-plugin-enact": "0.x",
     "eslint-plugin-jest": "22.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x"
