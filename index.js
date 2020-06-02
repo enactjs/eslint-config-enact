@@ -20,79 +20,91 @@ module.exports = {
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
-		'ecmaVersion': 2018,
-		'sourceType': 'module',
-		'ecmaFeatures': {
-			'jsx': true
+		ecmaVersion: 2018,
+		sourceType: 'module',
+		ecmaFeatures: {
+			jsx: true
 		}
 	},
 	plugins: ['react', 'enact'],
 	settings: {
-		'react': {
+		react: {
 			'pragma': 'React',  // Pragma to use, default to "React"
 			'version': '15.0' // React version, default to the latest React stable release
 		}
 	},
 	rules: {
+		'block-scoped-var': 'warn',
+		'curly': ['warn', 'multi-line'],
+		'eqeqeq': ['warn', 'smart'],
+		'new-cap': ['error', {
+			newIsCap: true,
+			capIsNew: false
+		}],
+		'new-parens': 'warn',
+		'no-alert': 'warn',
+		'no-array-constructor': 'warn',
+		'no-caller': 'error',
+		'no-catch-shadow': 'error',
 		'no-cond-assign': ['warn', 'except-parens'],
 		'no-constant-condition': 'warn',
 		'no-control-regex': 'off',
 		'no-debugger': 'off',
-		'no-empty': 'warn',
-		'no-extra-boolean-cast': 'warn',
-		'no-extra-semi': 'off',
-		'no-func-assign': 'warn',
-		'no-inner-declarations': 'off',
-		'no-irregular-whitespace': 'warn',
-		'no-negated-in-lhs': 'error',
-		'no-regex-spaces': 'warn',
-		'no-unreachable': 'warn',
-		'use-isnan': 'warn',
-		'no-unexpected-multiline': 'warn',
-		'block-scoped-var': 'warn',
-		'curly': ['warn', 'multi-line'],
-		'eqeqeq': ['warn', 'smart'],
-		'no-alert': 'warn',
-		'no-caller': 'error',
 		'no-div-regex': 'warn',
+		'no-empty': 'warn',
 		'no-eval': 'warn',
 		'no-extend-native': 'warn',
 		'no-extra-bind': 'warn',
+		'no-extra-boolean-cast': 'warn',
+		'no-extra-semi': 'off',
 		'no-fallthrough': 'warn',
 		'no-floating-decimal': 'warn',
+		'no-func-assign': 'warn',
 		'no-implied-eval': 'warn',
-		// 'no-invalid-this': 'error', -- false positive due to https://github.com/babel/eslint-plugin-babel/issues/12
+		'no-inner-declarations': 'off',
+		'no-irregular-whitespace': 'warn',
 		'no-iterator': 'error',
+		'no-label-var': 'error',
 		'no-labels': 'error',
+		'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
 		'no-native-reassign': 'error',
+		'no-negated-in-lhs': 'error',
 		'no-new-func': 'error',
+		'no-new-object': 'warn',
 		'no-new-wrappers': 'warn',
 		'no-octal-escape': 'warn',
 		'no-proto': 'error',
-		'no-redeclare': ['error', {'builtinGlobals': true}],
+		'no-redeclare': ['error', {
+			builtinGlobals: true
+		}],
+		'no-regex-spaces': 'warn',
 		'no-return-assign': ['warn', 'except-parens'],
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'warn',
+		'no-shadow': ['warn', {
+			builtinGlobals: true,
+			hoist: 'all',
+			allow: [
+				'context'
+			]
+		}],
 		'no-throw-literal': 'error',
+		'no-trailing-spaces': 'warn',
+		'no-unexpected-multiline': 'warn',
+		'no-unneeded-ternary': 'warn',
+		'no-unreachable': 'warn',
 		'no-unused-expressions': 'warn',
+		'no-unused-vars': 'warn',
+		'no-use-before-define': ['warn', {
+			functions: false
+		}],
 		'no-useless-call': 'warn',
 		'no-useless-escape': 'off',
-		'wrap-iife': ['error', 'inside'],
-		'no-catch-shadow': 'error',
-		'no-label-var': 'error',
-		'no-shadow': ['warn', {'builtinGlobals': true, 'hoist': 'all', 'allow': ['context']}],
-		'no-unused-vars': 'warn',
-		'no-use-before-define': ['warn', {'functions': false}],
-		'new-cap': ['error', {'newIsCap': true, 'capIsNew': false}],
-		'new-parens': 'warn',
-		'no-array-constructor': 'warn',
-		'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
-		'no-new-object': 'warn',
-		'no-trailing-spaces': 'warn',
-		'no-unneeded-ternary': 'warn',
 		'no-var': 'warn',
 		'require-yield': 'off',
+		'use-isnan': 'warn',
+		'wrap-iife': ['error', 'inside'],
 
 		// react plugin
 		'react/display-name': 'off',
@@ -120,9 +132,9 @@ module.exports = {
 		'react/jsx-boolean-value': ['warn', 'never'],
 		'react/jsx-key': 'off',
 		'react/jsx-no-bind': ['warn', {
-			'ignoreRefs': true,
-			'allowArrowFunctions': false,
-			'allowBind': false
+				ignoreRefs: true,
+				allowArrowFunctions: false,
+				allowBind: false
 		}],
 		'react/jsx-no-comment-textnodes': 'warn',
 		'react/jsx-no-duplicate-props': 'warn',
