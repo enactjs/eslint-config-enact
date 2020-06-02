@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
   },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
   "peerDependencies": {
     "babel-eslint": "10.x",
     "eslint": "6.x || 7.x",
