@@ -141,12 +141,17 @@ module.exports = {
 				'tests/ui/**/*'
 			],
 			rules: {
+				// Lots of callbacks can occur in tests
+				'max-nested-callbacks': 'off',
 				// disallow describe.only and test.only
 				"no-restricted-properties": ['error', {
 					"object": "describe",
 					"property": "only"
 				}, {
 					"object": "test",
+					"property": "only"
+				}, {
+					"object": "it",
 					"property": "only"
 				}]
 			}
