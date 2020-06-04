@@ -1,6 +1,6 @@
 module.exports = {
 	extends: './index.js',
-	plugins: ['react', 'babel', 'jest', 'enact'],
+	plugins: ['react', 'babel', 'enact'],
 	rules: {
 		'array-bracket-spacing': ['warn', 'never', {}],
 		'arrow-spacing': ['warn', {
@@ -140,8 +140,14 @@ module.exports = {
 			],
 			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 			rules: {
-				// jest plugin
-				'jest/no-focused-tests': 'error',
+				// disallow describe.only and test.only
+				"no-restricted-properties": ['error', {
+					"object": "describe",
+					"property": "only"
+				}, {
+					"object": "test",
+					"property": "only"
+				}]
 			}
 		}
 	]
