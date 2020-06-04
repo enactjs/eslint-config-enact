@@ -136,9 +136,10 @@ module.exports = {
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
 				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
-				'**/*-specs.{js,jsx,ts,tsx}'
+				'**/*-specs.{js,jsx,ts,tsx}',
+				'tests/screenshot/**/*',
+				'tests/ui/**/*'
 			],
-			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 			rules: {
 				// disallow describe.only and test.only
 				"no-restricted-properties": ['error', {
