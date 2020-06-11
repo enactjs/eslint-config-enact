@@ -12,13 +12,15 @@
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
   },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
   "peerDependencies": {
     "babel-eslint": "10.x",
-    "eslint": "5.x",
+    "eslint": "6.x || 7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
-    "eslint-plugin-jest": "22.x",
     "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "1.x"
+    "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x"
   }
 }
