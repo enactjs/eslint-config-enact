@@ -29,7 +29,7 @@ module.exports = {
 	plugins: ['react', 'enact'],
 	settings: {
 		react: {
-			'pragma': 'React',  // Pragma to use, default to "React"
+			'pragma': 'React',	// Pragma to use, default to "React"
 			'version': '15.0' // React version, default to the latest React stable release
 		}
 	},
@@ -149,6 +149,52 @@ module.exports = {
 	},
 	overrides: [
 		{
+			// Typescript
+			files: ['**/*.ts?(x)'],
+			parser: '@typescript-eslint/parser',
+			parserOptions: {
+				ecmaVersion: 2018,
+				sourceType: 'module',
+				ecmaFeatures: {
+					jsx: true,
+				},
+				warnOnUnsupportedTypeScriptVersion: true,
+			},
+			plugins: ['@typescript-eslint'],
+			rules: {
+				// Unneeded options covered by Typescript plugin
+				'default-case': 'off',
+				'no-dupe-class-members': 'off',
+				'no-undef': 'off',
+
+				// Typescript rules
+				'@typescript-eslint/consistent-type-assertions': 'warn',
+				'no-array-constructor': 'off',
+				'@typescript-eslint/no-array-constructor': 'warn',
+				'no-use-before-define': 'off',
+				'@typescript-eslint/no-use-before-define': ['warn', {
+					functions: false,
+					classes: false,
+					variables: false,
+					typedefs: false
+				}],
+				'no-unused-expressions': 'off',
+				'@typescript-eslint/no-unused-expressions': ['error', {
+					allowShortCircuit: true,
+					allowTernary: true,
+					allowTaggedTemplates: true
+				}],
+				'no-unused-vars': 'off',
+				'@typescript-eslint/no-unused-vars': ['warn', {
+					args: 'none',
+					ignoreRestSiblings: true
+				}],
+				'no-useless-constructor': 'off',
+				'@typescript-eslint/no-useless-constructor': 'warn'
+			},
+		},
+		{
+			// Jest unit tests
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
 				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
@@ -160,6 +206,7 @@ module.exports = {
 			}
 		},
 		{
+			// WDIO mocha ui & screenshot tests
 			files: [
 				'tests/screenshot/**/*', 'tests/ui/**/*'
 			],

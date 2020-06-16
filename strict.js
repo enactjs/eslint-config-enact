@@ -133,6 +133,20 @@ module.exports = {
 	},
 	overrides: [
 		{
+			// Strict Typescript overrides
+			files: ['**/*.ts?(x)'],
+			rules: {
+				'@typescript-eslint/no-array-constructor': 'error',
+				'@typescript-eslint/no-use-before-define': ['error', {
+					functions: false,
+					classes: false,
+					variables: false,
+					typedefs: false
+				}]
+			}
+		},
+		{
+			// Strict testfile overrides
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
 				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
