@@ -26,7 +26,7 @@ module.exports = {
 			jsx: true
 		}
 	},
-	plugins: ['react', 'enact'],
+	plugins: ['babel', 'react', 'enact'],
 	settings: {
 		react: {
 			'pragma': 'React',	// Pragma to use, default to "React"
