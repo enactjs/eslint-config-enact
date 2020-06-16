@@ -13,10 +13,16 @@ module.exports = {
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
 	ignorePatterns: [
-		'**/node_modules/**',
-		'**/build/**',
-		'**/dist/**',
-		'**/coverage/**'
+		'/**/node_modules/',
+		'/**/node_modules/*',
+		'/**/build/',
+		'/**/build/*',
+		'/**/dist/',
+		'/**/dist/*',
+		'/**/coverage/',
+		'/**/coverage/*',
+		'/**/resources/',
+		'/**/resources/*'
 	],
 	parser: 'babel-eslint',
 	parserOptions: {
