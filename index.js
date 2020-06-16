@@ -30,7 +30,7 @@ module.exports = {
 	settings: {
 		react: {
 			'pragma': 'React',	// Pragma to use, default to "React"
-			'version': '15.0' // React version, default to the latest React stable release
+			'version': 'detect' // React version, default to the latest React stable release
 		}
 	},
 	rules: {
