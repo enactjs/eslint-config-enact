@@ -25,5 +25,16 @@
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "3.x",
+    "@typescript-eslint/parser": "3.x",
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "eslint-plugin-babel": "5.x",
+    "eslint-plugin-enact": "0.x",
+    "eslint-plugin-jsx-a11y": "jsx-eslint/eslint-plugin-jsx-a11y",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "4.x"
   }
 }
