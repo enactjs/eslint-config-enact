@@ -8,11 +8,6 @@ module.exports = {
 			after: true
 		}],
 		'brace-style': ['warn', '1tbs', {}],
-		'camelcase': ['warn', {
-			allow: [
-				'^UNSAFE_'
-			]
-		}],
 		'comma-dangle': ['warn', 'never'],
 		'comma-spacing': ['warn', {
 			after: true
@@ -71,9 +66,7 @@ module.exports = {
 		'no-useless-return': 'warn',
 		'operator-linebreak': ['warn', 'after'],
 		'prefer-spread': 'warn',
-		'quotes': ['warn', 'single', 'avoid-escape'],
 		'radix': ['warn', 'as-needed'],
-		'semi': ['warn', 'always'],
 		'semi-spacing': ['warn', {
 			before: false,
 			after: true
@@ -95,7 +88,7 @@ module.exports = {
 		'use-isnan': 'error',
 		'vars-on-top': 'warn',
 
-		// react plugin
+		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/default-props-match-prop-types': 'warn',
 		'react/sort-comp': 'warn',
 		'react/sort-prop-types': ['warn', {
@@ -123,10 +116,17 @@ module.exports = {
 			afterOpening: 'never'
 		}],
 
-		// babel plugin
+		// babel plugin https://github.com/babel/eslint-plugin-babel
+		'babel/camelcase': ['warn', {
+			allow: [
+				'^UNSAFE_'
+			]
+		}],
 		'babel/object-curly-spacing': ['warn', 'never'],
+		'babel/quotes': ['warn', 'single', 'avoid-escape'],
+		'babel/semi': ['warn', 'always'],
 
-		// enact plugin
+		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 		'enact/display-name': 'warn',
 		'enact/kind-name': 'warn',
 		'enact/prop-types': ['warn', {'ignore': ['children', 'className', 'style']}]

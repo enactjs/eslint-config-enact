@@ -37,10 +37,6 @@ module.exports = {
 		'block-scoped-var': 'warn',
 		'curly': ['warn', 'multi-line'],
 		'eqeqeq': ['warn', 'smart'],
-		'new-cap': ['error', {
-			newIsCap: true,
-			capIsNew: false
-		}],
 		'new-parens': 'warn',
 		'no-alert': 'warn',
 		'no-array-constructor': 'warn',
@@ -94,7 +90,6 @@ module.exports = {
 		'no-unexpected-multiline': 'warn',
 		'no-unneeded-ternary': 'warn',
 		'no-unreachable': 'warn',
-		'no-unused-expressions': 'warn',
 		'no-unused-vars': 'warn',
 		'no-use-before-define': ['warn', {
 			functions: false
@@ -106,7 +101,7 @@ module.exports = {
 		'use-isnan': 'warn',
 		'wrap-iife': ['error', 'inside'],
 
-		// react plugin
+		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/display-name': 'off',
 		'react/no-access-state-in-setstate': 'warn',
 		'react/no-children-prop': 'warn',
@@ -144,7 +139,14 @@ module.exports = {
 		'react/jsx-uses-react': 'warn',
 		'react/jsx-uses-vars': 'warn',
 
-		// enact plugin
+		// babel plugin https://github.com/babel/eslint-plugin-babel
+		'babel/new-cap': ['error', {
+			newIsCap: true,
+			capIsNew: false
+		}],
+		'babel/no-unused-expressions': 'warn',
+
+		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 		'enact/no-module-exports-import': 'error'
 	},
 	overrides: [
