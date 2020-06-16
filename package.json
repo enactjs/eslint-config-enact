@@ -12,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
   },
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
   "eslintConfig": {
     "extends": "./index.js"
   },
