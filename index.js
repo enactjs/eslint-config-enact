@@ -127,7 +127,7 @@ module.exports = {
 		'jsx-a11y/no-redundant-roles': 'warn',
 		'jsx-a11y/role-has-required-aria-props': 'warn',
 		'jsx-a11y/role-supports-aria-props': 'warn',
-		'jsx-a11y/scope': 'warn'
+		'jsx-a11y/scope': 'warn',
 
 		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/display-name': 'off',
