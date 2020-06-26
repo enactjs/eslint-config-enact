@@ -4,17 +4,14 @@
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "author": "",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "fix": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": "./index.js"
@@ -26,6 +23,7 @@
     "eslint": "6.x || 7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
+    "eslint-plugin-jsx-a11y": "6.3.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x"
   },
@@ -47,6 +45,7 @@
     "eslint": "7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
+    "eslint-plugin-jsx-a11y": "6.3.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "react": "^16.13.1"
