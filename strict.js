@@ -8,6 +8,12 @@ module.exports = {
 			after: true
 		}],
 		'brace-style': ['warn', '1tbs', {}],
+		// Use ESLint camelcase rule until https://github.com/babel/eslint-plugin-babel/pull/187
+		'camelcase': ['warn', {
+			allow: [
+				'^UNSAFE_'
+			]
+		}],
 		'comma-dangle': ['warn', 'never'],
 		'comma-spacing': ['warn', {
 			after: true
@@ -117,11 +123,6 @@ module.exports = {
 		}],
 
 		// babel plugin https://github.com/babel/eslint-plugin-babel
-		'babel/camelcase': ['warn', {
-			allow: [
-				'^UNSAFE_'
-			]
-		}],
 		'babel/object-curly-spacing': ['warn', 'never'],
 		'babel/quotes': ['warn', 'single', 'avoid-escape'],
 		'babel/semi': ['warn', 'always'],
