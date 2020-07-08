@@ -96,7 +96,15 @@ module.exports = {
 
 		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/default-props-match-prop-types': 'warn',
-		'react/sort-comp': 'warn',
+		'react/sort-comp': ['warn', {
+			order: [
+				'static-methods',
+				'static-variables',
+				'lifecycle',
+				'everything-else',
+				'render'
+			]
+		}],
 		'react/sort-prop-types': ['warn', {
 			ignoreCase: true,
 			requiredFirst: true,
