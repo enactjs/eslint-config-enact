@@ -125,6 +125,8 @@ module.exports = {
 		// babel plugin https://github.com/babel/eslint-plugin-babel
 		'babel/object-curly-spacing': ['warn', 'never'],
 		'babel/quotes': ['warn', 'single', 'avoid-escape'],
+		// According to spec, class properties should end with semicolon
+		// https://github.com/tc39/proposal-class-public-fields/issues/25
 		'babel/semi': ['warn', 'always'],
 
 		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
