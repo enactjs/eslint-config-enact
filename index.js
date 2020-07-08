@@ -249,6 +249,10 @@ module.exports = {
 			},
 			env: {
 				mocha: true
+			},
+			rules: {
+				// While not performant, arrow functions can be simplify tests
+				'react/jsx-no-bind': 'off'
 			}
 		}
 	]
