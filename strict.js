@@ -98,8 +98,8 @@ module.exports = {
 		'react/default-props-match-prop-types': 'warn',
 		'react/sort-comp': ['warn', {
 			order: [
-				'static-methods',
 				'static-variables',
+				'static-methods',
 				'lifecycle',
 				'everything-else',
 				'render'
