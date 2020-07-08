@@ -162,8 +162,8 @@ module.exports = {
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
 				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
 				'**/*-specs.{js,jsx,ts,tsx}',
-				'tests/screenshot/**/*',
-				'tests/ui/**/*'
+				'**/tests/screenshot/**/*',
+				'**/tests/ui/**/*'
 			],
 			rules: {
 				// Lots of callbacks can occur in tests

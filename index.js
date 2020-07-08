@@ -239,7 +239,7 @@ module.exports = {
 		{
 			// WDIO mocha ui & screenshot tests
 			files: [
-				'tests/screenshot/**/*', 'tests/ui/**/*'
+				'**/tests/screenshot/**/*', '**/tests/ui/**/*'
 			],
 			globals: {
 				'browser': true,
