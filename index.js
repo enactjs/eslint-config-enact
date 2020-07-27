@@ -236,7 +236,7 @@ module.exports = {
 				jest: true
 			},
 			rules: {
-				// While not performant, arrow functions can be simplify tests
+				// Arrow functions can simplify tests
 				'react/jsx-no-bind': 'off'
 			}
 		},
@@ -255,7 +255,7 @@ module.exports = {
 				mocha: true
 			},
 			rules: {
-				// While not performant, arrow functions can be simplify tests
+				// Arrow functions can simplify tests
 				'react/jsx-no-bind': 'off'
 			}
 		}
