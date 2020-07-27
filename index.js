@@ -12,18 +12,7 @@ module.exports = {
 		commonjs: true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
-	ignorePatterns: [
-		'/**/node_modules/',
-		'/**/node_modules/*',
-		'/**/build/',
-		'/**/build/*',
-		'/**/dist/',
-		'/**/dist/*',
-		'/**/coverage/',
-		'/**/coverage/*',
-		'/**/resources/',
-		'/**/resources/*'
-	],
+
 	parser: 'babel-eslint',
 	parserOptions: {
 		ecmaVersion: 2018,
@@ -261,3 +250,27 @@ module.exports = {
 		}
 	]
 };
+
+// ignorePatterns not valid on 5.x
+
+const ignore = [
+	'/**/node_modules/',
+	'/**/node_modules/*',
+	'/**/build/',
+	'/**/build/*',
+	'/**/dist/',
+	'/**/dist/*',
+	'/**/coverage/',
+	'/**/coverage/*',
+	'/**/resources/',
+	'/**/resources/*'
+];
+try {
+	const ver = require.main.require('eslint/package.json').version.split('.');
+	const major = parseInt(ver[0]);
+	if (major > 5) {
+		module.exports.ignorePatterns = ignore;
+	}
+} catch (e) {
+	module.exports.ignorePatterns = ignore;
+}
