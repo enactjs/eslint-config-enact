@@ -8,6 +8,7 @@ module.exports = {
 			after: true
 		}],
 		'brace-style': ['warn', '1tbs', {}],
+		// Use ESLint camelcase rule until https://github.com/babel/eslint-plugin-babel/pull/187
 		'camelcase': ['warn', {
 			allow: [
 				'^UNSAFE_'
@@ -71,9 +72,7 @@ module.exports = {
 		'no-useless-return': 'warn',
 		'operator-linebreak': ['warn', 'after'],
 		'prefer-spread': 'warn',
-		'quotes': ['warn', 'single', 'avoid-escape'],
 		'radix': ['warn', 'as-needed'],
-		'semi': ['warn', 'always'],
 		'semi-spacing': ['warn', {
 			before: false,
 			after: true
@@ -95,9 +94,17 @@ module.exports = {
 		'use-isnan': 'error',
 		'vars-on-top': 'warn',
 
-		// react plugin
+		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/default-props-match-prop-types': 'warn',
-		'react/sort-comp': 'warn',
+		'react/sort-comp': ['warn', {
+			order: [
+				'static-variables',
+				'static-methods',
+				'lifecycle',
+				'everything-else',
+				'render'
+			]
+		}],
 		'react/sort-prop-types': ['warn', {
 			ignoreCase: true,
 			requiredFirst: true,
@@ -123,22 +130,40 @@ module.exports = {
 			afterOpening: 'never'
 		}],
 
-		// babel plugin
+		// babel plugin https://github.com/babel/eslint-plugin-babel
 		'babel/object-curly-spacing': ['warn', 'never'],
+		'babel/quotes': ['warn', 'single', 'avoid-escape'],
+		// According to spec, class properties should end with semicolon
+		// https://github.com/tc39/proposal-class-public-fields/issues/25
+		'babel/semi': ['warn', 'always'],
 
-		// enact plugin
+		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 		'enact/display-name': 'warn',
 		'enact/kind-name': 'warn',
 		'enact/prop-types': ['warn', {'ignore': ['children', 'className', 'style']}]
 	},
 	overrides: [
 		{
+			// Strict Typescript overrides
+			files: ['**/*.ts?(x)'],
+			rules: {
+				'@typescript-eslint/no-array-constructor': 'error',
+				'@typescript-eslint/no-use-before-define': ['error', {
+					functions: false,
+					classes: false,
+					variables: false,
+					typedefs: false
+				}]
+			}
+		},
+		{
+			// Strict testfile overrides
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
 				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
 				'**/*-specs.{js,jsx,ts,tsx}',
-				'tests/screenshot/**/*',
-				'tests/ui/**/*'
+				'**/tests/screenshot/**/*',
+				'**/tests/ui/**/*'
 			],
 			rules: {
 				// Lots of callbacks can occur in tests
@@ -153,7 +178,9 @@ module.exports = {
 				}, {
 					"object": "it",
 					"property": "only"
-				}]
+				}],
+				// PropType validation is not a priority in tests
+				'enact/prop-types': 'off'
 			}
 		}
 	]
