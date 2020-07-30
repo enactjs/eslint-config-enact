@@ -147,7 +147,9 @@ module.exports = {
 			// Strict Typescript overrides
 			files: ['**/*.ts?(x)'],
 			rules: {
+				'no-array-constructor': 'off',
 				'@typescript-eslint/no-array-constructor': 'error',
+				'no-use-before-define': 'off',
 				'@typescript-eslint/no-use-before-define': ['error', {
 					functions: false,
 					classes: false,
