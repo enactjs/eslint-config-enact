@@ -108,7 +108,6 @@ module.exports = {
 		'wrap-iife': ['error', 'inside'],
 
 		// jsx-a11y plugin https://github.com/evcohen/eslint-plugin-jsx-a11y
-		'jsx-a11y/accessible-emoji': 'warn',
 		'jsx-a11y/alt-text': 'warn',
 		'jsx-a11y/anchor-has-content': 'warn',
 		'jsx-a11y/anchor-is-valid': ['warn', {
