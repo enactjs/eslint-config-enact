@@ -147,7 +147,7 @@ module.exports = {
 		'react/no-unknown-property': 'warn',
 		'react/prefer-es6-class': ['warn', 'always'],
 		'react/prop-types': 'off',
-		'react/react-in-jsx-scope': 'warn',
+		'react/react-in-jsx-scope': 'off',
 		'react/require-render-return': 'warn',
 		'react/self-closing-comp': 'warn',
 
@@ -164,7 +164,7 @@ module.exports = {
 		'react/jsx-no-target-blank': 'warn',
 		'react/jsx-no-undef': 'warn',
 		'react/jsx-pascal-case': 'warn',
-		'react/jsx-uses-react': 'warn',
+		'react/jsx-uses-react': 'off',
 		'react/jsx-uses-vars': 'warn',
 
 		// babel plugin https://github.com/babel/eslint-plugin-babel
