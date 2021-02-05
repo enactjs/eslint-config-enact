@@ -108,7 +108,6 @@ module.exports = {
 		'wrap-iife': ['error', 'inside'],
 
 		// jsx-a11y plugin https://github.com/evcohen/eslint-plugin-jsx-a11y
-		'jsx-a11y/accessible-emoji': 'warn',
 		'jsx-a11y/alt-text': 'warn',
 		'jsx-a11y/anchor-has-content': 'warn',
 		'jsx-a11y/anchor-is-valid': ['warn', {
@@ -148,7 +147,7 @@ module.exports = {
 		'react/no-unknown-property': 'warn',
 		'react/prefer-es6-class': ['warn', 'always'],
 		'react/prop-types': 'off',
-		'react/react-in-jsx-scope': 'warn',
+		'react/react-in-jsx-scope': 'off',
 		'react/require-render-return': 'warn',
 		'react/self-closing-comp': 'warn',
 
@@ -165,7 +164,7 @@ module.exports = {
 		'react/jsx-no-target-blank': 'warn',
 		'react/jsx-no-undef': 'warn',
 		'react/jsx-pascal-case': 'warn',
-		'react/jsx-uses-react': 'warn',
+		'react/jsx-uses-react': 'off',
 		'react/jsx-uses-vars': 'warn',
 
 		// babel plugin https://github.com/babel/eslint-plugin-babel

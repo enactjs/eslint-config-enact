@@ -2,6 +2,12 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [3.0.0] (February 5, 2021)
+
+* Removed deprecated `jsx-a11y/accessible-emoji` rule.
+* Updated React version to 17 and `@typescript-eslint` related modules to `4.x`.
+* Turned `react/jsx-uses-react` and `react/react-in-jsx-scope` off to support the new JSX transform with React 17.
+
 ## [2.0.0]
 
 * All dependencies have been updated and 2.0.0 of this config package is now designed for ESLint 6, 7 and later.
