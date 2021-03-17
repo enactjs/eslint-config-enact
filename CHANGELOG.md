@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Fixed the glob patterns for test files
+
 ## [3.0.0] (February 5, 2021)
 
 * Removed deprecated `jsx-a11y/accessible-emoji` rule.

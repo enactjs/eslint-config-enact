@@ -227,7 +227,7 @@ module.exports = {
 			// Jest unit tests
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
-				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
+				'**/?(*.)+(spec|test).[jt]s?(x)',
 				'**/*-specs.{js,jsx,ts,tsx}'
 			],
 			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
