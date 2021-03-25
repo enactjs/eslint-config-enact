@@ -18,17 +18,17 @@ If you want to switch to the strict version of the linting rules, modify your `p
     "lint": "enact lint",
 ...
   "eslintConfig": {
-    "extends": "enact"
+    "extends": "enact-proxy"
   },
 ```
 
 to read:
 
 ```json
-    "lint": "enact lint --framework",
+    "lint": "enact lint --strict",
 ...
   "eslintConfig": {
-    "extends": "enact/strict"
+    "extends": "enact-proxy/strict"
   },
 ```
 
@@ -39,7 +39,7 @@ If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` 
   "extends": "enact"
 }
 ```
->**NOTE**: For strict mode, use `"extends": "enact/strict"`.
+>**NOTE**: For strict mode, use `"extends": "enact-proxy/strict"`.
 
 If you like our linting rules and want to use them by default you can create the `.eslintrc` file in your HOME directory instead.
 
@@ -47,10 +47,21 @@ If you like our linting rules and want to use them by default you can create the
 
 This section describes the procedure for setting up several popular editors.
 
-Before setting up in-editor linting, be sure to install this config and its dependencies globally using the following command:
+You would need to install an ESLint plugin for your editor first.
 
-```bash
-npm install -g eslint eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-enact eslint-config-enact
+Ever since ESLint 6, global installs of ESLint configs are no longer supported.
+To work around this new limitation, while still supporting in-editor linting, we've created a new [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) package.
+The [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
+In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
+
+```sh
+npm install -g eslint
+```
+
+Then, you will need to uninstall any previous globally-installed Enact linting package (everything but eslint itself):
+
+```sh
+npm remove -g eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
 ```
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.

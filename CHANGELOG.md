@@ -2,9 +2,9 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [3.0.1] (March 25, 2021)
 
-* Fixed the glob patterns for test files
+* Fixed the glob patterns for test files.
 
 ## [3.0.0] (February 5, 2021)
 
