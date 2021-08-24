@@ -2,6 +2,29 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Added optional `jest` rules for Jest unit tests filetype validation:
+  * `jest/no-conditional-expect`: error
+	* `jest/no-identical-title`: error
+	* `jest/no-interpolation-in-snapshots`: error
+	* `jest/no-jasmine-globals`: error
+	* `jest/no-jest-import`: error
+	* `jest/no-mocks-import`: error
+	* `jest/valid-describe`: error
+	* `jest/valid-expect`: error
+	*	`jest/valid-expect-in-promise`: error
+	*	`jest/valid-title`: warn
+* Added optional `testing-library` rules for Jest unit tests filetype validation:
+  * `@typescript-eslint/consistent-type-assertions` warning
+  * `@typescript-eslint/no-array-constructor` warning
+	*	`testing-library/await-async-query`: error
+	*	`testing-library/await-async-utils`: error
+	*	`testing-library/no-await-sync-query`: warn
+	*	`testing-library/no-dom-import`: [error, react]
+	*	`testing-library/no-wait-for-empty-callback`: error
+	*	`testing-library/no-wait-for-snapshot`: error
+
 ## [3.0.1] (March 25, 2021)
 
 * Fixed the glob patterns for test files.

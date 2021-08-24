@@ -45,9 +45,11 @@
     "eslint": "7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
+    "eslint-plugin-jest": "^24.0.0",
     "eslint-plugin-jsx-a11y": "6.3.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
+    "eslint-plugin-testing-library": "^3.9.0",
     "react": "^17.0.1"
   }
 }
