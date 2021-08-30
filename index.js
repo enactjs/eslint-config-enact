@@ -233,8 +233,7 @@ module.exports = {
 			plugins: ['jest', 'testing-library'],
 			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 			env: {
-				jest: true,
-				'jest/globals': true,
+				jest: true
 			},
 			rules: {
 				// Arrow functions can simplify tests
