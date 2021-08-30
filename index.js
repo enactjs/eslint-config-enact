@@ -230,7 +230,7 @@ module.exports = {
 				'**/?(*.)+(spec|test).[jt]s?(x)',
 				'**/*-specs.{js,jsx,ts,tsx}'
 			],
-			plugins: ['jest', 'testing-library'],
+			plugins: ['testing-library'],
 			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 			env: {
 				jest: true
@@ -238,18 +238,6 @@ module.exports = {
 			rules: {
 				// Arrow functions can simplify tests
 				'react/jsx-no-bind': 'off',
-
-				// https://github.com/jest-community/eslint-plugin-jest
-				'jest/no-conditional-expect': 'error',
-				'jest/no-identical-title': 'error',
-				'jest/no-interpolation-in-snapshots': 'error',
-				'jest/no-jasmine-globals': 'error',
-				'jest/no-jest-import': 'error',
-				'jest/no-mocks-import': 'error',
-				'jest/valid-describe': 'error',
-				'jest/valid-expect': 'error',
-				'jest/valid-expect-in-promise': 'error',
-				'jest/valid-title': 'warn',
 
 				// https://github.com/testing-library/eslint-plugin-testing-library
 				'testing-library/await-async-query': 'error',
