@@ -4,17 +4,6 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Added optional `jest` rules for Jest unit tests filetype validation:
-  * `jest/no-conditional-expect` error
-  * `jest/no-identical-title` error
-  * `jest/no-interpolation-in-snapshots` error
-  * `jest/no-jasmine-globals` error
-  * `jest/no-jest-import` error
-  * `jest/no-mocks-import` error
-  * `jest/valid-describe` error
-  * `jest/valid-expect` error
-  * `jest/valid-expect-in-promise` error
-  * `jest/valid-title` warning
 * Added optional `testing-library` rules for Jest unit tests filetype validation:
   * `testing-library/await-async-query` error
   * `testing-library/await-async-utils` error
