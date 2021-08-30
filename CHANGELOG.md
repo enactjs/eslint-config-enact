@@ -16,8 +16,6 @@ The following is a curated list of changes in the Enact eslint config:
   * `jest/valid-expect-in-promise` error
   * `jest/valid-title` warning
 * Added optional `testing-library` rules for Jest unit tests filetype validation:
-  * `@typescript-eslint/consistent-type-assertions` warning
-  * `@typescript-eslint/no-array-constructor` warning
   * `testing-library/await-async-query` error
   * `testing-library/await-async-utils` error
   * `testing-library/no-await-sync-query` warning
