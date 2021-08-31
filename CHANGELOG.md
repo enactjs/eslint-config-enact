@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Added optional `testing-library` rules for Jest unit tests filetype validation:
+* Added `testing-library` rules for Jest unit tests validation:
   * `testing-library/await-async-query` error
   * `testing-library/await-async-utils` error
   * `testing-library/no-await-sync-query` warning
