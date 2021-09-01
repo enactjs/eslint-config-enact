@@ -48,6 +48,7 @@
     "eslint-plugin-jsx-a11y": "6.3.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
+    "eslint-plugin-testing-library": "3.9.x",
     "react": "^17.0.1"
   }
 }

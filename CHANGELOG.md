@@ -2,6 +2,16 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Added `testing-library` rules for Jest unit tests validation:
+  * `testing-library/await-async-query` error
+  * `testing-library/await-async-utils` error
+  * `testing-library/no-await-sync-query` warning
+  * `testing-library/no-dom-import` [error, react]
+  * `testing-library/no-wait-for-empty-callback` error
+  * `testing-library/no-wait-for-snapshot` error
+
 ## [3.0.1] (March 25, 2021)
 
 * Fixed the glob patterns for test files.
