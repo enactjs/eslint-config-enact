@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [3.1.0] (October 12, 2021)
 
 * Added `testing-library` rules for Jest unit tests validation:
   * `testing-library/await-async-query` error
