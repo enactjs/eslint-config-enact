@@ -43,13 +43,13 @@
     "@typescript-eslint/eslint-plugin": "4.x",
     "@typescript-eslint/parser": "4.x",
     "babel-eslint": "10.x",
-    "eslint": "7.x",
-    "eslint-plugin-babel": "5.x",
-    "eslint-plugin-enact": "0.x",
-    "eslint-plugin-jsx-a11y": "6.3.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "4.x",
+    "eslint": "^7.32.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-enact": "^0.2.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-testing-library": "3.10.x",
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   }
 }
