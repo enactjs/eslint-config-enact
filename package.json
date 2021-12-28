@@ -23,7 +23,7 @@
     "eslint": "6.x || 7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
-    "eslint-plugin-jsx-a11y": "6.3.x",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x",
     "eslint-plugin-testing-library": "3.10.x"
