@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [3.1.2] (December 28, 2021)
+
+* Updated dependencies.
+
 ## [3.1.1] (October 13, 2021)
 
 * Added `eslint-plugin-testing-library` as a peerDependency.
