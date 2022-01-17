@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Updated @typescript-eslint peerDependency to support version `4.x`
+* Updated `@typescript-eslint` peerDependency to support `4.x` version.
 
 ## [3.1.2] (December 28, 2021)
 
