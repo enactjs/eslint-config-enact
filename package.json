@@ -17,13 +17,13 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.x || 3.x",
-    "@typescript-eslint/parser": "2.x || 3.x",
+    "@typescript-eslint/eslint-plugin": "2.x || 3.x || 4.x",
+    "@typescript-eslint/parser": "2.x || 3.x || 4.x",
     "babel-eslint": "10.x",
     "eslint": "6.x || 7.x",
     "eslint-plugin-babel": "5.x",
     "eslint-plugin-enact": "0.x",
-    "eslint-plugin-jsx-a11y": "6.5.x",
+    "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x",
     "eslint-plugin-testing-library": "3.10.x"
