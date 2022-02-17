@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [3.1.3] (February 17, 2022)
 
 * Fixed `@typescript-eslint` peerDependency to support `4.x` version.
 
