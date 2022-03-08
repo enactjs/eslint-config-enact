@@ -24,12 +24,12 @@ module.exports = {
 		'/**/resources/',
 		'/**/resources/*'
 	],
-	parser: 'babel-eslint',
+	parser: '@babel/eslint-parser',
 	parserOptions: {
-		ecmaVersion: 2018,
 		sourceType: 'module',
-		ecmaFeatures: {
-			jsx: true
+		requireConfigFile: false,
+		babelOptions: {
+			presets: ['babel-preset-react-app/prod']
 		}
 	},
 	plugins: ['babel', 'jsx-a11y',  'react', 'enact'],
