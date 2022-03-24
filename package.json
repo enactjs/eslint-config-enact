@@ -17,7 +17,7 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.16.3",
+    "@babel/eslint-parser": "^7.17.0",
     "@typescript-eslint/eslint-plugin": "2.x || 3.x || 4.x",
     "@typescript-eslint/parser": "2.x || 3.x || 4.x",
     "eslint": "6.x || 7.x",
