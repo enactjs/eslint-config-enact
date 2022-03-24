@@ -29,7 +29,12 @@ module.exports = {
 		sourceType: 'module',
 		requireConfigFile: false,
 		babelOptions: {
-			presets: [require.resolve('babel-preset-react-app/prod')]
+			presets: [require.resolve('babel-preset-react-app/prod')],
+			plugins: [
+				require('@babel/plugin-proposal-export-default-from').default,
+				require('@babel/plugin-proposal-export-namespace-from').default,
+				require('@babel/plugin-syntax-dynamic-import').default
+			]
 		}
 	},
 	plugins: ['babel', 'jsx-a11y',  'react', 'enact'],
