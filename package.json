@@ -17,33 +17,16 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.x || 3.x || 4.x || 5.x",
-    "@typescript-eslint/parser": "2.x || 3.x || 4.x || 5.x",
-    "babel-eslint": "10.x",
-    "eslint": "6.x || 7.x || 8.x",
-    "eslint-plugin-babel": "5.x",
-    "eslint-plugin-enact": "0.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "1.x || 2.x || 3.x || 4.x",
-    "eslint-plugin-testing-library": "3.x || 4.x || 5.x"
+    "eslint": "^8.11.0"
   },
-  "peerDependenciesMeta": {
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
-    "typescript": {
-      "optional": true
-    }
-  },
-  "devDependencies": {
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
-    "babel-eslint": "10.x",
-    "eslint": "^8.3.0",
+    "babel-preset-react-app": "^10.0.1",
+    "eslint": "^8.11.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-enact": "^0.2.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
