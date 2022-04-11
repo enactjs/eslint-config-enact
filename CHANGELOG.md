@@ -4,7 +4,8 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Replaced deprecated `babel-eslint` with `@babel/eslint-parser`
+* Updated all dependencies including ESLint 8.
+* Replaced deprecated `babel-eslint` with `@babel/eslint-parser`.
 
 ## [3.1.3] (February 17, 2022)
 
