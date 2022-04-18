@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [4.0.0] (April 11, 2022)
+
+* Updated all dependencies including ESLint 8.
+* Replaced deprecated `babel-eslint` with `@babel/eslint-parser`.
+
 ## [3.1.3] (February 17, 2022)
 
 * Fixed `@typescript-eslint` peerDependency to support `4.x` version.
