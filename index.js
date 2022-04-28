@@ -263,7 +263,7 @@ module.exports = {
 				'testing-library/no-container': 'error',
 				'testing-library/no-debugging-utils': 'error',
 				'testing-library/no-dom-import': ['error', 'react'],
-				'testing-library/no-node-access': 'error',
+				'testing-library/no-node-access': 'off',
 				'testing-library/no-promise-in-fire-event': 'error',
 				'testing-library/no-render-in-setup': 'error',
 				'testing-library/no-unnecessary-act': 'error',
