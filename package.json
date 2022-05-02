@@ -17,19 +17,19 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/plugin-proposal-export-default-from": "^7.16.7",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
-    "babel-preset-react-app": "^10.0.1",
-    "eslint": "^8.12.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-enact": "^1.0.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-testing-library": "^5.1.0"
+    "@babel/core": "7.x",
+    "@babel/eslint-parser": "7.x",
+    "@babel/plugin-proposal-export-default-from": "7.x",
+    "@typescript-eslint/eslint-plugin": "5.x",
+    "@typescript-eslint/parser": "5.x",
+    "babel-preset-react-app": "10.x",
+    "eslint": "8.x",
+    "eslint-plugin-babel": "5.x",
+    "eslint-plugin-enact": "1.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "4.x",
+    "eslint-plugin-testing-library": "5.x"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
