@@ -37,7 +37,7 @@ module.exports = {
 			]
 		}
 	},
-	plugins: ['babel', 'jsx-a11y',  'react', 'enact'],
+	plugins: ['@babel', 'jsx-a11y', 'react', 'enact'],
 	settings: {
 		react: {
 			'pragma': 'React',	// Pragma to use, default to "React"
@@ -172,12 +172,12 @@ module.exports = {
 		'react/jsx-uses-react': 'off',
 		'react/jsx-uses-vars': 'warn',
 
-		// babel plugin https://github.com/babel/eslint-plugin-babel
-		'babel/new-cap': ['error', {
+		// babel plugin https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin
+		'@babel/new-cap': ['error', {
 			newIsCap: true,
 			capIsNew: false
 		}],
-		'babel/no-unused-expressions': 'warn',
+		'@babel/no-unused-expressions': 'warn',
 
 		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 		'enact/no-module-exports-import': 'error'
@@ -232,25 +232,46 @@ module.exports = {
 			// Jest unit tests
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
-				'**/?(*.)+(spec|test).[jt]s?(x)',
+				'**/*.+(spec|test).{js,jsx,ts,tsx}',
 				'**/*-specs.{js,jsx,ts,tsx}'
 			],
-			plugins: ['testing-library'],
+			plugins: ['jest', 'testing-library'],
 			excludedFiles: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 			env: {
-				jest: true
+				"jest/globals": true
 			},
 			rules: {
 				// Arrow functions can simplify tests
 				'react/jsx-no-bind': 'off',
 
-				// https://github.com/testing-library/eslint-plugin-testing-library
+				// jest plugin https://github.com/jest-community/eslint-plugin-jest
+				'jest/no-conditional-expect': 'warn',
+				'jest/no-identical-title': 'warn',
+				'jest/no-jest-import': 'warn',
+				'jest/valid-describe-callback': 'warn',
+				'jest/valid-expect': 'warn',
+				'jest/valid-expect-in-promise': 'warn',
+				'jest/valid-title': 'warn',
+
+				// testing library plugin https://github.com/testing-library/eslint-plugin-testing-library
 				'testing-library/await-async-query': 'error',
 				'testing-library/await-async-utils': 'error',
 				'testing-library/no-await-sync-query': 'warn',
 				'testing-library/no-dom-import': ['error', 'react'],
+				'testing-library/no-container': 'warn',
+				'testing-library/no-debugging-utils': 'warn',
+				'testing-library/no-promise-in-fire-event': 'warn',
+				'testing-library/no-render-in-setup': 'warn',
+				'testing-library/no-unnecessary-act': 'warn',
 				'testing-library/no-wait-for-empty-callback': 'error',
+				'testing-library/no-wait-for-multiple-assertions': 'warn',
+				'testing-library/no-wait-for-side-effects': 'warn',
 				'testing-library/no-wait-for-snapshot': 'error',
+				'testing-library/prefer-find-by': 'warn',
+				'testing-library/prefer-presence-queries': 'warn',
+				'testing-library/prefer-query-by-disappearance': 'warn',
+				'testing-library/prefer-screen-queries': 'error',
+				'testing-library/render-result-naming-convention': 'warn'
 			}
 		},
 		{
