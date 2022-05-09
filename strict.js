@@ -1,6 +1,6 @@
 module.exports = {
 	extends: './index.js',
-	plugins: ['react', 'babel', 'enact'],
+	plugins: ['react', '@babel', 'enact'],
 	rules: {
 		'array-bracket-spacing': ['warn', 'never', {}],
 		'arrow-spacing': ['warn', {
@@ -8,7 +8,6 @@ module.exports = {
 			after: true
 		}],
 		'brace-style': ['warn', '1tbs', {}],
-		// Use ESLint camelcase rule until https://github.com/babel/eslint-plugin-babel/pull/187
 		'camelcase': ['warn', {
 			allow: [
 				'^UNSAFE_'
@@ -130,12 +129,11 @@ module.exports = {
 			afterOpening: 'never'
 		}],
 
-		// babel plugin https://github.com/babel/eslint-plugin-babel
-		'babel/object-curly-spacing': ['warn', 'never'],
-		'babel/quotes': ['warn', 'single', 'avoid-escape'],
+		// babel plugin https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin
+		'@babel/object-curly-spacing': ['warn', 'never'],
 		// According to spec, class properties should end with semicolon
 		// https://github.com/tc39/proposal-class-public-fields/issues/25
-		'babel/semi': ['warn', 'always'],
+		'@babel/semi': ['warn', 'always'],
 
 		// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 		'enact/display-name': 'warn',
@@ -162,7 +160,7 @@ module.exports = {
 			// Strict testfile overrides
 			files: [
 				'**/__tests__/**/*.{js,jsx,ts,tsx}',
-				'**/?(*.)(spec|test).{js,jsx,ts,tsx}',
+				'**/*.+(spec|test).{js,jsx,ts,tsx}',
 				'**/*-specs.{js,jsx,ts,tsx}',
 				'**/tests/screenshot/**/*',
 				'**/tests/ui/**/*'
