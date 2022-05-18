@@ -2,6 +2,35 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [4.1.0] (May 18, 2022)
+
+* Replaced deprecated `babel-eslint-plugin` with `@babel/eslint-plugin` and related rules.
+* Replaced deprecated `no-native-reassign` rule with `no-global-assign`.
+* Replaced deprecated `no-negated-in-lhs` rule with `no-unsafe-negation`.
+* Removed `babel/quotes` rule.
+* Updated glob pattern for searching test files to compatible with windows.
+* Added `eslint-plugin-jest` dependency.
+* Added `jest` and `testing-library` rules for Jest unit tests validation:
+  * `jest/no-conditional-expect` warn
+  * `jest/no-identical-title` warn
+  * `jest/no-jest-import` warn
+  * `jest/valid-describe-callback` warn
+  * `jest/valid-expect` warn
+  * `jest/valid-expect-in-promise` warn
+  * `jest/valid-title` warn
+  * `testing-library/no-container` warn
+  * `testing-library/no-debugging-utils` warn
+  * `testing-library/no-promise-in-fire-event` warn
+  * `testing-library/no-render-in-setup` warn
+  * `testing-library/no-unnecessary-act` warn
+  * `testing-library/no-wait-for-multiple-assertions` warn
+  * `testing-library/no-wait-for-side-effects` warn
+  * `testing-library/prefer-find-by` warn
+  * `testing-library/prefer-presence-queries` warn
+  * `testing-library/prefer-query-by-disappearance` warn
+  * `testing-library/prefer-screen-queries` error
+  * `testing-library/render-result-naming-convention` warn
+
 ## [4.0.0] (April 11, 2022)
 
 * Updated all dependencies including ESLint 8.
