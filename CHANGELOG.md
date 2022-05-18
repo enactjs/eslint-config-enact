@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
+## [4.1.0] (May 18, 2022)
 
 * Replaced deprecated `babel-eslint-plugin` with `@babel/eslint-plugin` and related rules.
 * Replaced deprecated `no-native-reassign` rule with `no-global-assign`.
