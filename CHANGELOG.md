@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Updated the `lockfileVersion` of npm-shrinkwrap file to v2.
+
 ## [4.1.0] (May 18, 2022)
 
 * Replaced deprecated `babel-eslint-plugin` with `@babel/eslint-plugin` and related rules.
