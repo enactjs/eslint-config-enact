@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [4.1.1] (May 31, 2022)
 
 * Updated the `lockfileVersion` of npm-shrinkwrap file to v2.
 
