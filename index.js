@@ -33,7 +33,8 @@ module.exports = {
 			plugins: [
 				require('@babel/plugin-proposal-export-default-from').default,
 				require('@babel/plugin-proposal-export-namespace-from').default,
-				require('@babel/plugin-syntax-dynamic-import').default
+				require('@babel/plugin-syntax-dynamic-import').default,
+				[require('@babel/plugin-proposal-decorators').default, {decoratorsBeforeExport: true}]
 			]
 		}
 	},
