@@ -129,7 +129,7 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 
 If in-editor linting is not working in your local project, be sure you set up `package.json` or `.eslintrc` as described above.
 
-Or, please use an additional setting for your editor if an installed ESLint package can't be detected.
+Or, please use an additional setting(ex: eslint.nodePath) for your editor if an installed ESLint package can't be detected.
 
 ```sh
 /myGlobalNodePackages/node_modules.
