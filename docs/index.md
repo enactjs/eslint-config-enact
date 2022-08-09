@@ -60,7 +60,7 @@ npm install eslint-config-enact-proxy
 In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
 
 ```sh
-npm install --location=global eslint
+npm install --location=global eslint @enact/cli
 ```
 
 Then, you will need to uninstall any previous globally-installed Enact linting package (everything but eslint itself):
