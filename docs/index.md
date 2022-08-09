@@ -52,16 +52,21 @@ You would need to install an ESLint plugin for your editor first.
 Ever since ESLint 6, global installs of ESLint configs are no longer supported.
 To work around this new limitation, while still supporting in-editor linting, we've created a new [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) package.
 The [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
+
+```sh
+npm install eslint-config-enact-proxy
+```
+
 In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
 
 ```sh
-npm install -g eslint
+npm install --location=global eslint
 ```
 
 Then, you will need to uninstall any previous globally-installed Enact linting package (everything but eslint itself):
 
 ```sh
-npm remove -g eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel @babel/eslint-parser eslint-plugin-jest eslint-plugin-enact eslint-config-enact
+npm remove --location=global eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel @babel/eslint-parser eslint-plugin-jest eslint-plugin-enact eslint-config-enact
 ```
 
 Each editor requires a slightly different setup.  Jump to the section relevant to your editor.
@@ -106,6 +111,15 @@ Unfortunately, Syntastic does not support real-time linting and only lints on sa
 
 Install the [vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin.  More information on linters and Visual Studio Code can be found [here](https://code.visualstudio.com/docs/languages/javascript#_linters).
 
+> **NOTE**: To open the Settings editor, use the following VS Code menu command:
+
+```sh
+On Windows/Linux - File > Preferences > Settings
+On macOS - Code > Preferences > Settings
+```
+
+This extension contributes the following variables to the settings: [Settings Options](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint#settings-options)
+
 ##### WebStorm
 
 In either the default or per-project preferences, go to *Languages & Frameworks* > *JavaScript* > *Code Quality* > *ESLint*.
@@ -114,3 +128,9 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 #### Troubleshooting
 
 If in-editor linting is not working in your local project, be sure you set up `package.json` or `.eslintrc` as described above.
+
+Or, please use an additional setting for your editor if an installed ESLint package can't be detected.
+
+```sh
+/myGlobalNodePackages/node_modules.
+```
