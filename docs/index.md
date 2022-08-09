@@ -132,5 +132,5 @@ If in-editor linting is not working in your local project, be sure you set up `p
 Or, please use an additional setting(ex: eslint.nodePath) for your editor if an installed ESLint package can't be detected.
 
 ```sh
-/myGlobalNodePackages/node_modules.
+/myGlobalNodePackages/node_modules
 ```
