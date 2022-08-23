@@ -15,28 +15,20 @@ If you use the `cli` tools to create your project, `npm run lint` will run the E
 If you want to switch to the strict version of the linting rules, modify your `package.json` file and change the following lines:
 
 ```json
-    "lint": "enact lint",
-...
-  "eslintConfig": {
-    "extends": "enact-proxy"
-  },
+    "lint": "enact lint"
 ```
 
 to read:
 
 ```json
-    "lint": "enact lint --strict",
-...
-  "eslintConfig": {
-    "extends": "enact-proxy/strict"
-  },
+    "lint": "enact lint --strict"
 ```
 
-If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`(`eslint-config-enact-proxy` should be installed locally on a project.):
 
 ```json
 {
-  "extends": "enact"
+  "extends": "enact-proxy"
 }
 ```
 >**NOTE**: For strict mode, use `"extends": "enact-proxy/strict"`.
@@ -52,6 +44,12 @@ You would need to install an ESLint plugin for your editor first.
 Ever since ESLint 6, global installs of ESLint configs are no longer supported.
 To work around this new limitation, while still supporting in-editor linting, we've created a new [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) package.
 The [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
+In order for in-editor linting, `eslint-config-enact-proxy` should be installed locally on a project:
+
+```sh
+npm install --save-dev eslint-config-enact-proxy
+```
+
 In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
 
 ```sh
@@ -114,9 +112,3 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 #### Troubleshooting
 
 If in-editor linting is not working in your local project, be sure you set up `package.json` or `.eslintrc` as described above.
-
-Or, please use an additional setting(ex: eslint.nodePath) for your editor if an installed ESLint package can't be detected.
-
-```sh
-/myGlobalNodePackages/node_modules
-```
