@@ -36,7 +36,7 @@ If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` 
 
 ```json
 {
-  "extends": "enact"
+  "extends": "enact-proxy"
 }
 ```
 >**NOTE**: For strict mode, use `"extends": "enact-proxy/strict"`.
