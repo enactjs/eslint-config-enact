@@ -29,7 +29,7 @@ module.exports = {
 		sourceType: 'module',
 		requireConfigFile: false,
 		babelOptions: {
-			presets: [require.resolve('babel-preset-enact-app')]
+			presets: [require.resolve('babel-preset-enact')]
 		}
 	},
 	plugins: ['@babel', 'jsx-a11y', 'react', 'enact'],
