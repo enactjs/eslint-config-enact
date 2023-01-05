@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
-* Replaced `babel-preset-react-app` with `babel-preset-enact-app` to use own enact app config.
+* Replaced `babel-preset-react-app` with `babel-preset-enact` to use own enact app config.
 
 ## [4.1.2] (August 29, 2022)
 
