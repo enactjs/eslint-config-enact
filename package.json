@@ -17,22 +17,23 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "eslint": "^8.12.0"
+    "eslint": "^8.25.0"
   },
   "dependencies": {
-    "@babel/core": "^7.18.13",
-    "@babel/eslint-parser": "^7.18.9",
-    "@babel/eslint-plugin": "^7.18.10",
-    "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
-    "babel-preset-enact-app": "github:enactjs/babel-preset-enact-app#feature/WRO-697",
-    "eslint": "^8.23.0",
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-plugin": "^7.19.1",
+    "@babel/plugin-proposal-export-default-from": "^7.18.10",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "babel-preset-enact": "github:enactjs/babel-preset-enact#feature/WRO-697",
+    "eslint": "^8.28.0",
     "eslint-plugin-enact": "^1.0.1",
-    "eslint-plugin-jest": "^26.8.7",
+    "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.6.0",
+    "eslint-plugin-testing-library": "^5.9.1",
     "react": "^18.2.0"
   }
 }
