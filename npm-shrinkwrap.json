@@ -18,7 +18,7 @@
         "babel-preset-enact": "github:enactjs/babel-preset-enact#feature/WRO-697",
         "eslint": "^8.28.0",
         "eslint-plugin-enact": "^1.0.1",
-        "eslint-plugin-jest": "^27.1.6",
+        "eslint-plugin-jest": "^26.9.0",
         "eslint-plugin-jsx-a11y": "^6.6.1",
         "eslint-plugin-react": "^7.31.11",
         "eslint-plugin-react-hooks": "^4.6.0",
@@ -2453,35 +2453,20 @@
     },
     "node_modules/babel-preset-enact": {
       "version": "1.0.0",
-      "resolved": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#f9cefbfcb495401061babbfc9c77a9797e58b23f",
+      "resolved": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#ae21d1aab6dff4c61822bd054da45a0aa07a6325",
       "license": "Apache-2.0",
       "dependencies": {
         "@babel/plugin-proposal-decorators": "^7.16.4",
-        "@babel/plugin-proposal-export-default-from": "7.18.9",
-        "@babel/plugin-transform-react-inline-elements": "7.18.6",
+        "@babel/plugin-proposal-export-default-from": "^7.18.9",
+        "@babel/plugin-transform-react-inline-elements": "^7.18.6",
         "@babel/plugin-transform-runtime": "^7.16.4",
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-react": "^7.16.0",
         "@babel/preset-typescript": "^7.16.0",
         "@babel/runtime": "^7.16.3",
-        "babel-plugin-dev-expression": "0.2.3",
-        "babel-plugin-dynamic-import-node": "2.3.3",
+        "babel-plugin-dev-expression": "^0.2.3",
+        "babel-plugin-dynamic-import-node": "^2.3.3",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
-      }
-    },
-    "node_modules/babel-preset-enact/node_modules/@babel/plugin-proposal-export-default-from": {
-      "version": "7.18.9",
-      "resolved": "https://registry.npmjs.org/@babel/plugin-proposal-export-default-from/-/plugin-proposal-export-default-from-7.18.9.tgz",
-      "integrity": "sha512-1qtsLNCDm5awHLIt+2qAFDi31XC94r4QepMQcOosC7FpY6O+Bgay5f2IyAQt2wvm1TARumpFprnQt5pTIJ9nUg==",
-      "dependencies": {
-        "@babel/helper-plugin-utils": "^7.18.9",
-        "@babel/plugin-syntax-export-default-from": "^7.18.6"
-      },
-      "engines": {
-        "node": ">=6.9.0"
-      },
-      "peerDependencies": {
-        "@babel/core": "^7.0.0-0"
       }
     },
     "node_modules/balanced-match": {
@@ -4954,18 +4939,18 @@
       }
     },
     "node_modules/eslint-plugin-jest": {
-      "version": "27.2.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-27.2.0.tgz",
-      "integrity": "sha512-KGIYtelk4rIhKocxRKUEeX+kJ0ZCab/CiSgS8BMcKD7AY7YxXhlg/d51oF5jq2rOrtuJEDYWRwXD95l6l2vtrA==",
+      "version": "26.9.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.9.0.tgz",
+      "integrity": "sha512-TWJxWGp1J628gxh2KhaH1H1paEdgE2J61BBF1I59c6xWeL5+D1BzMxGDN/nXAfX+aSkR5u80K+XhskK6Gwq9ng==",
       "dependencies": {
         "@typescript-eslint/utils": "^5.10.0"
       },
       "engines": {
-        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
       },
       "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.0.0",
-        "eslint": "^7.0.0 || ^8.0.0"
+        "eslint": "^6.0.0 || ^7.0.0 || ^8.0.0"
       },
       "peerDependenciesMeta": {
         "@typescript-eslint/eslint-plugin": {
@@ -8491,31 +8476,20 @@
       "integrity": "sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA=="
     },
     "babel-preset-enact": {
-      "version": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#f9cefbfcb495401061babbfc9c77a9797e58b23f",
+      "version": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#ae21d1aab6dff4c61822bd054da45a0aa07a6325",
       "from": "babel-preset-enact@github:enactjs/babel-preset-enact#feature/WRO-697",
       "requires": {
         "@babel/plugin-proposal-decorators": "^7.16.4",
-        "@babel/plugin-proposal-export-default-from": "7.18.9",
-        "@babel/plugin-transform-react-inline-elements": "7.18.6",
+        "@babel/plugin-proposal-export-default-from": "^7.18.9",
+        "@babel/plugin-transform-react-inline-elements": "^7.18.6",
         "@babel/plugin-transform-runtime": "^7.16.4",
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-react": "^7.16.0",
         "@babel/preset-typescript": "^7.16.0",
         "@babel/runtime": "^7.16.3",
-        "babel-plugin-dev-expression": "0.2.3",
-        "babel-plugin-dynamic-import-node": "2.3.3",
+        "babel-plugin-dev-expression": "^0.2.3",
+        "babel-plugin-dynamic-import-node": "^2.3.3",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
-      },
-      "dependencies": {
-        "@babel/plugin-proposal-export-default-from": {
-          "version": "7.18.9",
-          "resolved": "https://registry.npmjs.org/@babel/plugin-proposal-export-default-from/-/plugin-proposal-export-default-from-7.18.9.tgz",
-          "integrity": "sha512-1qtsLNCDm5awHLIt+2qAFDi31XC94r4QepMQcOosC7FpY6O+Bgay5f2IyAQt2wvm1TARumpFprnQt5pTIJ9nUg==",
-          "requires": {
-            "@babel/helper-plugin-utils": "^7.18.9",
-            "@babel/plugin-syntax-export-default-from": "^7.18.6"
-          }
-        }
       }
     },
     "balanced-match": {
@@ -10377,9 +10351,9 @@
       }
     },
     "eslint-plugin-jest": {
-      "version": "27.2.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-27.2.0.tgz",
-      "integrity": "sha512-KGIYtelk4rIhKocxRKUEeX+kJ0ZCab/CiSgS8BMcKD7AY7YxXhlg/d51oF5jq2rOrtuJEDYWRwXD95l6l2vtrA==",
+      "version": "26.9.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-jest/-/eslint-plugin-jest-26.9.0.tgz",
+      "integrity": "sha512-TWJxWGp1J628gxh2KhaH1H1paEdgE2J61BBF1I59c6xWeL5+D1BzMxGDN/nXAfX+aSkR5u80K+XhskK6Gwq9ng==",
       "requires": {
         "@typescript-eslint/utils": "^5.10.0"
       }
