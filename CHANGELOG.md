@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Fixed `eslint-plugin-jest` version to `26.x` to fix unexpected lint errors.
+
 ## [4.1.2] (August 29, 2022)
 
 * No significant changes.
