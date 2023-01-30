@@ -9,7 +9,6 @@
       "version": "4.1.2",
       "license": "Apache-2.0",
       "dependencies": {
-        "@babel/core": "^7.20.12",
         "@babel/eslint-parser": "^7.19.1",
         "@babel/eslint-plugin": "^7.19.1",
         "@typescript-eslint/eslint-plugin": "^5.48.2",
@@ -2451,9 +2450,10 @@
     },
     "node_modules/babel-preset-enact": {
       "version": "0.1.0",
-      "resolved": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#2330a65c131e0fe88beda1d754faddc27aa7f534",
+      "resolved": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#4d0c8588a6a342426933866248bdf7bb2195856e",
       "license": "Apache-2.0",
       "dependencies": {
+        "@babel/core": "^7.20.12",
         "@babel/plugin-proposal-decorators": "^7.20.13",
         "@babel/plugin-proposal-export-default-from": "^7.18.10",
         "@babel/plugin-transform-react-inline-elements": "^7.18.6",
@@ -8725,9 +8725,10 @@
       "integrity": "sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA=="
     },
     "babel-preset-enact": {
-      "version": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#2330a65c131e0fe88beda1d754faddc27aa7f534",
+      "version": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#4d0c8588a6a342426933866248bdf7bb2195856e",
       "from": "babel-preset-enact@github:enactjs/babel-preset-enact#feature/WRO-697",
       "requires": {
+        "@babel/core": "^7.20.12",
         "@babel/plugin-proposal-decorators": "^7.20.13",
         "@babel/plugin-proposal-export-default-from": "^7.18.10",
         "@babel/plugin-transform-react-inline-elements": "^7.18.6",
