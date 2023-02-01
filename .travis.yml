@@ -6,4 +6,4 @@ sudo: false
 install:
     - npm install
 script:
-    - npm run lint
+    - npm run lint -- --report-unused-disable-directives --max-warnings 0
