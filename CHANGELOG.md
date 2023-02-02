@@ -2,8 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [4.1.3] (February 1, 2023)
 
+* Fixed `eslint-plugin-react` version to `7.31.11` temporarily.
+* Replaced `babel-preset-react-app` with `babel-preset-enact` to use babel config for Enact.
 * Fixed `eslint-plugin-jest` version to `26.x` to fix unexpected lint errors.
 
 ## [4.1.2] (August 29, 2022)
