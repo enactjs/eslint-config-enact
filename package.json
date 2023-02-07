@@ -26,7 +26,7 @@
     "@typescript-eslint/parser": "^5.48.2",
     "babel-preset-enact": "^0.1.0",
     "eslint": "^8.32.0",
-    "eslint-plugin-enact": "^1.0.1",
+    "eslint-plugin-enact": "https://github.com/enactjs/eslint-plugin-enact.git#feature/WRP-8570",
     "eslint-plugin-jest": "^26.9.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "7.31.11",
