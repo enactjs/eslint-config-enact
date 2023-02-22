@@ -22,16 +22,16 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@babel/eslint-plugin": "^7.19.1",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
-    "babel-preset-enact": "^0.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "babel-preset-enact": "^0.1.1",
     "eslint": "^8.32.0",
     "eslint-plugin-enact": "https://github.com/enactjs/eslint-plugin-enact.git#feature/WRP-8570",
     "eslint-plugin-jest": "^26.9.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.9.1",
+    "eslint-plugin-testing-library": "^5.10.0",
     "react": "^18.2.0"
   }
 }
