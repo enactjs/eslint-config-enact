@@ -24,8 +24,8 @@
     "@babel/eslint-plugin": "^7.19.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
-    "babel-preset-enact": "^0.1.1",
-    "eslint": "^8.32.0",
+    "babel-preset-enact": "../babel-preset-enact",
+    "eslint": "^8.25.0",
     "eslint-plugin-enact": "^1.0.1",
     "eslint-plugin-jest": "^26.9.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -33,5 +33,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.10.0",
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-custom-elements": "^0.0.7"
   }
 }

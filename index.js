@@ -11,7 +11,7 @@ module.exports = {
 		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
 		commonjs: true
 	},
-	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:custom-elements/recommended'],
 	ignorePatterns: [
 		'/**/node_modules/',
 		'/**/node_modules/*',
