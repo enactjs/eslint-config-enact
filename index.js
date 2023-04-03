@@ -26,6 +26,10 @@ module.exports = {
 	],
 	parser: '@babel/eslint-parser',
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
+		ecmaVersion: 'latest',
 		sourceType: 'module',
 		requireConfigFile: false,
 		babelOptions: {
@@ -183,7 +187,7 @@ module.exports = {
 			files: ['**/*.ts?(x)'],
 			parser: '@typescript-eslint/parser',
 			parserOptions: {
-				ecmaVersion: 2018,
+				ecmaVersion: 'latest',
 				sourceType: 'module',
 				ecmaFeatures: {
 					jsx: true,
