@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [4.1.4] (April 4, 2023)
+## [4.1.4] (April 6, 2023)
 
 * Updated dependencies.
 
