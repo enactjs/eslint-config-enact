@@ -6,6 +6,10 @@ The following is a curated list of changes in the Enact eslint config:
 
 * Upgraded `eslint-plugin-react` version to `^7.32.2`.
 
+## [4.1.4] (April 6, 2023)
+
+* Updated dependencies.
+
 ## [4.1.3] (February 1, 2023)
 
 * Fixed `eslint-plugin-react` version to `7.31.11` temporarily.
