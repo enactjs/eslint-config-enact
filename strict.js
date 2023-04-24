@@ -120,7 +120,7 @@ module.exports = {
 		'react/jsx-indent': ['warn', 'tab'],
 		'react/jsx-indent-props': ['warn', 'tab'],
 		'react/jsx-props-no-multi-spaces': 'warn',
-		'react/jsx-sort-default-props': ['warn',{
+		'react/sort-default-props': ['warn', {
 			ignoreCase: true
 		}],
 		'react/jsx-tag-spacing': ['warn', {

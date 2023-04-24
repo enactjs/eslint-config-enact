@@ -4,7 +4,7 @@ module.exports = {
 		__DEV__: true,
 		process: true,
 		window: true,
-		document: true,
+		document: true
 	},
 	env: {
 		es6: true, // Enables ES6 globals
@@ -26,6 +26,10 @@ module.exports = {
 	],
 	parser: '@babel/eslint-parser',
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
+		ecmaVersion: 'latest',
 		sourceType: 'module',
 		requireConfigFile: false,
 		babelOptions: {
@@ -155,9 +159,9 @@ module.exports = {
 		'react/jsx-boolean-value': ['warn', 'never'],
 		'react/jsx-key': 'off',
 		'react/jsx-no-bind': ['warn', {
-				ignoreRefs: true,
-				allowArrowFunctions: false,
-				allowBind: false
+			ignoreRefs: true,
+			allowArrowFunctions: false,
+			allowBind: false
 		}],
 		'react/jsx-no-comment-textnodes': 'warn',
 		'react/jsx-no-duplicate-props': 'warn',
@@ -186,9 +190,9 @@ module.exports = {
 				ecmaVersion: 2018,
 				sourceType: 'module',
 				ecmaFeatures: {
-					jsx: true,
+					jsx: true
 				},
-				warnOnUnsupportedTypeScriptVersion: true,
+				warnOnUnsupportedTypeScriptVersion: true
 			},
 			plugins: ['@typescript-eslint'],
 			rules: {
@@ -221,7 +225,7 @@ module.exports = {
 				}],
 				'no-useless-constructor': 'off',
 				'@typescript-eslint/no-useless-constructor': 'warn'
-			},
+			}
 		},
 		{
 			// Jest unit tests
