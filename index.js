@@ -246,7 +246,6 @@ module.exports = {
 				// jest plugin https://github.com/jest-community/eslint-plugin-jest
 				'jest/no-conditional-expect': 'warn',
 				'jest/no-identical-title': 'warn',
-				'jest/no-jest-import': 'warn',
 				'jest/valid-describe-callback': 'warn',
 				'jest/valid-expect': 'warn',
 				'jest/valid-expect-in-promise': 'warn',
