@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
-* Updated all dependencies to the latest, including Jest 29.
+* Updated all dependencies to the latest.
 * Removed `jest/no-jest-import` rule.
 * Updated `eslint-plugin-react` version to `^7.32.2`.
 
