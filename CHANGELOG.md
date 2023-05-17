@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
+## [4.1.5] (May 17, 2023)
 
 * Updated all dependencies to the latest.
 * Removed `jest/no-jest-import` rule.
