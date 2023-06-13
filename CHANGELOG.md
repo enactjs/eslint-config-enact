@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## unreleased
+
+* Fixed support for `ENACT_PACK_NO_ANIMATION` global
+
 ## [4.1.5] (May 17, 2023)
 
 * Updated all dependencies to the latest.
