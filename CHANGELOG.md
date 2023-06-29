@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
-* Added `browser`, `jest` and `node` environment.
+* Added `worker` environment.
 * Fixed support for `ENACT_PACK_NO_ANIMATION` global
 
 ## [4.1.5] (May 17, 2023)
