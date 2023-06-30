@@ -94,7 +94,10 @@ module.exports = {
 			builtinGlobals: true,
 			hoist: 'all',
 			allow: [
-				'context'
+				'context',
+				'location',
+				'name',
+				'Notification'
 			]
 		}],
 		'no-throw-literal': 'error',
