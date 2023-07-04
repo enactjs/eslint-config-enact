@@ -4,7 +4,8 @@ module.exports = {
 		__DEV__: true,
 		process: true,
 		window: true,
-		document: true
+		document: true,
+		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
 		es6: true, // Enables ES6 globals
