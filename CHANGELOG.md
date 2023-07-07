@@ -4,6 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [4.1.6] (July 4, 2023)
 
+* Added `worker` environment.
 * Fixed support for `ENACT_PACK_NO_ANIMATION` global
 
 ## [4.1.5] (May 17, 2023)
