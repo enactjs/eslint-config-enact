@@ -1,6 +1,7 @@
 const babelParser = require('@babel/eslint-parser');
 const babelPlugin = require('@babel/eslint-plugin');
 const babelPresetEnact = require.resolve('babel-preset-enact');
+const globals = require('globals');
 const js = require('@eslint/js');
 const enactPlugin = require('eslint-plugin-enact');
 const jestPlugin = require('eslint-plugin-jest');
@@ -12,9 +13,6 @@ const typeScriptPlugin = require('@typescript-eslint/eslint-plugin');
 
 module.exports = [
 	{
-		...reactPlugin.configs.recommended,
-		...js.configs.recommended,
-		...reactHooksPlugin.configs.recommended,
 		ignores: [
 			'/**/node_modules/',
 			'/**/node_modules/*',
@@ -36,7 +34,11 @@ module.exports = [
 				process: true,
 				window: true,
 				document: true,
-				ENACT_PACK_NO_ANIMATION: true
+				ENACT_PACK_NO_ANIMATION: true,
+				...globals.node,
+				...globals.jest,
+				...globals.es2020,
+				...globals.commonjs
 			},
 			parserOptions: {
 				ecmaFeatures: {
@@ -158,6 +160,8 @@ module.exports = [
 	},
 	{
 		rules: {
+			...reactPlugin.configs.recommended.rules,
+			...js.configs.recommended.rules,
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
 			'eqeqeq': ['warn', 'smart'],
@@ -296,7 +300,7 @@ module.exports = [
 
 			// jest plugin https://github.com/jest-community/eslint-plugin-jest
 			'jest/no-conditional-expect': 'warn',
-			'jest/no-identical-title': 'warn',
+			'jest/no-identical-title': 'error',
 			'jest/valid-describe-callback': 'warn',
 			'jest/valid-expect': 'warn',
 			'jest/valid-expect-in-promise': 'warn',
