@@ -9,6 +9,9 @@
   },
   "author": "",
   "license": "Apache-2.0",
+  "engines": {
+    "node": "^16.0.0 || >=18.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
