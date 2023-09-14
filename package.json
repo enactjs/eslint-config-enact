@@ -9,6 +9,9 @@
   },
   "author": "",
   "license": "Apache-2.0",
+  "engines": {
+    "node": "^16.0.0 || >=18.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
@@ -22,8 +25,8 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.22.9",
     "@babel/eslint-plugin": "^7.22.5",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.9",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "babel-preset-enact": "^0.1.4",
     "eslint": "^8.45.0",
     "eslint-plugin-enact": "^1.0.4",
