@@ -8,7 +8,6 @@ module.exports = {
 		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
-		worker: true,
 		es6: true, // Enables ES6 globals
 		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
 		commonjs: true
@@ -94,10 +93,7 @@ module.exports = {
 			builtinGlobals: true,
 			hoist: 'all',
 			allow: [
-				'context',
-				'location',
-				'name',
-				'Notification'
+				'context'
 			]
 		}],
 		'no-throw-literal': 'error',
