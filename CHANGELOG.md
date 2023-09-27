@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [4.1.7] (September 27, 2023)
+
+* Updated `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser` version to `^6.1.0` and the minimum version of Node to `^16.0.0`.
+
 ## [4.1.6] (July 4, 2023)
 
 * Fixed support for `ENACT_PACK_NO_ANIMATION` global
