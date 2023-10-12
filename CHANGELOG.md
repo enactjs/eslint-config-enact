@@ -5,7 +5,6 @@ The following is a curated list of changes in the Enact eslint config:
 ## [unreleased]
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
-
 * Renamed `testing-library` rules for Jest unit tests validation:
   * `testing-library/await-async-query` renamed to `testing-library/await-async-queries` 
   * `testing-library/no-await-sync-query` renamed to `testing-library/no-await-sync-queries`
