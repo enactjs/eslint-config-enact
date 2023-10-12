@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased] (October 5, 2023)
+## [unreleased]
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
 
