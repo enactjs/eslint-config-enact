@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [4.1.8] (December 21, 2023)
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
 * Renamed `testing-library` rules for Jest unit tests validation:
