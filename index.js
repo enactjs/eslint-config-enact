@@ -7,7 +7,8 @@ module.exports = {
 		__DEV__: true,
 		process: true,
 		window: true,
-		document: true
+		document: true,
+		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
 		es6: true, // Enables ES6 globals
@@ -255,16 +256,15 @@ module.exports = {
 				'jest/valid-title': 'warn',
 
 				// testing library plugin https://github.com/testing-library/eslint-plugin-testing-library
-				'testing-library/await-async-query': 'error',
+				'testing-library/await-async-queries': 'error',
 				'testing-library/await-async-utils': 'error',
-				'testing-library/no-await-sync-query': 'warn',
+				'testing-library/no-await-sync-queries': 'warn',
 				'testing-library/no-dom-import': ['error', 'react'],
 				'testing-library/no-container': 'warn',
 				'testing-library/no-debugging-utils': 'warn',
 				'testing-library/no-promise-in-fire-event': 'warn',
-				'testing-library/no-render-in-setup': 'warn',
+				'testing-library/no-render-in-lifecycle': 'warn',
 				'testing-library/no-unnecessary-act': 'warn',
-				'testing-library/no-wait-for-empty-callback': 'error',
 				'testing-library/no-wait-for-multiple-assertions': 'warn',
 				'testing-library/no-wait-for-side-effects': 'warn',
 				'testing-library/no-wait-for-snapshot': 'error',
