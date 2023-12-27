@@ -206,6 +206,8 @@ module.exports = {
 				'@typescript-eslint/consistent-type-assertions': 'warn',
 				'no-array-constructor': 'off',
 				'@typescript-eslint/no-array-constructor': 'warn',
+				'no-shadow': 'off',
+				'@typescript-eslint/no-shadow': 'warn',
 				'no-use-before-define': 'off',
 				'@typescript-eslint/no-use-before-define': ['warn', {
 					functions: false,
