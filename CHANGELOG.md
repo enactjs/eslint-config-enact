@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [4.2.0] (January 3, 2024)
+
+* Added `@rushstack/eslint-patch` to support eslint shareable config.
+
 ## [4.1.8] (December 21, 2023)
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
