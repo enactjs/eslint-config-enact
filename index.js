@@ -11,6 +11,7 @@ module.exports = {
 		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
+		worker: true,
 		es6: true, // Enables ES6 globals
 		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
 		commonjs: true
