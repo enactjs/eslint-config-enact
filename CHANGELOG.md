@@ -4,6 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
+* Replaced deprecated rules with `@stylistic/js` rules.
 * Added `worker` environment.
 
 ## [4.2.0] (January 3, 2024)
