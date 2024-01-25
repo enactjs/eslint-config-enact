@@ -1,54 +1,21 @@
 module.exports = {
 	extends: './index.js',
-	plugins: ['react', '@babel', 'enact'],
+	plugins: ['react', '@babel', '@stylistic/js', 'enact'],
 	rules: {
-		'array-bracket-spacing': ['warn', 'never', {}],
-		'arrow-spacing': ['warn', {
-			before: true,
-			after: true
-		}],
-		'brace-style': ['warn', '1tbs', {}],
 		'camelcase': ['warn', {
 			allow: [
 				'^UNSAFE_'
 			]
 		}],
-		'comma-dangle': ['warn', 'never'],
-		'comma-spacing': ['warn', {
-			after: true
-		}],
-		'comma-style': 'warn',
-		'computed-property-spacing': ['warn', 'never'],
-		'dot-location': ['warn', 'property'],
-		'eol-last': 'warn',
-		'indent': ['warn', 'tab', {
-			SwitchCase: 1,
-			FunctionDeclaration: {
-				body: 1,
-				parameters: 2
-			},
-			FunctionExpression: {
-				body: 1,
-				parameters: 2
-			},
-			ignoredNodes: [
-				'TemplateLiteral *'
-			]
-		}],
-		'jsx-quotes': ['warn', 'prefer-double'],
-		'keyword-spacing': 'warn',
-		'linebreak-style': ['warn', 'unix'],
 		'max-nested-callbacks': ['warn', 4],
 		'no-array-constructor': 'error',
 		'no-cond-assign': ['error', 'except-parens'],
 		'no-console': 'warn',
 		'no-debugger': 'warn',
 		'no-extend-native': 'error',
-		'no-extra-semi': 'warn',
 		'no-fallthrough': 'error',
 		'no-func-assign': 'error',
 		'no-lonely-if': 'warn',
-		'no-mixed-spaces-and-tabs': ['warn', false],
 		'no-nested-ternary': 'warn',
 		'no-new': 'warn',
 		'no-new-object': 'error',
@@ -72,29 +39,64 @@ module.exports = {
 		'no-useless-call': 'error',
 		'no-useless-escape': 'warn',
 		'no-useless-return': 'warn',
-		'operator-linebreak': ['warn', 'after'],
 		'prefer-spread': 'warn',
 		'radix': ['warn', 'as-needed'],
 		'semi-spacing': ['warn', {
 			before: false,
 			after: true
 		}],
-		'space-before-blocks': ['warn', 'always'],
-		'space-before-function-paren': ['warn', 'always'],
-		'space-infix-ops': ['warn', {
+		'use-isnan': 'error',
+		'vars-on-top': 'warn',
+
+		// @stylistic/js plugin https://github.com/eslint-stylistic/eslint-stylistic
+		'@stylistic/js/array-bracket-spacing': ['warn', 'never', {}],
+		'@stylistic/js/arrow-spacing': ['warn', {
+			before: true,
+			after: true
+		}],
+		'@stylistic/js/brace-style': ['warn', '1tbs', {}],
+		'@stylistic/js/comma-dangle': ['warn', 'never'],
+		'@stylistic/js/comma-spacing': ['warn', {
+			after: true
+		}],
+		'@stylistic/js/comma-style': 'warn',
+		'@stylistic/js/computed-property-spacing': ['warn', 'never'],
+		'@stylistic/js/dot-location': ['warn', 'property'],
+		'@stylistic/js/eol-last': 'warn',
+		'@stylistic/js/indent': ['warn', 'tab', {
+			SwitchCase: 1,
+			FunctionDeclaration: {
+				body: 1,
+				parameters: 2
+			},
+			FunctionExpression: {
+				body: 1,
+				parameters: 2
+			},
+			ignoredNodes: [
+				'TemplateLiteral *'
+			]
+		}],
+		'@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
+		'@stylistic/js/keyword-spacing': 'warn',
+		'@stylistic/js/linebreak-style': ['warn', 'unix'],
+		'@stylistic/js/no-extra-semi': 'warn',
+		'@stylistic/js/no-mixed-spaces-and-tabs': ['warn', false],
+		'@stylistic/js/operator-linebreak': ['warn', 'after'],
+		'@stylistic/js/space-before-blocks': ['warn', 'always'],
+		'@stylistic/js/space-before-function-paren': ['warn', 'always'],
+		'@stylistic/js/space-infix-ops': ['warn', {
 			int32Hint: true
 		}],
-		'space-unary-ops': ['warn', {
+		'@stylistic/js/space-unary-ops': ['warn', {
 			words: true,
 			nonwords: false
 		}],
-		'spaced-comment': ['warn', 'always', {
+		'@stylistic/js/spaced-comment': ['warn', 'always', {
 			markers: [
 				'*'
 			]
 		}],
-		'use-isnan': 'error',
-		'vars-on-top': 'warn',
 
 		// react plugin https://github.com/yannickcr/eslint-plugin-react
 		'react/default-props-match-prop-types': 'warn',
