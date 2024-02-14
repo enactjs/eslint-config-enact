@@ -14,7 +14,10 @@ module.exports = {
 		worker: true,
 		es6: true, // Enables ES6 globals
 		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
-		commonjs: true
+		commonjs: true,
+		browser: true,
+		jest: true,
+		node: true
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
 	ignorePatterns: [
