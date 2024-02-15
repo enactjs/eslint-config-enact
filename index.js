@@ -101,6 +101,7 @@ module.exports = {
 			hoist: 'all',
 			allow: [
 				'context',
+				'focus',
 				'Image',
 				'length',
 				'name',
