@@ -100,7 +100,16 @@ module.exports = {
 			builtinGlobals: true,
 			hoist: 'all',
 			allow: [
-				'context'
+				'context',
+				'Image',
+				'length',
+				'name',
+				'Notification',
+				'open',
+				'Option',
+				'scrollTo',
+				'Text',
+				'top'
 			]
 		}],
 		'no-throw-literal': 'error',
