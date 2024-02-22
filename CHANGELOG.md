@@ -4,8 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
-* Added `browser`, `node`, and `jest` environment.
-* Added `worker` environment.
+* Added `browser`, `jest`, `node`, and `worker` environment.
 
 ## [4.2.0] (January 3, 2024)
 
