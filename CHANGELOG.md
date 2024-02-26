@@ -2,10 +2,6 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
-
-* Added `worker` environment.
-
 ## [4.2.0] (January 3, 2024)
 
 * Added `@rushstack/eslint-patch` to support eslint shareable config.
