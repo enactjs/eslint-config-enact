@@ -11,10 +11,13 @@ module.exports = {
 		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
+		browser: true,
+		commonjs: true,
+		es2015: true, // Enables ES6 globals
+		jest: true,
+		node: true,
 		worker: true,
-		es6: true, // Enables ES6 globals
-		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
-		commonjs: true
+		'shared-node-browser': true // restrict to common globals to preserve isomorphic support
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
 	ignorePatterns: [
@@ -97,7 +100,17 @@ module.exports = {
 			builtinGlobals: true,
 			hoist: 'all',
 			allow: [
-				'context'
+				'context',
+				'focus',
+				'Image',
+				'length',
+				'name',
+				'Notification',
+				'open',
+				'Option',
+				'scrollTo',
+				'Text',
+				'top'
 			]
 		}],
 		'no-throw-literal': 'error',
