@@ -11,13 +11,13 @@ module.exports = {
 		ENACT_PACK_NO_ANIMATION: true
 	},
 	env: {
-		worker: true,
-		es6: true, // Enables ES6 globals
-		'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
-		commonjs: true,
 		browser: true,
+		commonjs: true,
+		es2015: true, // Enables ES6 globals
 		jest: true,
-		node: true
+		node: true,
+		worker: true,
+		'shared-node-browser': true // restrict to common globals to preserve isomorphic support
 	},
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
 	ignorePatterns: [
