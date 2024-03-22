@@ -26,10 +26,7 @@ module.exports = {
 			builtinGlobals: true,
 			hoist: 'all',
 			allow: [
-				'context',
-				'location',
-				'name',
-				'Notification'
+				'context'
 			]
 		}],
 		'no-undefined': 'error',
