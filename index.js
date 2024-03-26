@@ -74,7 +74,7 @@ module.exports = {
 		'no-iterator': 'error',
 		'no-label-var': 'error',
 		'no-labels': 'error',
-		'no-mixed-spaces-and-tabs': ['warn', false],
+		'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
 		'no-global-assign': 'error',
 		'no-unsafe-negation': 'error',
 		'no-new-func': 'error',
