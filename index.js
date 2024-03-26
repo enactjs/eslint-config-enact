@@ -65,6 +65,7 @@ module.exports = {
 		'no-extend-native': 'warn',
 		'no-extra-bind': 'warn',
 		'no-extra-boolean-cast': 'warn',
+		'no-extra-semi': 'off',
 		'no-fallthrough': 'warn',
 		'no-func-assign': 'warn',
 		'no-implied-eval': 'warn',
@@ -73,6 +74,7 @@ module.exports = {
 		'no-iterator': 'error',
 		'no-label-var': 'error',
 		'no-labels': 'error',
+		'no-mixed-spaces-and-tabs': ['warn', false],
 		'no-global-assign': 'error',
 		'no-unsafe-negation': 'error',
 		'no-new-func': 'error',
@@ -111,9 +113,7 @@ module.exports = {
 
 		// @stylistic/js plugin https://github.com/eslint-stylistic/eslint-stylistic
 		'@stylistic/js/new-parens': 'warn',
-		'@stylistic/js/no-extra-semi': 'off',
 		'@stylistic/js/no-floating-decimal': 'warn',
-		'@stylistic/js/no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
 		'@stylistic/js/no-trailing-spaces': 'warn',
 		'@stylistic/js/wrap-iife': ['error', 'inside'],
 
