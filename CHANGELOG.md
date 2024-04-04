@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## unreleased
+
+* Replaced deprecated rules with `@stylistic/js` rules.
+
 ## [4.2.1] (February 27, 2024)
 
 * Updated dependencies.
