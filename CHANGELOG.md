@@ -4,6 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## unreleased
 
+* Repleced deprecated rule `no-new-object` to `no-object-constructor`.
 * Replaced deprecated rules with `@stylistic/js` rules.
 
 ## [4.2.1] (February 27, 2024)

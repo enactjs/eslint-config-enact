@@ -78,7 +78,7 @@ module.exports = {
 		'no-global-assign': 'error',
 		'no-unsafe-negation': 'error',
 		'no-new-func': 'error',
-		'no-new-object': 'warn',
+		'no-object-constructor': 'warn',
 		'no-new-wrappers': 'warn',
 		'no-octal-escape': 'warn',
 		'no-proto': 'error',
