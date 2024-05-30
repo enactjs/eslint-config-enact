@@ -37,6 +37,6 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^6.2.0",
-    "react": "^19.0.0-rc-81c5ff2e04-20240521"
+    "react": "^19.0.0-rc-38e3b23483-20240529"
   }
 }
