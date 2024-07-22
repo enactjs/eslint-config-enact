@@ -20,7 +20,7 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.57.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.24.7",
@@ -29,9 +29,9 @@
     "@stylistic/eslint-plugin-js": "^1.7.0",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
-    "babel-preset-enact": "github:enactjs/babel-preset-enact#release/0.1.8",
+    "babel-preset-enact": "^0.1.8",
     "eslint": "^8.57.0",
-    "eslint-plugin-enact": "github:enactjs/eslint-plugin-enact#release/1.0.8",
+    "eslint-plugin-enact": "^1.0.8",
     "eslint-plugin-jest": "^28.6.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.34.3",
