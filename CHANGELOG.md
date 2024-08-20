@@ -2,9 +2,13 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
+## [unreleased]
 
 * Repleced deprecated rule `no-new-object` to `no-object-constructor`.
+
+## [5.0.0-alpha.1] (July 22, 2024)
+
+* Updated the minimum version of Node to `18.18.0`.
 * Replaced deprecated rules with `@stylistic/js` rules.
 
 ## [4.2.1] (February 27, 2024)
