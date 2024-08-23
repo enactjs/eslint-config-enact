@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Repleced deprecated rule `no-new-object` to `no-object-constructor`.
+* Repleced deprecated rule `no-new-object` with `no-object-constructor`.
 
 ## [5.0.0-alpha.1] (July 22, 2024)
 
@@ -23,7 +23,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
 * Renamed `testing-library` rules for Jest unit tests validation:
-  * `testing-library/await-async-query` renamed to `testing-library/await-async-queries` 
+  * `testing-library/await-async-query` renamed to `testing-library/await-async-queries`
   * `testing-library/no-await-sync-query` renamed to `testing-library/no-await-sync-queries`
   * `testing-library/no-render-in-setup` renamed to `testing-library/no-render-in-lifecycle`
 
