@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Repleced deprecated rule `no-new-object` with `no-object-constructor`.
+* Replaced deprecated rule `no-new-object` with `no-object-constructor`.
 
 ## [5.0.0-alpha.1] (July 22, 2024)
 
