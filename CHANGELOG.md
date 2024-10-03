@@ -7,7 +7,6 @@ The following is a curated list of changes in the Enact eslint config:
 * Replaced deprecated rule `no-new-object` with `no-object-constructor`.
 * Updated the minimum version of Node to `^18.18.0 || ^20.9.0 || >=21.1.0`.
 * Updated `@stylistic/eslint-plugin-js` to `^2.8.0`, `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser` to `^8.6.0`.
-* Updated the `lockfileVersion` of npm-shrinkwrap file to v3.
 
 ## [5.0.0-alpha.1] (July 22, 2024)
 
