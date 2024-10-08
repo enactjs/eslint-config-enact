@@ -10,7 +10,7 @@
   "author": "",
   "license": "Apache-2.0",
   "engines": {
-    "node": "^18.18.0 || >=20.0.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,9 @@
     "@babel/eslint-parser": "^7.25.1",
     "@babel/eslint-plugin": "^7.25.1",
     "@rushstack/eslint-patch": "^1.10.4",
-    "@stylistic/eslint-plugin-js": "^1.8.1",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
+    "@stylistic/eslint-plugin-js": "^2.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "babel-preset-enact": "^0.1.8",
     "eslint": "^8.57.0",
     "eslint-plugin-enact": "^1.0.8",
