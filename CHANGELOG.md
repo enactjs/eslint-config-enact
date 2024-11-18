@@ -2,8 +2,15 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
+## [unreleased]
 
+* Replaced deprecated rule `no-new-object` with `no-object-constructor`.
+* Updated the minimum version of Node to `^18.18.0 || ^20.9.0 || >=21.1.0`.
+* Updated `@stylistic/eslint-plugin-js` to `^2.8.0`, `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser` to `^8.6.0`.
+
+## [5.0.0-alpha.1] (July 22, 2024)
+
+* Updated the minimum version of Node to `18.18.0`.
 * Replaced deprecated rules with `@stylistic/js` rules.
 
 ## [4.2.1] (February 27, 2024)
@@ -18,7 +25,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 * Removed deprecated rule `testing-library/no-wait-for-empty-callback`.
 * Renamed `testing-library` rules for Jest unit tests validation:
-  * `testing-library/await-async-query` renamed to `testing-library/await-async-queries` 
+  * `testing-library/await-async-query` renamed to `testing-library/await-async-queries`
   * `testing-library/no-await-sync-query` renamed to `testing-library/no-await-sync-queries`
   * `testing-library/no-render-in-setup` renamed to `testing-library/no-render-in-lifecycle`
 
