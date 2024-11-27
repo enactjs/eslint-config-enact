@@ -101,7 +101,9 @@ module.exports = {
 		'no-unexpected-multiline': 'warn',
 		'no-unneeded-ternary': 'warn',
 		'no-unreachable': 'warn',
-		'no-unused-vars': 'warn',
+		'no-unused-vars': ['warn', {
+			caughtErrors: 'none'
+		}],
 		'no-use-before-define': ['warn', {
 			functions: false
 		}],
