@@ -4,8 +4,8 @@
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "fix": "eslint . --fix"
+    "lint": "cross-env ESLINT_USE_FLAT_CONFIG=false eslint .",
+    "fix": "cross-env ESLINT_USE_FLAT_CONFIG=false eslint . --fix"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -38,5 +38,8 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-testing-library": "^7.0.0",
     "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
