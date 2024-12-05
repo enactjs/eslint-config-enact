@@ -29,7 +29,7 @@
     "@stylistic/eslint-plugin-js": "^2.8.0",
     "@typescript-eslint/eslint-plugin": "^8.6.0",
     "@typescript-eslint/parser": "^8.6.0",
-    "babel-preset-enact": "github:enactjs/babel-preset-enact#release/0.1.9",
+    "babel-preset-enact": "^0.1.8",
     "eslint": "^8.57.0",
     "eslint-plugin-enact": "github:enactjs/eslint-plugin-enact#release/2.0.0-alpha.1",
     "eslint-plugin-jest": "^28.8.3",
