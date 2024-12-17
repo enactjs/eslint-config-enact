@@ -49,7 +49,7 @@ This section describes the procedure for setting up several popular editors.
 
 You would need to install an ESLint plugin for your editor first.
 
-Ever since ESLint 6, global installs of ESLint configs are no longer supported.
+Ever since ESLint 6, global installations of ESLint configs are no longer supported.
 To work around this new limitation, while still supporting in-editor linting, we've created a new [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) package.
 The [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
 `eslint-config-enact-proxy` needs to be installed locally on a project to enable in-editor linting:
