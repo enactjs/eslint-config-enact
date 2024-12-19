@@ -81,7 +81,14 @@ module.exports = {
 		'@stylistic/js/linebreak-style': ['warn', 'unix'],
 		'@stylistic/js/operator-linebreak': ['warn', 'after'],
 		'@stylistic/js/space-before-blocks': ['warn', 'always'],
-		'@stylistic/js/space-before-function-paren': ['warn', 'always'],
+		'@stylistic/js/space-before-function-paren': [
+			'warn',
+			{
+				anonymous: 'always',
+				named: 'never',
+				asyncArrow: 'always'
+			}
+		],
 		'@stylistic/js/space-infix-ops': ['warn', {
 			int32Hint: true
 		}],
