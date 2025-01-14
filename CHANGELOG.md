@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Updated `react` dependency to `^19.0.0`
+
 ## [5.0.0-alpha.2] (December 6, 2024)
 
 * Replaced deprecated rule `no-new-object` with `no-object-constructor`.
