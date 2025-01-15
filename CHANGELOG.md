@@ -6,6 +6,10 @@ The following is a curated list of changes in the Enact eslint config:
 
 * Updated Enact ESLint config to `9.1.5` including eslint related modules.
 
+## [5.0.0-alpha.3] (January 15, 2025)
+
+* Updated `react` dependency to `^19.0.0`
+
 ## [5.0.0-alpha.2] (December 6, 2024)
 
 * Replaced deprecated rule `no-new-object` with `no-object-constructor`.
