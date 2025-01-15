@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [5.0.0-alpha.3] (January 15, 2025)
 
 * Updated `react` dependency to `^19.0.0`
 
