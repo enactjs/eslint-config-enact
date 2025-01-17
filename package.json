@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-enact",
-  "version": "5.0.0-alpha.3",
+  "version": "5.0.0-alpha.4",
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "@stylistic/eslint-plugin-js": "^2.10.1",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
-    "babel-preset-enact": "^0.1.9",
+    "babel-preset-enact": "^0.1.10",
     "eslint": "^8.57.1",
     "eslint-plugin-enact": "^2.0.0-alpha.1",
     "eslint-plugin-jest": "^28.9.0",
