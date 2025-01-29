@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^8.21.0",
     "@typescript-eslint/parser": "^8.21.0",
     "babel-preset-enact": "^0.1.10",
-    "eslint": "^9.18.0",
+    "eslint": "^9.19.0",
     "eslint-plugin-enact": "enactjs/eslint-plugin-enact#feature/WRR-12625",
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
