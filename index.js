@@ -52,9 +52,8 @@ const basicConfig = [
 				...globals.es2015,
 				'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
 				...globals.commonjs,
-				...customGlobals,
-				...globals.node
-
+				...globals.node,
+				...customGlobals
 			},
 			parser: babelParser,
 			parserOptions: {
@@ -290,7 +289,9 @@ const basicConfig = [
 		},
 		ignores: ['tests/screenshot/**/*', 'tests/ui/**/*'],
 		languageOptions: {
-			globals: eslintPluginJest.environments.globals.globals,
+			globals: {
+				...eslintPluginJest.environments.globals.globals
+			}
 		},
 		rules: {
 			// Arrow functions can simplify tests
@@ -331,8 +332,8 @@ const basicConfig = [
 		],
 		languageOptions: {
 			globals: {
-				...customTestsGlobals,
-				...globals.mocha
+				...globals.mocha,
+				...customTestsGlobals
 			}
 		},
 		rules: {
