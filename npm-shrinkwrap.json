@@ -29,7 +29,7 @@
         "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
       },
       "peerDependencies": {
-        "eslint": "^8.57.0"
+        "eslint": "^9.19.0"
       }
     },
     "node_modules/@ampproject/remapping": {
