@@ -281,7 +281,8 @@ const basicConfig = [
 		files: [
 			'**/__tests__/**/*.{js,jsx,ts,tsx}',
 			'**/*.+(spec|test).{js,jsx,ts,tsx}',
-			'**/*-specs.{js,jsx,ts,tsx}'
+			'**/*-specs.{js,jsx,ts,tsx}',
+			'**/*setupTests.{js,jsx,ts,tsx}'
 		],
 		plugins: {
 			jest: eslintPluginJest,
