@@ -4,8 +4,8 @@
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "fix": "eslint . --fix"
+    "lint": "eslint . --no-config-lookup",
+    "fix": "eslint . --fix --no-config-lookup"
   },
   "author": "",
   "license": "Apache-2.0",
