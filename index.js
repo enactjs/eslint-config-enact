@@ -18,7 +18,8 @@ const customGlobals = {
 	process: true,
 	window: true,
 	document: true,
-	ENACT_PACK_NO_ANIMATION: true
+	ENACT_PACK_NO_ANIMATION: true,
+	XMLHttpRequest: true
 };
 
 const customTestsGlobals = {
