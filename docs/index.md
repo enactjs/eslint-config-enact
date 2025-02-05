@@ -32,7 +32,7 @@ to read:
   },
 ```
 
-If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` in the project's root and run `eslint .`:
+If you are not using the `cli` tools, you can create (or modify) an `eslint.config.js` in the project's root and run `eslint .`:
 
 ```json
 {
@@ -41,7 +41,7 @@ If you are not using the `cli` tools, you can create (or modify) an `.eslintrc` 
 ```
 >**NOTE**: For strict mode, use `"extends": "enact-proxy/strict"`.
 
-If you like our linting rules and want to use them by default you can create the `.eslintrc` file in your HOME directory instead.
+If you like our linting rules and want to use them by default you can create the `eslint.config.js` file in your HOME directory instead.
 
 ### In-editor
 
@@ -128,4 +128,4 @@ Check the *Enable* checkbox.  Ensure that the proper paths for `node` and `eslin
 
 #### Troubleshooting
 
-If in-editor linting is not working in your local project, be sure you set up `package.json` or `.eslintrc` as described above.
+If in-editor linting is not working in your local project, be sure you set up `package.json` or `eslint.config.js` as described above.
