@@ -18,8 +18,7 @@ const customGlobals = {
 	process: true,
 	window: true,
 	document: true,
-	ENACT_PACK_NO_ANIMATION: true,
-	XMLHttpRequest: true
+	ENACT_PACK_NO_ANIMATION: true
 };
 
 const customTestsGlobals = {
@@ -66,6 +65,9 @@ const basicConfig = [
 					presets: [babelPresetEnact]
 				}
 			}
+		},
+		linterOptions: {
+			reportUnusedDisableDirectives: "off"
 		},
 		plugins: {
 			'@babel': babelEslintPlugin,
