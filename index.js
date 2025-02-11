@@ -3,7 +3,6 @@ const babelParser = require('@babel/eslint-parser');
 const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
 const typescriptParser = require('@typescript-eslint/parser');
 const eslint = require('@eslint/js');
-const babelPresetEnact = require('babel-preset-enact');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginJest = require('eslint-plugin-jest');
 const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
@@ -62,7 +61,7 @@ const basicConfig = [
 				},
 				requireConfigFile: false,
 				babelOptions: {
-					presets: [babelPresetEnact]
+					presets: [require.resolve('babel-preset-enact')]
 				}
 			}
 		},
