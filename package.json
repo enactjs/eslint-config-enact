@@ -20,7 +20,7 @@
     "extends": "./index.js"
   },
   "peerDependencies": {
-    "eslint": "^9.19.0"
+    "eslint": "^9.20.0"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.26.8",
