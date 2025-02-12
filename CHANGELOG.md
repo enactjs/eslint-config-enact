@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## unreleased
+## [unreleased]
 
 * Updated `eslint` to v9 and adopted flat config.
 
