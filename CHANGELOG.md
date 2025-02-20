@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Updated `eslint` to v9 and adopted flat config.
+
 ## [5.0.0-alpha.4] (January 17, 2025)
 
 * Updated dependencies.

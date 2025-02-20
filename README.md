@@ -6,7 +6,7 @@ This module includes both a standard set of rules and a set of stricter rules th
 
 ## Usage
 
-Reference this set of rules from your `.eslintrc` or `package.json` file and then use `eslint`.  If you are using the `cli` tools, simply use `npm run lint` from your project directory.
+Reference this set of rules from your `eslint.config.js` or `package.json` file and then use `eslint`.  If you are using the `cli` tools, simply use `npm run lint` from your project directory.
 
 For more information (including editor/IDE setup), please see the [docs](docs/index.md).
 
