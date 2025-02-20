@@ -16,7 +16,7 @@
         "@typescript-eslint/parser": "^8.24.0",
         "babel-preset-enact": "^0.1.10",
         "eslint": "^9.20.0",
-        "eslint-plugin-enact": "enactjs/eslint-plugin-enact#feature/eslint9",
+        "eslint-plugin-enact": "enactjs/eslint-plugin-enact#develop",
         "eslint-plugin-jest": "^28.11.0",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.4",
@@ -6500,7 +6500,7 @@
     },
     "node_modules/eslint-plugin-enact": {
       "version": "2.0.0-alpha.1",
-      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#bee97d800361ede97e393d89b9a411152351f915",
+      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#a8c5a437ab841a1b90a5e7114d95f6bfbf76b30b",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
@@ -13198,8 +13198,8 @@
       }
     },
     "eslint-plugin-enact": {
-      "version": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#bee97d800361ede97e393d89b9a411152351f915",
-      "from": "eslint-plugin-enact@enactjs/eslint-plugin-enact#feature/eslint9",
+      "version": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#a8c5a437ab841a1b90a5e7114d95f6bfbf76b30b",
+      "from": "eslint-plugin-enact@enactjs/eslint-plugin-enact#develop",
       "requires": {
         "doctrine": "^3.0.0",
         "jsx-ast-utils": "^3.3.5",
