@@ -49,9 +49,8 @@ const basicConfig = [
 			sourceType: 'module',
 			globals: {
 				...globals.es2015,
-				'shared-node-browser': true, // restrict to common globals to preserve isomorphic support
+				...globals['shared-node-browser'], // restrict to common globals to preserve isomorphic support
 				...globals.commonjs,
-				...globals.node,
 				...customGlobals
 			},
 			parser: babelParser,
