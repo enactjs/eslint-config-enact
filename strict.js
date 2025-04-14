@@ -152,8 +152,7 @@ module.exports = [
 
 			// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 			'enact/display-name': 'warn',
-			'enact/kind-name': 'warn',
-			'enact/prop-types': ['warn', {'ignore': ['children', 'className', 'style']}]
+			'enact/kind-name': 'warn'
 		}
 	},
 	{
