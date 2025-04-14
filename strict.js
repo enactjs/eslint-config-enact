@@ -192,9 +192,7 @@ module.exports = [
 			}, {
 				"object": "it",
 				"property": "only"
-			}],
-			// PropType validation is not a priority in tests
-			'enact/prop-types': 'off'
+			}]
 		}
 	}
 ];
