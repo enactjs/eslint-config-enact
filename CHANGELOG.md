@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## unreleased
+
+* Removed deprecated rule `enact/prop-types`.
+
 ## [5.0.0-alpha.5] (February 21, 2025)
 
 * Updated `eslint` to v9 and adopted flat config.
