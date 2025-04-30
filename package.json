@@ -4,8 +4,8 @@
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --no-config-lookup",
-    "fix": "eslint . --fix --no-config-lookup"
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -15,9 +15,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/eslint-config-enact.git"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
   },
   "peerDependencies": {
     "eslint": "^9.20.0"
