@@ -16,7 +16,7 @@
         "@typescript-eslint/parser": "^8.24.0",
         "babel-preset-enact": "^0.1.12",
         "eslint": "^9.20.0",
-        "eslint-plugin-enact": "^2.0.0-beta.1",
+        "eslint-plugin-enact": "^2.0.0",
         "eslint-plugin-jest": "^28.11.0",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.4",
@@ -3255,9 +3255,9 @@
       }
     },
     "node_modules/eslint-plugin-enact": {
-      "version": "2.0.0-beta.1",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.0-beta.1.tgz",
-      "integrity": "sha512-TEba9YDbb8j286XBETlbclFFp5nFIrp2W2A+BAEfx5MDFSlYUQnS0LTCIA3J5NOsLQZq5ELjjkNZwKZaklMBSA==",
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.0.tgz",
+      "integrity": "sha512-jFOgtwOuSAlQQAHvEwmqOe/7AY3reYfMZYhDXCAyOUHZjkmmr6xXgLTq3pGG37b7ip+hhnNU26kYPYJDpCMAdg==",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
