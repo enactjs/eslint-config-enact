@@ -11,7 +11,7 @@
       "dependencies": {
         "@babel/eslint-parser": "^7.26.8",
         "@babel/eslint-plugin": "^7.25.9",
-        "@stylistic/eslint-plugin-js": "^4.4.1",
+        "@stylistic/eslint-plugin-js": "^3.1.0",
         "@typescript-eslint/eslint-plugin": "^8.24.0",
         "@typescript-eslint/parser": "^8.24.0",
         "babel-preset-enact": "^0.1.12",
@@ -22,7 +22,7 @@
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-react-hooks": "^5.1.0",
         "eslint-plugin-testing-library": "^7.1.1",
-        "globals": "^15.14.0",
+        "globals": "^16.2.0",
         "react": "^19.0.0"
       },
       "engines": {
@@ -2107,9 +2107,9 @@
       }
     },
     "node_modules/@stylistic/eslint-plugin-js": {
-      "version": "4.4.1",
-      "resolved": "https://registry.npmjs.org/@stylistic/eslint-plugin-js/-/eslint-plugin-js-4.4.1.tgz",
-      "integrity": "sha512-eLisyHvx7Sel8vcFZOEwDEBGmYsYM1SqDn81BWgmbqEXfXRf8oe6Rwp+ryM/8odNjlxtaaxp0Ihmt86CnLAxKg==",
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/@stylistic/eslint-plugin-js/-/eslint-plugin-js-3.1.0.tgz",
+      "integrity": "sha512-lQktsOiCr8S6StG29C5fzXYxLOD6ID1rp4j6TRS+E/qY1xd59Fm7dy5qm9UauJIEoSTlYx6yGsCHYh5UkgXPyg==",
       "license": "MIT",
       "dependencies": {
         "eslint-visitor-keys": "^4.2.0",
@@ -2119,7 +2119,7 @@
         "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
       },
       "peerDependencies": {
-        "eslint": ">=9.0.0"
+        "eslint": ">=8.40.0"
       }
     },
     "node_modules/@stylistic/eslint-plugin-js/node_modules/eslint-visitor-keys": {
@@ -3953,9 +3953,9 @@
       }
     },
     "node_modules/globals": {
-      "version": "15.15.0",
-      "resolved": "https://registry.npmjs.org/globals/-/globals-15.15.0.tgz",
-      "integrity": "sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==",
+      "version": "16.2.0",
+      "resolved": "https://registry.npmjs.org/globals/-/globals-16.2.0.tgz",
+      "integrity": "sha512-O+7l9tPdHCU320IigZZPj5zmRCFG9xHmx9cU8FqU2Rp+JN714seHV+2S9+JslCpY4gJwU2vOGox0wzgae/MCEg==",
       "license": "MIT",
       "engines": {
         "node": ">=18"
