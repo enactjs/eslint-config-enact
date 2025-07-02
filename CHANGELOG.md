@@ -4,7 +4,7 @@ The following is a curated list of changes in the Enact eslint config:
 
 ## [unreleased]
 
-* Updated `@stylistic/eslint-plugin-js` to `^4.4.1` and `globals` to `^16.2.0`.
+* Updated `globals` version to `^16.2.0`.
 
 ## [5.0.0] (June 10, 2025)
 
