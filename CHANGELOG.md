@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [5.0.1] (July 18, 2025)
+
+* Updated `globals` version to `^16.2.0`.
+
 ## [5.0.0] (June 10, 2025)
 
 * Updated dependencies.
