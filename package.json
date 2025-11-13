@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-enact",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "ESLint config for Enact",
   "main": "index.js",
   "scripts": {
