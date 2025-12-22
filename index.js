@@ -92,6 +92,7 @@ const basicConfig = [
 			'react-hooks/set-state-in-effect': 'off',
 			'react-hooks/globals': 'off',
 			'react-hooks/static-components': 'off',
+			'react-hooks/use-memo': 'off',
 			//
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
