@@ -10,7 +10,7 @@ const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const globals = require('globals');
-const stylisticEslintPluginJs = require('@stylistic/eslint-plugin-js');
+const stylisticEslintPluginJs = require('@stylistic/eslint-plugin');
 
 const customGlobals = {
 	__DEV__: true,
@@ -69,7 +69,7 @@ const basicConfig = [
 		},
 		plugins: {
 			'@babel': babelEslintPlugin,
-			'@stylistic/js': stylisticEslintPluginJs,
+			'@stylistic': stylisticEslintPluginJs,
 			'jsx-a11y': eslintPluginJsxA11y,
 			react: eslintPluginReact,
 			enact: eslintPluginEnact,
@@ -83,7 +83,16 @@ const basicConfig = [
 		},
 		rules: {
 			...eslintPluginReact.configs.recommended.rules,
-			...eslintPluginReactHooks.configs.recommended.rules,
+			...eslintPluginReactHooks.configs.flat.recommended.rules,
+			// Disable React Compiler rules if not using React Compiler
+			'react-hooks/immutability': 'off',
+			'react-hooks/refs': 'off',
+			'react-hooks/preserve-manual-memoization': 'off',
+			'react-hooks/purity': 'off',
+			'react-hooks/set-state-in-effect': 'off',
+			'react-hooks/globals': 'off',
+			'react-hooks/static-components': 'off',
+			//
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
 			'eqeqeq': ['warn', 'smart'],
@@ -149,11 +158,11 @@ const basicConfig = [
 			'require-yield': 'off',
 			'use-isnan': 'warn',
 
-			// @stylistic/js plugin https://github.com/eslint-stylistic/eslint-stylistic
-			'@stylistic/js/new-parens': 'warn',
-			'@stylistic/js/no-floating-decimal': 'warn',
-			'@stylistic/js/no-trailing-spaces': 'warn',
-			'@stylistic/js/wrap-iife': ['error', 'inside'],
+			// @stylistic plugin https://github.com/eslint-stylistic/eslint-stylistic
+			'@stylistic/new-parens': 'warn',
+			'@stylistic/no-floating-decimal': 'warn',
+			'@stylistic/no-trailing-spaces': 'warn',
+			'@stylistic/wrap-iife': ['error', 'inside'],
 
 			// jsx-a11y plugin https://github.com/evcohen/eslint-plugin-jsx-a11y
 			'jsx-a11y/alt-text': 'warn',
