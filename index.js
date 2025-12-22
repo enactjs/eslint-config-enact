@@ -10,7 +10,7 @@ const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const globals = require('globals');
-const stylisticEslintPluginJs = require('@stylistic/eslint-plugin');
+const stylisticEslintPlugin = require('@stylistic/eslint-plugin');
 
 const customGlobals = {
 	__DEV__: true,
@@ -69,7 +69,7 @@ const basicConfig = [
 		},
 		plugins: {
 			'@babel': babelEslintPlugin,
-			'@stylistic': stylisticEslintPluginJs,
+			'@stylistic': stylisticEslintPlugin,
 			'jsx-a11y': eslintPluginJsxA11y,
 			react: eslintPluginReact,
 			enact: eslintPluginEnact,
