@@ -2,6 +2,7 @@ const babelEslintPlugin = require('@babel/eslint-plugin');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginReact = require('eslint-plugin-react');
 const stylisticEslintPluginRaw = require('@stylistic/eslint-plugin');
+
 const stylisticEslintPlugin = stylisticEslintPluginRaw.default || stylisticEslintPluginRaw;
 
 const basicConfig = require('./index.js');
