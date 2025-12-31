@@ -2,6 +2,12 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Updated dependencies.
+* Updated the minimum version of Node to `"^20.12.0 || ^22.0.0 || >=24.0.0"`.
+* Disabled newly added React compiler-related eslint rules.
+
 ## [5.0.2] (November 13, 2025)
 
 * Updated dependencies.

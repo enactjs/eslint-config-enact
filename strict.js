@@ -1,7 +1,9 @@
 const babelEslintPlugin = require('@babel/eslint-plugin');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginReact = require('eslint-plugin-react');
-const stylisticEslintPluginJs = require('@stylistic/eslint-plugin-js');
+const stylisticEslintPluginRaw = require('@stylistic/eslint-plugin');
+
+const stylisticEslintPlugin = stylisticEslintPluginRaw.default || stylisticEslintPluginRaw;
 
 const basicConfig = require('./index.js');
 
@@ -11,7 +13,7 @@ module.exports = [
 		plugins: {
 			react: eslintPluginReact,
 			'@babel': babelEslintPlugin,
-			'@stylistic/js': stylisticEslintPluginJs,
+			'@stylistic': stylisticEslintPlugin,
 			enact: eslintPluginEnact
 		},
 		rules: {
@@ -60,22 +62,22 @@ module.exports = [
 			'use-isnan': 'error',
 			'vars-on-top': 'warn',
 
-			// @stylistic/js plugin https://github.com/eslint-stylistic/eslint-stylistic
-			'@stylistic/js/array-bracket-spacing': ['warn', 'never', {}],
-			'@stylistic/js/arrow-spacing': ['warn', {
+			// @stylistic plugin https://github.com/eslint-stylistic/eslint-stylistic
+			'@stylistic/array-bracket-spacing': ['warn', 'never', {}],
+			'@stylistic/arrow-spacing': ['warn', {
 				before: true,
 				after: true
 			}],
-			'@stylistic/js/brace-style': ['warn', '1tbs', {}],
-			'@stylistic/js/comma-dangle': ['warn', 'never'],
-			'@stylistic/js/comma-spacing': ['warn', {
+			'@stylistic/brace-style': ['warn', '1tbs', {}],
+			'@stylistic/comma-dangle': ['warn', 'never'],
+			'@stylistic/comma-spacing': ['warn', {
 				after: true
 			}],
-			'@stylistic/js/comma-style': 'warn',
-			'@stylistic/js/computed-property-spacing': ['warn', 'never'],
-			'@stylistic/js/dot-location': ['warn', 'property'],
-			'@stylistic/js/eol-last': 'warn',
-			'@stylistic/js/indent': ['warn', 'tab', {
+			'@stylistic/comma-style': 'warn',
+			'@stylistic/computed-property-spacing': ['warn', 'never'],
+			'@stylistic/dot-location': ['warn', 'property'],
+			'@stylistic/eol-last': 'warn',
+			'@stylistic/indent': ['warn', 'tab', {
 				SwitchCase: 1,
 				FunctionDeclaration: {
 					body: 1,
@@ -89,20 +91,20 @@ module.exports = [
 					'TemplateLiteral *'
 				]
 			}],
-			'@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
-			'@stylistic/js/keyword-spacing': 'warn',
-			'@stylistic/js/linebreak-style': ['warn', 'unix'],
-			'@stylistic/js/operator-linebreak': ['warn', 'after'],
-			'@stylistic/js/space-before-blocks': ['warn', 'always'],
-			'@stylistic/js/space-before-function-paren': ['warn', 'always'],
-			'@stylistic/js/space-infix-ops': ['warn', {
+			'@stylistic/jsx-quotes': ['warn', 'prefer-double'],
+			'@stylistic/keyword-spacing': 'warn',
+			'@stylistic/linebreak-style': ['warn', 'unix'],
+			'@stylistic/operator-linebreak': ['warn', 'after'],
+			'@stylistic/space-before-blocks': ['warn', 'always'],
+			'@stylistic/space-before-function-paren': ['warn', 'always'],
+			'@stylistic/space-infix-ops': ['warn', {
 				int32Hint: true
 			}],
-			'@stylistic/js/space-unary-ops': ['warn', {
+			'@stylistic/space-unary-ops': ['warn', {
 				words: true,
 				nonwords: false
 			}],
-			'@stylistic/js/spaced-comment': ['warn', 'always', {
+			'@stylistic/spaced-comment': ['warn', 'always', {
 				markers: [
 					'*'
 				]
