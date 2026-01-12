@@ -86,16 +86,12 @@ const basicConfig = [
 		rules: {
 			...eslintPluginReact.configs.recommended.rules,
 			...eslintPluginReactHooks.configs.flat.recommended.rules,
-			// Disable React Compiler rules if not using React Compiler
-			'react-hooks/immutability': 'off',
-			'react-hooks/refs': 'off',
 			'react-hooks/preserve-manual-memoization': 'off',
 			'react-hooks/purity': 'off',
 			'react-hooks/set-state-in-effect': 'off',
 			'react-hooks/globals': 'off',
 			'react-hooks/static-components': 'off',
 			'react-hooks/use-memo': 'off',
-			//
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
 			'eqeqeq': ['warn', 'smart'],
