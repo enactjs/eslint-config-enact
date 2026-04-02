@@ -14,9 +14,9 @@
         "@stylistic/eslint-plugin": "^5.10.0",
         "@typescript-eslint/eslint-plugin": "^8.58.0",
         "@typescript-eslint/parser": "^8.58.0",
-        "babel-preset-enact": "^0.1.15",
-        "eslint": "^9.39.4",
-        "eslint-plugin-enact": "^2.0.3",
+        "babel-preset-enact": "github:enactjs/babel-preset-enact#release/0.1.16",
+        "eslint": "^9.20.0",
+        "eslint-plugin-enact": "github:enactjs/eslint-plugin-enact#release/2.0.4",
         "eslint-plugin-jest": "^29.15.1",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.5",
@@ -2647,19 +2647,18 @@
     },
     "node_modules/babel-preset-enact": {
       "version": "0.1.15",
-      "resolved": "https://registry.npmjs.org/babel-preset-enact/-/babel-preset-enact-0.1.15.tgz",
-      "integrity": "sha512-/w6eV97HMbp2Si5Kqb14WEvBw6p5bF/aEfDBCpt50h7TCsWkfGUX2JNfZYCGCuD+XaIxsHmwwYpnenIkerzYuw==",
+      "resolved": "git+ssh://git@github.com/enactjs/babel-preset-enact.git#ae183536655a6d1b4e2e38bead34228ef6083ef0",
       "license": "Apache-2.0",
       "dependencies": {
-        "@babel/core": "^7.28.5",
-        "@babel/plugin-proposal-decorators": "^7.28.0",
+        "@babel/core": "^7.29.0",
+        "@babel/plugin-proposal-decorators": "^7.29.0",
         "@babel/plugin-proposal-export-default-from": "^7.27.1",
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-        "@babel/plugin-transform-runtime": "^7.28.5",
-        "@babel/preset-env": "^7.28.5",
+        "@babel/plugin-transform-runtime": "^7.29.0",
+        "@babel/preset-env": "^7.29.2",
         "@babel/preset-react": "^7.28.5",
         "@babel/preset-typescript": "^7.28.5",
-        "@babel/runtime": "^7.28.4",
+        "@babel/runtime": "^7.29.2",
         "babel-plugin-dev-expression": "^0.2.3",
         "babel-plugin-dynamic-import-node": "^2.3.3",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
@@ -3284,13 +3283,12 @@
     },
     "node_modules/eslint-plugin-enact": {
       "version": "2.0.3",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.3.tgz",
-      "integrity": "sha512-zrBtSQpnPY3sIOOnbOnJg0A3SfNftxfCJdUEHQTaQCmkb27tOdlnv1rddQ+6Z/ssgFj3zoj0PSksyiJOGMBfuQ==",
+      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#44efa306c4ffbb40f1e41c41302a0118e2576852",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
         "jsx-ast-utils": "^3.3.5",
-        "minimatch": "^10.1.1"
+        "minimatch": "^10.2.5"
       },
       "engines": {
         "node": "^20.0.0 || >=22.0.0"
