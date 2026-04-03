@@ -16,7 +16,7 @@
         "@typescript-eslint/parser": "^8.58.0",
         "babel-preset-enact": "github:enactjs/babel-preset-enact#release/0.1.16",
         "eslint": "^9.20.0",
-        "eslint-plugin-enact": "github:enactjs/eslint-plugin-enact#release/2.0.4",
+        "eslint-plugin-enact": "^2.0.3",
         "eslint-plugin-jest": "^29.15.1",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.5",
@@ -3283,12 +3283,13 @@
     },
     "node_modules/eslint-plugin-enact": {
       "version": "2.0.3",
-      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#44efa306c4ffbb40f1e41c41302a0118e2576852",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.3.tgz",
+      "integrity": "sha512-zrBtSQpnPY3sIOOnbOnJg0A3SfNftxfCJdUEHQTaQCmkb27tOdlnv1rddQ+6Z/ssgFj3zoj0PSksyiJOGMBfuQ==",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
         "jsx-ast-utils": "^3.3.5",
-        "minimatch": "^10.2.5"
+        "minimatch": "^10.1.1"
       },
       "engines": {
         "node": "^20.0.0 || >=22.0.0"
