@@ -2,6 +2,11 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [5.1.0] (April 7, 2026)
+
+* Activated react compiler rules.
+* Updated dependencies.
+
 ## [5.0.3] (January 13, 2026)
 
 * Updated dependencies.
