@@ -10,9 +10,6 @@ const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const globals = require('globals');
-const stylisticEslintPluginRaw = require('@stylistic/eslint-plugin');
-
-const stylisticEslintPlugin = stylisticEslintPluginRaw.default || stylisticEslintPluginRaw;
 
 const customGlobals = {
 	__DEV__: true,
@@ -71,7 +68,6 @@ const basicConfig = [
 		},
 		plugins: {
 			'@babel': babelEslintPlugin,
-			'@stylistic': stylisticEslintPlugin,
 			'jsx-a11y': eslintPluginJsxA11y,
 			react: eslintPluginReact,
 			enact: eslintPluginEnact,
@@ -151,11 +147,10 @@ const basicConfig = [
 			'require-yield': 'off',
 			'use-isnan': 'warn',
 
-			// @stylistic plugin https://github.com/eslint-stylistic/eslint-stylistic
-			'@stylistic/new-parens': 'warn',
-			'@stylistic/no-floating-decimal': 'warn',
-			'@stylistic/no-trailing-spaces': 'warn',
-			'@stylistic/wrap-iife': ['error', 'inside'],
+			'new-parens': 'warn',
+			'no-floating-decimal': 'warn',
+			'no-trailing-spaces': 'warn',
+			'wrap-iife': ['error', 'inside'],
 
 			// jsx-a11y plugin https://github.com/evcohen/eslint-plugin-jsx-a11y
 			'jsx-a11y/alt-text': 'warn',
