@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [5.1.1] (June 1, 2026)
+
+* Removed @stylistic/eslint-plugin to fix unexpected lint errors. 
+
 ## [5.1.0] (April 7, 2026)
 
 * Activated react compiler rules.
