@@ -59,7 +59,6 @@ module.exports = [
 			'vars-on-top': 'warn',
 			'array-bracket-spacing': ['warn', 'never', {}],
 			'arrow-spacing': ['warn', {
-
 				before: true,
 				after: true
 			}],

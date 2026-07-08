@@ -5,7 +5,7 @@ const typescriptParser = require('@typescript-eslint/parser');
 const eslint = require('@eslint/js');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginJest = require('eslint-plugin-jest');
-const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
+const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y-x');
 const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
@@ -67,8 +67,8 @@ const basicConfig = [
 			reportUnusedDisableDirectives: "off"
 		},
 		plugins: {
-			'@babel': babelEslintPlugin,
-			'jsx-a11y': eslintPluginJsxA11y,
+			'@babel': babelEslintPlugin.default,
+			'jsx-a11y': eslintPluginJsxA11y.default,
 			react: eslintPluginReact,
 			enact: eslintPluginEnact,
 			'react-hooks': eslintPluginReactHooks
