@@ -15,7 +15,7 @@
         "@typescript-eslint/parser": "^8.60.1",
         "babel-preset-enact": "^0.1.17",
         "eslint": "^9.39.4",
-        "eslint-plugin-enact": "^2.0.4",
+        "eslint-plugin-enact": "^2.0.5",
         "eslint-plugin-jest": "^29.15.2",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.5",
@@ -2643,9 +2643,9 @@
       "license": "MIT"
     },
     "node_modules/babel-preset-enact": {
-      "version": "0.1.17",
-      "resolved": "https://registry.npmjs.org/babel-preset-enact/-/babel-preset-enact-0.1.17.tgz",
-      "integrity": "sha512-0x8sc//pDJazXhGvlOD4w8mecFVcUZvuiIi3JLK/1TBYZ7Q4/8jnXjii61OZyyGGwy30QCflf+WTy3A6rQubbg==",
+      "version": "0.1.18",
+      "resolved": "https://registry.npmjs.org/babel-preset-enact/-/babel-preset-enact-0.1.18.tgz",
+      "integrity": "sha512-zQzZImQfesnGQ6FRiNzypH3bzaapD1xhDxyndhSYzUUaLaPesV8TAXIJ1BPsQM17JbA/9BI/FHDsx95tGGFuLg==",
       "license": "Apache-2.0",
       "dependencies": {
         "@babel/core": "^7.29.7",
@@ -2672,9 +2672,9 @@
       }
     },
     "node_modules/baseline-browser-mapping": {
-      "version": "2.11.15",
-      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.15.tgz",
-      "integrity": "sha512-FwMjJJ7HnyZpWe+oWxegG0fezZyBZUagI5LZEoO3GCbtbKNwRfMH9Ue5d5v01PNePBy1QSfPSDTTeVL0Hb9EzA==",
+      "version": "2.11.16",
+      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.16.tgz",
+      "integrity": "sha512-H/bNPUFHewJHyCTdjn1n3Pit5+2GmWT6mmeHImPX+8MA9NA6b67jO4gYmi4jTbCJb2otq34KMZnovndDPqJwhQ==",
       "license": "Apache-2.0",
       "bin": {
         "baseline-browser-mapping": "dist/cli.cjs"
@@ -3021,9 +3021,9 @@
       }
     },
     "node_modules/electron-to-chromium": {
-      "version": "1.5.411",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.411.tgz",
-      "integrity": "sha512-gglkxzokjHfawpGxq75XdBV2/l3BAPzrsMs70qgaZdTW5rpV1tC4MdgJVP9fN126bODA4ZJQkn1wryEzJyQXIg==",
+      "version": "1.5.412",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.412.tgz",
+      "integrity": "sha512-z4rMe3esBzlzovKHj4gxJnsCGZRK5l4baUvm+gCGJBPE+gsyUMKsuU9tnEUtI1dOebXz1ytAPGjvXhmQ7rIPwA==",
       "license": "ISC"
     },
     "node_modules/emoji-regex": {
@@ -3247,6 +3247,7 @@
       "version": "9.39.5",
       "resolved": "https://registry.npmjs.org/eslint/-/eslint-9.39.5.tgz",
       "integrity": "sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==",
+      "deprecated": "This version is no longer supported. Please see https://eslint.org/version-support for other options.",
       "license": "MIT",
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.8.0",
@@ -3303,9 +3304,9 @@
       }
     },
     "node_modules/eslint-plugin-enact": {
-      "version": "2.0.4",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.4.tgz",
-      "integrity": "sha512-BGl2iswi85FUl/fTZ9WEQq+M6oHzcP4YjK4eCxaISeO/BIMjYenp76QHzKFNG20GFjeaK5Eo/Rpah7DhSkDLeQ==",
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.5.tgz",
+      "integrity": "sha512-THT/t3S03tPslMCcCMp5iSRNLKxq6AedKJcAHgXslekxfgNbp8pOi0VJaXBJ017CUkOuNtc5+D5gUXjt2ukItw==",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
