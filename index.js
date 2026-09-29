@@ -6,7 +6,7 @@ const eslint = require('@eslint/js');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginJest = require('eslint-plugin-jest');
 const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y-x');
-const eslintPluginReact = require('eslint-plugin-react');
+const eslintPluginReact = require('@eslint-react/eslint-plugin');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const globals = require('globals');
@@ -172,7 +172,7 @@ const basicConfig = [
 			'jsx-a11y/role-supports-aria-props': 'warn',
 			'jsx-a11y/scope': 'warn',
 
-			// react plugin https://github.com/yannickcr/eslint-plugin-react
+			// react plugin https://github.com/Rel1cx/eslint-react
 			'react/display-name': 'off',
 			'react/no-access-state-in-setstate': 'warn',
 			'react/no-children-prop': 'warn',

@@ -1,6 +1,6 @@
 const babelEslintPlugin = require('@babel/eslint-plugin');
 const eslintPluginEnact = require('eslint-plugin-enact');
-const eslintPluginReact = require('eslint-plugin-react');
+const eslintPluginReact = require('@eslint-react/eslint-plugin');
 
 const basicConfig = require('./index.js');
 
@@ -104,7 +104,7 @@ module.exports = [
 				]
 			}],
 
-			// react plugin https://github.com/yannickcr/eslint-plugin-react
+			// react plugin https://github.com/Rel1cx/eslint-react
 			'react/default-props-match-prop-types': 'warn',
 			'react/sort-comp': ['warn', {
 				order: [
