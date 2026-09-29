@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [5.1.3] (August 21, 2026)
+
+* Updated dependencies.
+
 ## [5.1.2] (June 23, 2026)
 
 * Updated dependencies.
