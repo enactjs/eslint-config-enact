@@ -2,6 +2,14 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Updated `eslint` to version 10.
+* Replaced `eslint-plugin-react`, which does not support ESLint 10, with `@eslint-react/eslint-plugin` and `@stylistic/eslint-plugin`. The `react/*` rule names are kept, so existing `eslint-disable` comments and config overrides keep working. Rules without a replacement are kept as no-ops.
+* Changed `@babel/eslint-parser` to parse only the syntax enabled by `babel-preset-enact` instead of loading the preset, and to let ESLint track JSX references.
+* Replaced `@babel/object-curly-spacing` and `@babel/semi`, removed in `@babel/eslint-plugin` 8, with `@stylistic/object-curly-spacing` and `semi`.
+* Turned off `radix`, since ESLint 10 no longer supports its `as-needed` option.
+
 ## [5.1.3] (August 21, 2026)
 
 * Updated dependencies.

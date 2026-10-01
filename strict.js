@@ -1,6 +1,7 @@
 const babelEslintPlugin = require('@babel/eslint-plugin');
 const eslintPluginEnact = require('eslint-plugin-enact');
-const eslintPluginReact = require('@eslint-react/eslint-plugin');
+const stylisticEslintPlugin = require('@stylistic/eslint-plugin');
+const eslintPluginReact = require('./react-compat');
 
 const basicConfig = require('./index.js');
 
@@ -9,8 +10,9 @@ module.exports = [
 	{
 		plugins: {
 			react: eslintPluginReact,
-			'@babel': babelEslintPlugin,
-			enact: eslintPluginEnact
+			'@babel': babelEslintPlugin.default,
+			'@stylistic': stylisticEslintPlugin,
+			enact: eslintPluginEnact,
 		},
 		rules: {
 			'camelcase': ['warn', {
@@ -50,7 +52,8 @@ module.exports = [
 			'no-useless-escape': 'warn',
 			'no-useless-return': 'warn',
 			'prefer-spread': 'warn',
-			'radix': ['warn', 'as-needed'],
+			// ESLint 10 ignores the deprecated `as-needed` option and always requires a radix
+			'radix': 'off',
 			'semi-spacing': ['warn', {
 				before: false,
 				after: true
@@ -104,47 +107,52 @@ module.exports = [
 				]
 			}],
 
-			// react plugin https://github.com/Rel1cx/eslint-react
-			'react/default-props-match-prop-types': 'warn',
-			'react/sort-comp': ['warn', {
-				order: [
-					'static-variables',
-					'static-methods',
-					'lifecycle',
-					'everything-else',
-					'render'
-				]
-			}],
-			'react/sort-prop-types': ['warn', {
-				ignoreCase: true,
-				requiredFirst: true,
-				sortShapeProp: true
-			}],
+			// react plugin (./react-compat)
 			'react/void-dom-elements-no-children': 'error',
 
+			// eslint-plugin-react rules without a replacement in ESLint React or @stylistic. They are registered as
+			// no-ops in ./react-compat so existing disable directives stay valid.
+			// 'react/default-props-match-prop-types': 'warn',
+			// 'react/forbid-foreign-prop-types': 'warn',
+			// 'react/sort-comp': ['warn', {
+			// 	order: [
+			// 		'static-variables',
+			// 		'static-methods',
+			// 		'lifecycle',
+			// 		'everything-else',
+			// 		'render'
+			// 	]
+			// }],
+			// 'react/sort-default-props': ['warn', {
+			// 	ignoreCase: true
+			// }],
+			// 'react/sort-prop-types': ['warn', {
+			// 	ignoreCase: true,
+			// 	requiredFirst: true,
+			// 	sortShapeProp: true
+			// }],
+
 			// react plugin - jsx rules
-			'react/forbid-foreign-prop-types': 'warn',
 			'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 			'react/jsx-curly-spacing': ['warn', 'never'],
 			'react/jsx-equals-spacing': ['warn', 'never'],
 			'react/jsx-first-prop-new-line': ['warn', 'multiline'],
-			'react/jsx-indent': ['warn', 'tab'],
+			// Covered by the core `indent` rule above
+			// 'react/jsx-indent': ['warn', 'tab'],
 			'react/jsx-indent-props': ['warn', 'tab'],
 			'react/jsx-props-no-multi-spaces': 'warn',
-			'react/sort-default-props': ['warn', {
-				ignoreCase: true
-			}],
 			'react/jsx-tag-spacing': ['warn', {
 				closingSlash: 'never',
 				beforeSelfClosing: 'always',
 				afterOpening: 'never'
 			}],
 
-			// babel plugin https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin
-			'@babel/object-curly-spacing': ['warn', 'never'],
+			// @babel/eslint-plugin 8 dropped its object-curly-spacing and semi rules.
+			// The core object-curly-spacing rule misreports `export Foo from './Foo'`, @stylistic handles it.
+			'@stylistic/object-curly-spacing': ['warn', 'never'],
 			// According to spec, class properties should end with semicolon
 			// https://github.com/tc39/proposal-class-public-fields/issues/25
-			'@babel/semi': ['warn', 'always'],
+			'semi': ['warn', 'always'],
 
 			// enact plugin https://github.com/enactjs/eslint-plugin-enact/
 			'enact/display-name': 'warn',
