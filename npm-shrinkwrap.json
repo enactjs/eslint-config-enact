@@ -18,7 +18,7 @@
         "@typescript-eslint/eslint-plugin": "^8.71.0",
         "@typescript-eslint/parser": "^8.71.0",
         "eslint": "^10.11.0",
-        "eslint-plugin-enact": "^2.0.5",
+        "eslint-plugin-enact": "enactjs/eslint-plugin-enact#feature/NXT-10859-1",
         "eslint-plugin-jest": "^29.16.6",
         "eslint-plugin-jsx-a11y-x": "^0.2.0",
         "eslint-plugin-react-hooks": "^7.1.1",
@@ -1888,8 +1888,7 @@
     },
     "node_modules/eslint-plugin-enact": {
       "version": "2.0.5",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-enact/-/eslint-plugin-enact-2.0.5.tgz",
-      "integrity": "sha512-THT/t3S03tPslMCcCMp5iSRNLKxq6AedKJcAHgXslekxfgNbp8pOi0VJaXBJ017CUkOuNtc5+D5gUXjt2ukItw==",
+      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#fad289e1204e3ce6576b50c8e4de0f0404cd3445",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
@@ -1897,10 +1896,10 @@
         "minimatch": "^10.2.5"
       },
       "engines": {
-        "node": "^20.0.0 || >=22.0.0"
+        "node": ">=20.19.0 || >=22.13.0 || >=24.0.0"
       },
       "peerDependencies": {
-        "eslint": ">=9.0.0"
+        "eslint": ">=10.0.0"
       }
     },
     "node_modules/eslint-plugin-jest": {
