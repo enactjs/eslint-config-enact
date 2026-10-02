@@ -1,5 +1,4 @@
-// Adapted from the `jsx-no-duplicate-props` recipe in the ESLint React migration guide:
-// https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react#jsx-no-duplicate-props
+// Port of eslint-plugin-react `jsx-no-duplicate-props` (https://github.com/jsx-eslint/eslint-plugin-react, MIT).
 module.exports = {
 	meta: {
 		type: 'problem',
@@ -14,7 +13,7 @@ module.exports = {
 			additionalProperties: false
 		}],
 		messages: {
-			duplicate: 'No duplicate props allowed: `{{name}}`'
+			noDuplicateProps: 'No duplicate props allowed'
 		}
 	},
 	create (context) {
@@ -25,15 +24,15 @@ module.exports = {
 				const seen = new Set();
 
 				for (const attr of node.attributes) {
-					if (attr.type !== 'JSXAttribute') continue;
+					// Namespaced names (`a:b`) are ignored, like the original rule
+					if (attr.type !== 'JSXAttribute' || typeof attr.name.name !== 'string') continue;
 
-					const name = context.sourceCode.getText(attr.name);
-					const key = ignoreCase ? name.toLowerCase() : name;
+					const name = ignoreCase ? attr.name.name.toLowerCase() : attr.name.name;
 
-					if (seen.has(key)) {
-						context.report({node: attr, messageId: 'duplicate', data: {name}});
+					if (seen.has(name)) {
+						context.report({node: attr, messageId: 'noDuplicateProps'});
 					} else {
-						seen.add(key);
+						seen.add(name);
 					}
 				}
 			}

@@ -1,27 +1,41 @@
-// Adapted from the `no-string-refs` recipe in the ESLint React migration guide:
-// https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react#no-string-refs
+// Port of the JSX part of eslint-plugin-react `no-string-refs` (https://github.com/jsx-eslint/eslint-plugin-react, MIT).
+// The `this.refs` check of the original is not ported: string refs are not supported since React 19.
 module.exports = {
 	meta: {
 		type: 'problem',
 		docs: {
-			description: 'Disallow string refs'
+			description: 'Disallow using string references'
 		},
-		schema: [],
+		schema: [{
+			type: 'object',
+			properties: {
+				noTemplateLiterals: {type: 'boolean'}
+			},
+			additionalProperties: false
+		}],
 		messages: {
-			stringRef: 'String refs are not supported. Use `useRef()` or a callback ref instead'
+			stringInRefDeprecated: 'Using string literals in ref attributes is deprecated.'
 		}
 	},
 	create (context) {
+		const {noTemplateLiterals = false} = context.options[0] || {};
+
+		const isString = (value) => {
+			if (value?.type === 'Literal') return typeof value.value === 'string';
+
+			if (value?.type === 'JSXExpressionContainer') {
+				const {expression} = value;
+				return (expression.type === 'Literal' && typeof expression.value === 'string') ||
+					(expression.type === 'TemplateLiteral' && noTemplateLiterals);
+			}
+
+			return false;
+		};
+
 		return {
 			JSXAttribute (node) {
-				if (node.name.type !== 'JSXIdentifier' || node.name.name !== 'ref') return;
-
-				const {value} = node;
-				const isString = value?.type === 'Literal' ||
-					(value?.type === 'JSXExpressionContainer' && value.expression.type === 'TemplateLiteral');
-
-				if (isString) {
-					context.report({node, messageId: 'stringRef'});
+				if (node.name.type === 'JSXIdentifier' && node.name.name === 'ref' && isString(node.value)) {
+					context.report({node, messageId: 'stringInRefDeprecated'});
 				}
 			}
 		};
