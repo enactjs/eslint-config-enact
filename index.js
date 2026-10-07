@@ -1,12 +1,12 @@
 const babelEslintPlugin = require('@babel/eslint-plugin');
-const babelParser = require('@babel/eslint-parser');
+const babelParser = require('./babel-parser');
 const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
 const typescriptParser = require('@typescript-eslint/parser');
 const eslint = require('@eslint/js');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginJest = require('eslint-plugin-jest');
-const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
-const eslintPluginReact = require('eslint-plugin-react');
+const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y-x');
+const eslintPluginReact = require('./react-compat');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const globals = require('globals');
@@ -58,8 +58,15 @@ const basicConfig = [
 					jsx: true
 				},
 				requireConfigFile: false,
+				// Linting only needs to parse, so enable the non-standard syntax babel-preset-enact supports in .js
+				// files instead of loading the preset (its Babel 7 plugins cannot run on @babel/eslint-parser 8).
+				// Decorators are only enabled for TypeScript, which is parsed by @typescript-eslint/parser.
 				babelOptions: {
-					presets: [require.resolve('babel-preset-enact')]
+					babelrc: false,
+					configFile: false,
+					parserOpts: {
+						plugins: ['jsx', 'exportDefaultFrom']
+					}
 				}
 			}
 		},
@@ -67,20 +74,18 @@ const basicConfig = [
 			reportUnusedDisableDirectives: "off"
 		},
 		plugins: {
-			'@babel': babelEslintPlugin,
-			'jsx-a11y': eslintPluginJsxA11y,
+			'@babel': babelEslintPlugin.default,
+			'jsx-a11y': eslintPluginJsxA11y.default,
 			react: eslintPluginReact,
 			enact: eslintPluginEnact,
 			'react-hooks': eslintPluginReactHooks
 		},
 		settings: {
-			react: {
-				'pragma': 'React',	// Pragma to use, default to "React"
-				'version': 'detect' // React version, default to the latest React stable release
+			'react-x': {
+				version: 'detect' // React version, default to the latest React stable release
 			}
 		},
 		rules: {
-			...eslintPluginReact.configs.recommended.rules,
 			...eslintPluginReactHooks.configs.flat.recommended.rules,
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
@@ -172,44 +177,49 @@ const basicConfig = [
 			'jsx-a11y/role-supports-aria-props': 'warn',
 			'jsx-a11y/scope': 'warn',
 
-			// react plugin https://github.com/yannickcr/eslint-plugin-react
-			'react/display-name': 'off',
+			// react plugin (./react-compat): eslint-plugin-react rule names backed by
+			// ESLint React https://github.com/Rel1cx/eslint-react and @stylistic https://eslint.style
 			'react/no-access-state-in-setstate': 'warn',
 			'react/no-children-prop': 'warn',
 			'react/no-danger': 'warn',
-			'react/no-deprecated': 'warn',
-			'react/no-did-mount-set-state': ['warn'],
-			'react/no-did-update-set-state': ['warn'],
+			'react/no-danger-with-children': 'error',
+			'react/no-did-mount-set-state': 'warn',
+			'react/no-did-update-set-state': 'warn',
 			'react/no-direct-mutation-state': 'warn',
 			'react/no-find-dom-node': 'warn',
-			'react/forbid-foreign-prop-types': 'warn',
-			'react/no-is-mounted': 'warn',
 			'react/no-render-return-value': 'warn',
 			'react/no-string-refs': 'warn',
-			'react/no-this-in-sfc': 'warn',
-			'react/no-unescaped-entities': 'warn',
 			'react/no-unknown-property': 'warn',
-			'react/prefer-es6-class': ['warn', 'always'],
-			'react/prop-types': 'off',
-			'react/react-in-jsx-scope': 'off',
-			'react/require-render-return': 'warn',
 			'react/self-closing-comp': 'warn',
+
+			// replacements for eslint-plugin-react `no-deprecated`
+			'react/no-component-will-mount': 'warn',
+			'react/no-component-will-receive-props': 'warn',
+			'react/no-component-will-update': 'warn',
+			'react/dom-no-hydrate': 'warn',
+			'react/dom-no-render': 'warn',
 
 			// react plugin - jsx rules
 			'react/jsx-boolean-value': ['warn', 'never'],
-			'react/jsx-key': 'off',
 			'react/jsx-no-bind': ['warn', {
-				ignoreRefs: true,
-				allowArrowFunctions: false,
-				allowBind: false
+				ignoreRefs: true
 			}],
 			'react/jsx-no-comment-textnodes': 'warn',
 			'react/jsx-no-duplicate-props': 'warn',
 			'react/jsx-no-target-blank': 'warn',
-			'react/jsx-no-undef': 'warn',
 			'react/jsx-pascal-case': 'warn',
-			'react/jsx-uses-react': 'off',
-			'react/jsx-uses-vars': 'warn',
+
+			// eslint-plugin-react rules without a replacement in ESLint React or @stylistic. They are registered as
+			// no-ops in ./react-compat so existing disable directives stay valid.
+			// 'react/forbid-foreign-prop-types': 'warn',
+			// 'react/no-is-mounted': 'warn',
+			// 'react/no-this-in-sfc': 'warn',
+			// 'react/no-unescaped-entities': 'warn',
+			// 'react/prefer-es6-class': ['warn', 'always'],
+			// 'react/require-render-return': 'warn',
+			// Covered by ESLint core since v10, which tracks JSX references in `no-undef` and `no-unused-vars`
+			// 'react/jsx-no-undef': 'warn',
+			// 'react/jsx-uses-vars': 'warn',
 
 			// babel plugin https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin
 			'@babel/new-cap': ['error', {
