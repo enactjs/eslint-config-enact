@@ -87,9 +87,9 @@ module.exports = {
 
 				if (value.type === 'Identifier') {
 					for (const block of getBlockAncestors(node)) {
-						const type = blockNames.get(block)?.get(value.name);
-						if (type) {
-							context.report({node, messageId: type});
+						const variableType = blockNames.get(block)?.get(value.name);
+						if (variableType) {
+							context.report({node, messageId: variableType});
 							return;
 						}
 					}
