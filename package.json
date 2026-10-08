@@ -17,8 +17,7 @@
     "url": "https://github.com/enactjs/eslint-config-enact.git"
   },
   "peerDependencies": {
-    "eslint": "^9.39.5",
-    "react": ">=19.2.7"
+    "eslint": "^9.39.5"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.29.9",
