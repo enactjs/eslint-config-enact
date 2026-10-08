@@ -2,6 +2,10 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
+## [unreleased]
+
+* Removed `react` dependency to avoid upgrading the consumer's `react` out of sync with `react-dom`. `eslint-plugin-react` detects the React version from the linted project.
+
 ## [5.1.3] (August 21, 2026)
 
 * Updated dependencies.
