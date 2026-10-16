@@ -5,6 +5,7 @@ The following is a curated list of changes in the Enact eslint config:
 ## [unreleased]
 
 * Updated `eslint` to version 10.
+* Updated the minimum version of Node to `^20.19.0 || ^22.13.0 || >=24.0.0`, the range supported by ESLint 10.
 * Replaced `eslint-plugin-react`, which does not support ESLint 10, with `@eslint-react/eslint-plugin` and `@stylistic/eslint-plugin`, following the [ESLint React migration guide](https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react). Rules use their new names (`@eslint-react/*`, `@stylistic/*`), so `react/*` rule names in `eslint-disable` comments and config overrides must be updated.
 * Replaced `react/jsx-boolean-value`, `react/jsx-no-bind`, `react/jsx-no-duplicate-props` and `react/jsx-props-no-multi-spaces` with the `enact/*` rules of the same name from `eslint-plugin-enact`.
 * Removed `eslint-plugin-react` rules without a replacement, mostly for `propTypes` and class components: `default-props-match-prop-types`, `forbid-foreign-prop-types`, `no-is-mounted`, `no-string-refs`, `no-this-in-sfc`, `no-unescaped-entities`, `prefer-es6-class`, `require-render-return`, `sort-comp`, `sort-default-props` and `sort-prop-types`.
