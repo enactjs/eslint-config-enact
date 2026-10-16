@@ -1,7 +1,6 @@
 const babelEslintPlugin = require('@babel/eslint-plugin');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const stylisticEslintPlugin = require('@stylistic/eslint-plugin');
-const eslintPluginReact = require('./react-compat');
 
 const basicConfig = require('./index.js');
 
@@ -9,7 +8,6 @@ module.exports = [
 	...basicConfig,
 	{
 		plugins: {
-			react: eslintPluginReact,
 			'@babel': babelEslintPlugin.default,
 			'@stylistic': stylisticEslintPlugin,
 			enact: eslintPluginEnact,
@@ -107,45 +105,24 @@ module.exports = [
 				]
 			}],
 
-			// react plugin (./react-compat)
-			'react/void-dom-elements-no-children': 'error',
+			// ESLint React https://eslint-react.xyz
+			'@eslint-react/dom-no-void-elements-with-children': 'error',
 
-			// eslint-plugin-react rules without a replacement in ESLint React or @stylistic. They are registered as
-			// no-ops in ./react-compat so existing disable directives stay valid.
-			// 'react/default-props-match-prop-types': 'warn',
-			// 'react/forbid-foreign-prop-types': 'warn',
-			// 'react/sort-comp': ['warn', {
-			// 	order: [
-			// 		'static-variables',
-			// 		'static-methods',
-			// 		'lifecycle',
-			// 		'everything-else',
-			// 		'render'
-			// 	]
-			// }],
-			// 'react/sort-default-props': ['warn', {
-			// 	ignoreCase: true
-			// }],
-			// 'react/sort-prop-types': ['warn', {
-			// 	ignoreCase: true,
-			// 	requiredFirst: true,
-			// 	sortShapeProp: true
-			// }],
-
-			// react plugin - jsx rules
-			'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
-			'react/jsx-curly-spacing': ['warn', 'never'],
-			'react/jsx-equals-spacing': ['warn', 'never'],
-			'react/jsx-first-prop-new-line': ['warn', 'multiline'],
-			// Covered by the core `indent` rule above
-			// 'react/jsx-indent': ['warn', 'tab'],
-			'react/jsx-indent-props': ['warn', 'tab'],
-			'react/jsx-props-no-multi-spaces': 'warn',
-			'react/jsx-tag-spacing': ['warn', {
+			// @stylistic plugin https://eslint.style
+			'@stylistic/jsx-closing-bracket-location': ['warn', 'line-aligned'],
+			'@stylistic/jsx-curly-spacing': ['warn', 'never'],
+			'@stylistic/jsx-equals-spacing': ['warn', 'never'],
+			'@stylistic/jsx-first-prop-new-line': ['warn', 'multiline'],
+			// jsx-indent is covered by the core `indent` rule above
+			'@stylistic/jsx-indent-props': ['warn', 'tab'],
+			'@stylistic/jsx-tag-spacing': ['warn', {
 				closingSlash: 'never',
 				beforeSelfClosing: 'always',
 				afterOpening: 'never'
 			}],
+
+			// eslint-plugin-react rule without a non-deprecated replacement, provided by eslint-plugin-enact
+			'enact/jsx-props-no-multi-spaces': 'warn',
 
 			// @babel/eslint-plugin 8 dropped its object-curly-spacing and semi rules.
 			// The core object-curly-spacing rule misreports `export Foo from './Foo'`, @stylistic handles it.

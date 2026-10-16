@@ -5,11 +5,13 @@ The following is a curated list of changes in the Enact eslint config:
 ## [unreleased]
 
 * Updated `eslint` to version 10.
-* Replaced `eslint-plugin-react`, which does not support ESLint 10, with `@eslint-react/eslint-plugin` and `@stylistic/eslint-plugin`. The `react/*` rule names are kept, so existing `eslint-disable` comments and config overrides keep working. Rules without a replacement are kept as no-ops.
+* Replaced `eslint-plugin-react`, which does not support ESLint 10, with `@eslint-react/eslint-plugin` and `@stylistic/eslint-plugin`, following the [ESLint React migration guide](https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react). Rules use their new names (`@eslint-react/*`, `@stylistic/*`), so `react/*` rule names in `eslint-disable` comments and config overrides must be updated.
+* Replaced `react/jsx-boolean-value`, `react/jsx-no-bind`, `react/jsx-no-duplicate-props` and `react/jsx-props-no-multi-spaces` with the `enact/*` rules of the same name from `eslint-plugin-enact`.
+* Removed `eslint-plugin-react` rules without a replacement, mostly for `propTypes` and class components: `default-props-match-prop-types`, `forbid-foreign-prop-types`, `no-is-mounted`, `no-string-refs`, `no-this-in-sfc`, `no-unescaped-entities`, `prefer-es6-class`, `require-render-return`, `sort-comp`, `sort-default-props` and `sort-prop-types`.
 * Changed `@babel/eslint-parser` to parse only the syntax enabled by `babel-preset-enact` instead of loading the preset, and to let ESLint track JSX references.
 * Replaced `@babel/object-curly-spacing` and `@babel/semi`, removed in `@babel/eslint-plugin` 8, with `@stylistic/object-curly-spacing` and `semi`.
 * Turned off `radix`, since ESLint 10 no longer supports its `as-needed` option.
-* Removed `react` dependency to avoid upgrading the consumer's `react` out of sync with `react-dom`. `eslint-plugin-react` detects the React version from the linted project.
+* Removed `react` dependency to avoid upgrading the consumer's `react` out of sync with `react-dom`. `@eslint-react/eslint-plugin` detects the React version from the linted project.
 
 ## [5.1.3] (August 21, 2026)
 
