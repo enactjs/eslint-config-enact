@@ -1884,7 +1884,7 @@
     },
     "node_modules/eslint-plugin-enact": {
       "version": "2.0.5",
-      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#d8dd97853552bb6aa485f730f53d4f638febf7e9",
+      "resolved": "git+ssh://git@github.com/enactjs/eslint-plugin-enact.git#49a280d4ff62fb206abd5ecad719b0abd1d69aa1",
       "license": "Apache-2.0",
       "dependencies": {
         "doctrine": "^3.0.0",
@@ -1892,7 +1892,7 @@
         "minimatch": "^10.2.6"
       },
       "engines": {
-        "node": ">=20.19.0 || >=22.13.0 || >=24.0.0"
+        "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
       },
       "peerDependencies": {
         "eslint": ">=10.0.0"
