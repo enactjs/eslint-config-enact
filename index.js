@@ -12,6 +12,8 @@ const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
 const stylisticEslintPlugin = require('@stylistic/eslint-plugin');
 const globals = require('globals');
 
+// TODO: remove together with @eslint-react/eslint-plugin once eslint-plugin-react supports ESLint 10
+// (see the TODO at the React rules below).
 // @eslint-react/eslint-plugin is ESM-only and its package `exports` only defines an `import` condition,
 // so a bare `require()` fails with ERR_PACKAGE_PATH_NOT_EXPORTED. Resolve the entry file directly and let
 // Node's require(esm) load it (supported by all Node versions in `engines`).
@@ -202,6 +204,7 @@ const basicConfig = [
 			'jsx-a11y/role-supports-aria-props': 'warn',
 			'jsx-a11y/scope': 'warn',
 
+			// TODO: switch back to eslint-plugin-react once a release supports ESLint 10
 			// ESLint React https://eslint-react.xyz
 			// Replaces eslint-plugin-react, which does not support ESLint 10. Rule names follow
 			// https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react

@@ -105,6 +105,7 @@ module.exports = [
 				]
 			}],
 
+			// TODO: switch back to eslint-plugin-react rules once it supports ESLint 10 (see the TODO in index.js)
 			// ESLint React https://eslint-react.xyz
 			'@eslint-react/dom-no-void-elements-with-children': 'error',
 
