@@ -1,15 +1,41 @@
+const path = require('path');
 const babelEslintPlugin = require('@babel/eslint-plugin');
-const babelParser = require('@babel/eslint-parser');
+const babelEslintParser = require('@babel/eslint-parser');
 const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
 const typescriptParser = require('@typescript-eslint/parser');
 const eslint = require('@eslint/js');
 const eslintPluginEnact = require('eslint-plugin-enact');
 const eslintPluginJest = require('eslint-plugin-jest');
-const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
-const eslintPluginReact = require('eslint-plugin-react');
+const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y-x');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginTestingLibrary = require('eslint-plugin-testing-library');
+const stylisticEslintPlugin = require('@stylistic/eslint-plugin');
 const globals = require('globals');
+
+// TODO: remove together with @eslint-react/eslint-plugin once eslint-plugin-react supports ESLint 10
+// (see the TODO at the React rules below).
+// @eslint-react/eslint-plugin is ESM-only and its package `exports` only defines an `import` condition,
+// so a bare `require()` fails with ERR_PACKAGE_PATH_NOT_EXPORTED. Resolve the entry file directly and let
+// Node's require(esm) load it (supported by all Node versions in `engines`).
+const eslintReactDir = path.dirname(require.resolve('@eslint-react/eslint-plugin/package.json'));
+const eslintReactPlugin = require(path.join(eslintReactDir, 'dist', 'index.js')).default;
+
+// Wraps @babel/eslint-parser so ESLint performs its own scope analysis.
+//
+// The scope manager built by @babel/eslint-parser does not track JSX references, so components used only in
+// JSX were reported by `no-unused-vars` and `no-useless-assignment`. ESLint 10 tracks JSX references natively
+// when the parser does not provide a scope manager. Babel's scope manager only adds handling for Flow/TS type
+// annotations and decorators, which are not enabled for the files parsed here.
+const babelParser = {
+	meta: {
+		name: 'eslint-config-enact/babel-parser'
+	},
+	parseForESLint (code, options) {
+		// eslint-disable-next-line no-unused-vars
+		const {scopeManager, ...result} = babelEslintParser.parseForESLint(code, options);
+		return result;
+	}
+};
 
 const customGlobals = {
 	__DEV__: true,
@@ -58,8 +84,15 @@ const basicConfig = [
 					jsx: true
 				},
 				requireConfigFile: false,
+				// Linting only needs to parse, so enable the non-standard syntax babel-preset-enact supports in .js
+				// files instead of loading the preset (its Babel 7 plugins cannot run on @babel/eslint-parser 8).
+				// Decorators are only enabled for TypeScript, which is parsed by @typescript-eslint/parser.
 				babelOptions: {
-					presets: [require.resolve('babel-preset-enact')]
+					babelrc: false,
+					configFile: false,
+					parserOpts: {
+						plugins: ['jsx', 'exportDefaultFrom']
+					}
 				}
 			}
 		},
@@ -67,20 +100,19 @@ const basicConfig = [
 			reportUnusedDisableDirectives: "off"
 		},
 		plugins: {
-			'@babel': babelEslintPlugin,
-			'jsx-a11y': eslintPluginJsxA11y,
-			react: eslintPluginReact,
+			'@babel': babelEslintPlugin.default,
+			'@eslint-react': eslintReactPlugin,
+			'@stylistic': stylisticEslintPlugin,
+			'jsx-a11y': eslintPluginJsxA11y.default,
 			enact: eslintPluginEnact,
 			'react-hooks': eslintPluginReactHooks
 		},
 		settings: {
-			react: {
-				'pragma': 'React',	// Pragma to use, default to "React"
-				'version': 'detect' // React version, default to the latest React stable release
+			'react-x': {
+				version: 'detect' // React version, default to the latest React stable release
 			}
 		},
 		rules: {
-			...eslintPluginReact.configs.recommended.rules,
 			...eslintPluginReactHooks.configs.flat.recommended.rules,
 			'block-scoped-var': 'warn',
 			'curly': ['warn', 'multi-line'],
@@ -172,44 +204,40 @@ const basicConfig = [
 			'jsx-a11y/role-supports-aria-props': 'warn',
 			'jsx-a11y/scope': 'warn',
 
-			// react plugin https://github.com/yannickcr/eslint-plugin-react
-			'react/display-name': 'off',
-			'react/no-access-state-in-setstate': 'warn',
-			'react/no-children-prop': 'warn',
-			'react/no-danger': 'warn',
-			'react/no-deprecated': 'warn',
-			'react/no-did-mount-set-state': ['warn'],
-			'react/no-did-update-set-state': ['warn'],
-			'react/no-direct-mutation-state': 'warn',
-			'react/no-find-dom-node': 'warn',
-			'react/forbid-foreign-prop-types': 'warn',
-			'react/no-is-mounted': 'warn',
-			'react/no-render-return-value': 'warn',
-			'react/no-string-refs': 'warn',
-			'react/no-this-in-sfc': 'warn',
-			'react/no-unescaped-entities': 'warn',
-			'react/no-unknown-property': 'warn',
-			'react/prefer-es6-class': ['warn', 'always'],
-			'react/prop-types': 'off',
-			'react/react-in-jsx-scope': 'off',
-			'react/require-render-return': 'warn',
-			'react/self-closing-comp': 'warn',
+			// TODO: switch back to eslint-plugin-react once a release supports ESLint 10
+			// ESLint React https://eslint-react.xyz
+			// Replaces eslint-plugin-react, which does not support ESLint 10. Rule names follow
+			// https://eslint-react.xyz/docs/migrating-from-eslint-plugin-react
+			'@eslint-react/dom-no-dangerously-set-innerhtml': 'warn',
+			'@eslint-react/dom-no-dangerously-set-innerhtml-with-children': 'error',
+			'@eslint-react/dom-no-find-dom-node': 'warn',
+			'@eslint-react/dom-no-render-return-value': 'warn',
+			'@eslint-react/dom-no-unknown-property': 'warn',
+			'@eslint-react/dom-no-unsafe-target-blank': 'warn',
+			'@eslint-react/jsx-no-children-prop': 'warn',
+			'@eslint-react/jsx-no-comment-textnodes': 'warn',
+			'@eslint-react/no-access-state-in-setstate': 'warn',
+			'@eslint-react/no-direct-mutation-state': 'warn',
+			'@eslint-react/no-set-state-in-component-did-mount': 'warn',
+			'@eslint-react/no-set-state-in-component-did-update': 'warn',
 
-			// react plugin - jsx rules
-			'react/jsx-boolean-value': ['warn', 'never'],
-			'react/jsx-key': 'off',
-			'react/jsx-no-bind': ['warn', {
-				ignoreRefs: true,
-				allowArrowFunctions: false,
-				allowBind: false
+			// replacements for eslint-plugin-react `no-deprecated`
+			'@eslint-react/dom-no-hydrate': 'warn',
+			'@eslint-react/dom-no-render': 'warn',
+			'@eslint-react/no-component-will-mount': 'warn',
+			'@eslint-react/no-component-will-receive-props': 'warn',
+			'@eslint-react/no-component-will-update': 'warn',
+
+			// @stylistic plugin https://eslint.style
+			'@stylistic/jsx-pascal-case': 'warn',
+			'@stylistic/jsx-self-closing-comp': 'warn',
+
+			// eslint-plugin-react rules without a replacement in ESLint React or @stylistic, provided by eslint-plugin-enact
+			'enact/jsx-boolean-value': ['warn', 'never'],
+			'enact/jsx-no-bind': ['warn', {
+				ignoreRefs: true
 			}],
-			'react/jsx-no-comment-textnodes': 'warn',
-			'react/jsx-no-duplicate-props': 'warn',
-			'react/jsx-no-target-blank': 'warn',
-			'react/jsx-no-undef': 'warn',
-			'react/jsx-pascal-case': 'warn',
-			'react/jsx-uses-react': 'off',
-			'react/jsx-uses-vars': 'warn',
+			'enact/jsx-no-duplicate-props': 'warn',
 
 			// babel plugin https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin
 			'@babel/new-cap': ['error', {
@@ -293,7 +321,7 @@ const basicConfig = [
 		},
 		rules: {
 			// Arrow functions can simplify tests
-			'react/jsx-no-bind': 'off',
+			'enact/jsx-no-bind': 'off',
 
 			// jest plugin https://github.com/jest-community/eslint-plugin-jest
 			'jest/no-conditional-expect': 'warn',
@@ -336,7 +364,7 @@ const basicConfig = [
 		},
 		rules: {
 			// Arrow functions can simplify tests
-			'react/jsx-no-bind': 'off'
+			'enact/jsx-no-bind': 'off'
 		}
 	}
 ];
