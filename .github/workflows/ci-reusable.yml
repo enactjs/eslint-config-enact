@@ -16,9 +16,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    env:
-      NPM_CONFIG_ALLOW_GIT: all
-
     strategy:
       matrix:
         node-version: ['node']
