@@ -2,7 +2,7 @@
 
 The following is a curated list of changes in the Enact eslint config:
 
-## [unreleased]
+## [6.0.0] (November 9, 2026)
 
 * Updated `eslint` to version 10.
 * Updated the minimum version of Node to `^20.19.0 || ^22.13.0 || >=24.0.0`, the range supported by ESLint 10.
