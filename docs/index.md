@@ -66,7 +66,7 @@ module.exports = [
 ];
 ```
 
->**NOTE**: `eslint-config-enact-proxy` 2.x requires ESLint 9 or later. Configuration through `.eslintrc` files or the `eslintConfig` property in `package.json` is no longer supported by ESLint.
+>**NOTE**: `eslint-config-enact-proxy` 2.x requires ESLint 10 or later. Configuration through `.eslintrc` files or the `eslintConfig` property in `package.json` is no longer supported by ESLint.
 
 With `eslint-config-enact-proxy` and `eslint` installed in the project, the editors below find ESLint and `eslint.config.js` automatically, so only the ESLint plugin for your editor is needed.  Jump to the section relevant to your editor.
 
@@ -153,6 +153,6 @@ Atom was [retired by GitHub](https://github.blog/open-source/git/sunsetting-atom
 If in-editor linting is not working in your local project, be sure that:
 
 * `eslint-config-enact-proxy` is installed locally and `eslint.config.js` is set up as described above.
-* ESLint 9 or later is installed in the project's `node_modules` (run `npm ls eslint`), or your editor is pointed to another ESLint 9 or later package as described above.
+* ESLint 10 or later is installed in the project's `node_modules` (run `npm ls eslint`), or your editor is pointed to another ESLint 10 or later package as described above.
 * `@enact/cli` (or `eslint-config-enact`) is installed globally. If the proxy cannot find it, ESLint reports an error that starts with `eslint-config-enact-proxy: Unable to find "eslint-config-enact"`.
 * You restarted the editor's ESLint service (or the editor) after installing or updating `@enact/cli`, `eslint-config-enact-proxy` or `eslint.config.js`.
